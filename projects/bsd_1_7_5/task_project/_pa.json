@@ -1,0 +1,10 @@
+[rtk] /!\ No hook installed — run `rtk init -g` for automatic token savings
+[{
+    abs_path: string[94],
+    brief: string[139],
+    has_yaml: bool,
+    is_image: bool,
+    label: string[71],
+    name: string,
+    type: string
+  }] (15)

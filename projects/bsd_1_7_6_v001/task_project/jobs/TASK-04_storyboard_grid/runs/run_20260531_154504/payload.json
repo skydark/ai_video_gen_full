@@ -1,0 +1,10 @@
+{
+  "prompt": "# 多宫格分镜 - TASK-04 闹别扭特写+收尾\n\n目标：6格黑白或低饱和分镜草稿contact sheet。粗线条、灰阶阴影、清晰分格。16:9画幅。**闹别扭表情格是全段关键——必须优先验证。**\n\n## 分格内容\n\n**格1 - 蕾微笑**：近景蕾。她微微笑了——不是开心，是「知道甲说得对但我仍不安」的复杂微笑。视线朝左(看甲)。说着「そうでしょうけど……」。金发微风轻动。\n**格2 - 视线飘移→黯淡**：同机位。笑容消失。视线从甲方向(左)→飘向画面右侧厨房方向。表情黯淡，低声继续：「……それでも、菜ノ葉さんを見ていると、身につまされるものを感じてしまいます」。眼神有羡慕和自我对比。\n**格3 - 闹别扭特写 ★关键**：特写蕾侧脸（偏右侧，面朝左）。闹别扭神情（すねた顔）：嘴角微撇一侧、视线偏下/侧方、眉头微蹙、脸颊极淡红晕。不生不悲——是幼稚、不设防、信任状态。她语带微不满说：「なんです？中尉」。微风拂金发。阳光柔和高光。黑色角状发饰可见。\n**格4 - 闹别扭中帧**：同特写。蕾察觉甲在凝视她，表情中带被盯着看的不自在。甲画外轻声笑答：「いや、なんでもないよ」。\n**格5 - 甲轻笑**：近景甲。听到闹别扭语气后轻轻笑——温暖、短暂。觉得她难得露这一面有意思。然后移开目光。不是嘲笑。\n**格6 - 两人转头**：双人中景（保持甲左蕾右构图）。画外厨房方向传来菜ノ叶元气大喊：「ふたりとも〜〜っ……！ご飯が炊けたよ〜〜っ！」。两人几乎同时转头向右（微差）。微风。淡出前定格。\n\n## Avoid\n- 闹别扭绝对不能画成生气或悲伤——核心是「すねた表情」（赌气/闹别扭）\n- 蕾视线方向从左→右转换要清晰\n- 双人镜保持甲左蕾右轴线\n- 蕾金发长直+黑色角状发饰+灰色马甲必须与角色参考图一致\n- 脸颊红晕不能过度\n",
+  "aspectRatio": "16:9",
+  "resolution": "2k",
+  "imageUrls": [
+    "https://rh-images-switch-1252422369.cos.ap-guangzhou.myqcloud.com/input/openapi/1aca0cbd718e17bc5ef9039d89f744491e75fd29395f8c82f17165a8763414a8.png?q-sign-algorithm=sha1&q-ak=AKIDv56FISEJUsKsMeELk0gmbNCGKTYSaZ3N&q-sign-time=1780213506%3B1780299906&q-key-time=1780213506%3B1780299906&q-header-list=host&q-url-param-list=&q-signature=880fc348a5911817d6a5b1d36c0748845742ca4b",
+    "https://rh-images-switch-1252422369.cos.ap-guangzhou.myqcloud.com/input/openapi/05fcc80981910bebdc9527e780663f12a7548e282d9896365e8f0e6440abcf16.png?q-sign-algorithm=sha1&q-ak=AKIDv56FISEJUsKsMeELk0gmbNCGKTYSaZ3N&q-sign-time=1780213507%3B1780299907&q-key-time=1780213507%3B1780299907&q-header-list=host&q-url-param-list=&q-signature=207df9f0324f2207767a752484e3aa862c32c496",
+    "https://rh-images-switch-1252422369.cos.ap-guangzhou.myqcloud.com/input/openapi/84f16a31671c13f58c7728a032332c473ad7c782c33c143dc7f93c94aeee1b83.png?q-sign-algorithm=sha1&q-ak=AKIDv56FISEJUsKsMeELk0gmbNCGKTYSaZ3N&q-sign-time=1780213509%3B1780299909&q-key-time=1780213509%3B1780299909&q-header-list=host&q-url-param-list=&q-signature=7d440f4abe78cfef7782d7c8983f6c29fe1ac08e"
+  ]
+}

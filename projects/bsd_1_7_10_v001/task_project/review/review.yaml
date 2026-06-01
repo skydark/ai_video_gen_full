@@ -1,0 +1,441 @@
+schema_version: 1
+project_id: bsd_1_7_10_v001
+source_shot_plan: ../shot_plan.json
+dialogue_policy: 复用游戏语音素材；dialogue_timing.text 必须逐字保留原剧本文本，不得改写或合并成新台词。本版仅删除少量缓冲对白，保留的对白全部照抄原文。
+dialogue_cuts:
+- voice_id: v10001032
+  text: なんだ、いきなり？
+  reason: 删除轻微打岔，直接让蕾说明朋友话题，节奏更紧。
+- voice_id: v10001033
+  text: そんなに、俺の表情って変わっているのか？
+  reason: 删除重复确认，保留蕾观察甲变亮的核心。
+- voice_id: v10100765
+  text: ええ……
+  reason: 删除单字承接，不影响信息。
+- voice_id: v10001038
+  text: どうしたんだ、いきなり、そんな……
+  reason: 删除重复惊讶，后续拒绝已能体现冲击。
+- voice_id: v10100773
+  text: アークは甲さんを保護してくれるでしょうし、アーヴァル・シティには、甲さんにとって大切な人が生きています
+  reason: 删除解释性退路，避免一镜过长；保留‘没有我也没关系’和菜ノ叶支撑信息。
+- voice_id: v10100775
+  text: 私は別に……
+  reason: 删除短促回避，直接进入恩情/仰慕句，保留蕾回避动作。
+asset_gaps:
+- 缺少雨前低云/远雷的专用参考；仅在镜头文字中描述为低云、远处短暂雷光、潮湿反光。
+- 缺少菜ノ叶回忆画面资产；本版不生成回忆画面，只保留甲的原台词。
+review_items:
+- task_id: GRID-01
+  title: 迎接与朋友话题
+  status: pending
+  recommendation: 先审多宫格，再决定是否生成关键帧/视频
+  shots:
+  - S001
+  - S002
+  checks:
+  - 参考图是否足够锁定角色与夜街场景
+  - 甲左蕾右/正反打轴线是否连续
+  - 动作、表情、视线是否清楚
+  - 对白是否只删除未改写
+  - 是否避开字幕、文字和高拒词
+- task_id: GRID-02
+  title: 死别阴影与请求
+  status: pending
+  recommendation: 先审多宫格，再决定是否生成关键帧/视频
+  shots:
+  - S003
+  - S004
+  checks:
+  - 参考图是否足够锁定角色与夜街场景
+  - 甲左蕾右/正反打轴线是否连续
+  - 动作、表情、视线是否清楚
+  - 对白是否只删除未改写
+  - 是否避开字幕、文字和高拒词
+- task_id: GRID-03
+  title: 约定被拒绝
+  status: pending
+  recommendation: 先审多宫格，再决定是否生成关键帧/视频
+  shots:
+  - S005
+  - S006
+  checks:
+  - 参考图是否足够锁定角色与夜街场景
+  - 甲左蕾右/正反打轴线是否连续
+  - 动作、表情、视线是否清楚
+  - 对白是否只删除未改写
+  - 是否避开字幕、文字和高拒词
+- task_id: GRID-04
+  title: 你就是支撑
+  status: pending
+  recommendation: 先审多宫格，再决定是否生成关键帧/视频
+  shots:
+  - S007
+  - S008
+  checks:
+  - 参考图是否足够锁定角色与夜街场景
+  - 甲左蕾右/正反打轴线是否连续
+  - 动作、表情、视线是否清楚
+  - 对白是否只删除未改写
+  - 是否避开字幕、文字和高拒词
+- task_id: GRID-05
+  title: 沉默与雨前收束
+  status: pending
+  recommendation: 先审多宫格，再决定是否生成关键帧/视频
+  shots:
+  - S009
+  - S010
+  checks:
+  - 参考图是否足够锁定角色与夜街场景
+  - 甲左蕾右/正反打轴线是否连续
+  - 动作、表情、视线是否清楚
+  - 对白是否只删除未改写
+  - 是否避开字幕、文字和高拒词
+shots:
+- id: S001
+  title: 夜道迎接
+  duration: 6.0
+  type: establishing
+  camera: 远景到双人中景，贫民街夜道，甲偏左走入，蕾从右侧路灯下迎上
+  dialogue: 迎えに来ました、甲さん / ああ、ご苦労さん
+  intent: 建立章终夜道空间和二人并肩关系。
+  review: 夜街压迫感、两人左右位置、迎接动作是否清楚。
+  risk: 中。夜景远景角色身份可能漂移。
+  recommendation: 先做多宫格
+  segment: 迎接与朋友话题
+  video_task: 迎接与朋友话题
+  prompt_preview: 夜道远景。甲从画面左侧进入，蕾在画面右侧路灯下等待；两人短暂对视后并肩向街道深处走。 / 缓慢推近，从环境远景到双人中景；保持甲左、蕾右。 / 潮湿地面有霓虹反光，雨前低云，路灯轻微闪烁。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S002
+  title: 朋友让脸色变亮
+  duration: 9.0
+  type: dialogue_two
+  camera: 并肩跟拍中近景，蕾侧脸偏右，甲听她说话
+  dialogue: やっぱり、友達って重要ですね…… / 最近、甲さんの顔色が明るくて、見ていると正直、ホッとします
+  intent: 用蕾主动观察甲的变化，把话题从日常带向关系核心。
+  review: 蕾是否有少量暖意；甲是否仍在听而不是抢戏。
+  risk: 中。并肩行走口型和身份一致性较难。
+  recommendation: 先做多宫格
+  segment: 迎接与朋友话题
+  video_task: 迎接与朋友话题
+  prompt_preview: 并肩行走中近景。蕾在右侧微微转头看甲，语气柔和；甲在左侧听着，表情稍意外但不打断。 / 侧向跟拍，偶尔让路灯柱从前景掠过。 / 昏黄路灯和冷色霓虹交替扫过两人脸部。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S003
+  title: 死别阴影
+  duration: 10.0
+  type: closeup
+  camera: 蕾近景，路灯频闪掠过面庞，甲肩部在前景虚化
+  dialogue: ……でも、そう言いたくなる気持ちもわかる気がします / 沢山、死に別れましたから……私も、甲さんも……
+  intent: 把朋友话题转为共同失去，为后续请求做情绪铺垫。
+  review: 蕾从温柔到沉重的转折是否成立；没有新增回忆资产。
+  risk: 中。细微表情可能过度。
+  recommendation: 先做多宫格
+  segment: 死别阴影与请求
+  video_task: 死别阴影
+  prompt_preview: 蕾近景。她视线从甲移到地面，声音转低；甲肩部只作为前景虚化轮廓。 / 极慢推近蕾的眼神，结尾停在她压住情绪的表情。 / 路灯短暂闪烁，远处冷色霓虹变弱。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S004
+  title: 如果我出事请离开
+  duration: 12.0
+  type: dialogue_ots
+  camera: 甲肩后过肩拍蕾，蕾停步正面看向甲
+  dialogue: ……甲さん、ひとつ、お願いがあります / なんだ……？ / 私に何かあったら、この清城市を脱出し、事件から身を引いてください
+  intent: 核心请求出现，剧情从同行谈话转为关系危机。
+  review: 蕾停步、甲注意力被拉住、请求严重性是否明确。
+  risk: 高。OTS 和停步轴线需要多宫格确认。
+  recommendation: 先做多宫格
+  segment: 死别阴影与请求
+  video_task: 如果我出事请离开
+  prompt_preview: 两人停步。以前景甲肩部过肩拍蕾；蕾在右中位置正面看向甲，站姿克制，像是在压住不安。 / 从并肩跟拍切到稳定过肩，轻微推近蕾。 / 蕾半边脸在路灯下，半边落入阴影；远处霓虹轻闪。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S005
+  title: 约定与拒绝
+  duration: 12.0
+  type: dialogue_ots
+  camera: 蕾肩后过肩拍甲，甲低声但坚定拒绝
+  dialogue: 万が一のことを話しているのです。……約束してくれますね、甲さん？ / ダメだね。そんな事、約束なんかできっこない
+  intent: 让甲明确拒绝蕾安排他的退路，确立两人价值冲突。
+  review: 甲的坚定是否可读；与上一镜轴线是否连续。
+  risk: 高。正反打身份、左右关系、口型需确认。
+  recommendation: 先做多宫格
+  segment: 约定被拒绝
+  video_task: 约定与拒绝
+  prompt_preview: 反打甲近景。蕾的肩部在前景右侧虚化；甲在左中位置先垂眼听完，然后抬眼直视蕾，低声坚定拒绝。 / 静止近景，甲说出拒绝时轻微推近。 / 甲脸部有冷暖交错反光，地面反光轻微晃动。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S006
+  title: 没有我也没关系
+  duration: 10.0
+  type: closeup
+  camera: 蕾近景，表情闪过极细微痉挛后抹平
+  dialogue: そんな……どうして……。私が居なくても、もう甲さんは大丈夫なはずです
+  intent: 表现蕾真实受伤但试图合理化自己的退场。
+  review: 细微动摇是否清楚；不要过度表演。
+  risk: 高。微表情难稳定，建议先出多宫格。
+  recommendation: 先做多宫格
+  segment: 约定被拒绝
+  video_task: 没有我也没关系
+  prompt_preview: 蕾近景。听到拒绝后，她脸上有极短的动摇，随后把表情压平；她避开甲视线半秒，又强迫自己看回来。 / 静止近景，轻微手持呼吸感。 / 路灯闪过脸部，短暂暴露动摇后回到阴影。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S007
+  title: 你就是支撑
+  duration: 13.0
+  type: dialogue_two
+  camera: 双人中近景转甲近景，甲抬头直视蕾
+  dialogue: ……そういえば、菜ノ葉に、俺をよろしくとか言ったらしいな？ / ええ……。中尉には、心の支えになってくれる人が必要ですから / 今更、何を言うんだよ。今だって充分に、レインが支えになってくれてるさ
+  intent: 保留菜ノ叶信息但不插回忆，让甲把关系核心说出口。
+  review: 不用新增菜ノ叶资产仍能理解；甲的直视是否有冲击力。
+  risk: 高。三句对白压在一个任务内，需检查节奏。
+  recommendation: 先做多宫格
+  segment: 你就是支撑
+  video_task: 你就是支撑
+  prompt_preview: 双人中近景。甲从沉默中抬头，提起菜ノ叶；蕾在右侧用平静理由回应；甲向前半步，直视蕾说出她就是支撑。 / 从双人中景缓慢推到甲偏左近景，结尾保留蕾右侧反应。 / 两人之间的湿地反光形成分隔线，路灯闪烁减弱。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S008
+  title: 只是恩与仰慕吗
+  duration: 11.0
+  type: closeup
+  camera: 蕾近景到双人静止，蕾回避视线后沉默
+  dialogue: 中尉に恩を感じておりますし、慕ってもいました。……けれど、それは、ただ…… / ただ……なんだって言うんだよ？まさかまた、部下だからとか任務だからとか、そんなことを言うんじゃないだろうな？
+  intent: 用蕾说不出口的停顿替代解释，突出真心被面具挡住。
+  review: 沉默是否有压力；画外甲追问是否能被理解。
+  risk: 中。长近景需要表情细节支撑。
+  recommendation: 先做多宫格
+  segment: 你就是支撑
+  video_task: 只是恩与仰慕吗
+  prompt_preview: 蕾近景。她移开视线，试图把感情说成恩情和仰慕，却在最后停住；甲追问时画面仍留在蕾沉默的脸上。 / 极慢推近蕾眼睛，甲画外追问时不切走。 / 路灯断续掠过蕾的脸，眼中有霓虹碎光。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S009
+  title: 真心问不出口
+  duration: 10.0
+  type: dialogue_two
+  camera: 双人中景，甲垂下目光，蕾沉默站在右侧
+  dialogue: 本当のことを話しては……くれないのか？ / ……悪かった、レイン。聞き流してくれ……
+  intent: 让甲意识到无法逼出真心，情绪下沉。
+  review: 蕾沉默、甲放弃追问是否明确；停顿是否足够。
+  risk: 中。静止镜头需避免空。
+  recommendation: 先做多宫格
+  segment: 沉默与雨前收束
+  video_task: 真心问不出口
+  prompt_preview: 双人中景。甲在左侧等待回答，肩膀逐渐放松并垂下目光；蕾在右侧沉默。甲道歉后，两人之间保留明显空隙。 / 静止双人镜头，用停顿表现压力。 / 低云压住街道，路灯短暂变暗，远处有很弱的雷光。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S010
+  title: 雨要来了
+  duration: 10.0
+  type: ending
+  camera: 蕾近景转远景拉远，两人继续并肩走入暗巷
+  dialogue: いえ……。急ぎましょう。雨が降りそうですから / ああ……
+  intent: 蕾退回冷静面具，用天气结束对话，章终以雷雨压迫收束。
+  review: 冷静浅笑是否像面具；拉远和雷光是否有章终余韵。
+  risk: 高。近景到远景、雷光和背影身份稳定需要确认。
+  recommendation: 先做多宫格
+  segment: 沉默与雨前收束
+  video_task: 雨要来了
+  prompt_preview: 蕾微微摇头，重新抬脸，露出克制的浅笑，说雨要来了。甲低声回应。两人重新并肩走向无人暗巷，背影渐小。 / 从蕾近景切到远景缓慢后拉，最后暗转。 / 霓虹逐渐稀疏，低云压迫，远处冷白雷光短闪。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+previs:
+  dir: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_10_v001
+  shot_plan: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_10_v001\shot_plan.json
+  sequence_title: BSD 1-7-10 贫民街夜道与雨前沉默
+status: in_review
+global_feedback: ''
+items:
+- id: S001
+  title: 夜道迎接
+  duration: 6.0
+  type: establishing
+  camera: 远景到双人中景，贫民街夜道，甲偏左走入，蕾从右侧路灯下迎上
+  dialogue: 迎えに来ました、甲さん / ああ、ご苦労さん
+  intent: 建立章终夜道空间和二人并肩关系。
+  review: 夜街压迫感、两人左右位置、迎接动作是否清楚。
+  risk: 中。夜景远景角色身份可能漂移。
+  recommendation: 先做多宫格
+  segment: SEG-01 迎接与朋友话题
+  video_task: TASK-01 迎接与朋友话题
+  prompt_preview: 夜道远景。甲从画面左侧进入，蕾在画面右侧路灯下等待；两人短暂对视后并肩向街道深处走。 / 缓慢推近，从环境远景到双人中景；保持甲左、蕾右。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S002
+  title: 朋友让脸色变亮
+  duration: 9.0
+  type: dialogue_two
+  camera: 并肩跟拍中近景，蕾侧脸偏右，甲听她说话
+  dialogue: やっぱり、友達って重要ですね…… / 最近、甲さんの顔色が明るくて、見ていると正直、ホッとします
+  intent: 用蕾主动观察甲的变化，把话题从日常带向关系核心。
+  review: 蕾是否有少量暖意；甲是否仍在听而不是抢戏。
+  risk: 中。并肩行走口型和身份一致性较难。
+  recommendation: 先做多宫格
+  segment: SEG-01 迎接与朋友话题
+  video_task: TASK-01 迎接与朋友话题
+  prompt_preview: 并肩行走中近景。蕾在右侧微微转头看甲，语气柔和；甲在左侧听着，表情稍意外但不打断。 / 侧向跟拍，偶尔让路灯柱从前景掠过。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S003
+  title: 死别阴影
+  duration: 10.0
+  type: closeup
+  camera: 蕾近景，路灯频闪掠过面庞，甲肩部在前景虚化
+  dialogue: ……でも、そう言いたくなる気持ちもわかる気がします / 沢山、死に別れましたから……私も、甲さんも……
+  intent: 把朋友话题转为共同失去，为后续请求做情绪铺垫。
+  review: 蕾从温柔到沉重的转折是否成立；没有新增回忆资产。
+  risk: 中。细微表情可能过度。
+  recommendation: 先做多宫格
+  segment: SEG-02 死别阴影与请求
+  video_task: TASK-02 死别阴影
+  prompt_preview: 蕾近景。她视线从甲移到地面，声音转低；甲肩部只作为前景虚化轮廓。 / 极慢推近蕾的眼神，结尾停在她压住情绪的表情。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S004
+  title: 如果我出事请离开
+  duration: 12.0
+  type: dialogue_ots
+  camera: 甲肩后过肩拍蕾，蕾停步正面看向甲
+  dialogue: ……甲さん、ひとつ、お願いがあります / なんだ……？ / 私に何かあったら、この清城市を脱出し、事件から身を引いてください
+  intent: 核心请求出现，剧情从同行谈话转为关系危机。
+  review: 蕾停步、甲注意力被拉住、请求严重性是否明确。
+  risk: 高。OTS 和停步轴线需要多宫格确认。
+  recommendation: 先做多宫格
+  segment: SEG-02 死别阴影与请求
+  video_task: TASK-03 如果我出事请离开
+  prompt_preview: 两人停步。以前景甲肩部过肩拍蕾；蕾在右中位置正面看向甲，站姿克制，像是在压住不安。 / 从并肩跟拍切到稳定过肩，轻微推近蕾。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S005
+  title: 约定与拒绝
+  duration: 12.0
+  type: dialogue_ots
+  camera: 蕾肩后过肩拍甲，甲低声但坚定拒绝
+  dialogue: 万が一のことを話しているのです。……約束してくれますね、甲さん？ / ダメだね。そんな事、約束なんかできっこない
+  intent: 让甲明确拒绝蕾安排他的退路，确立两人价值冲突。
+  review: 甲的坚定是否可读；与上一镜轴线是否连续。
+  risk: 高。正反打身份、左右关系、口型需确认。
+  recommendation: 先做多宫格
+  segment: SEG-03 约定被拒绝
+  video_task: TASK-04 约定与拒绝
+  prompt_preview: 反打甲近景。蕾的肩部在前景右侧虚化；甲在左中位置先垂眼听完，然后抬眼直视蕾，低声坚定拒绝。 / 静止近景，甲说出拒绝时轻微推近。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S006
+  title: 没有我也没关系
+  duration: 10.0
+  type: closeup
+  camera: 蕾近景，表情闪过极细微痉挛后抹平
+  dialogue: そんな……どうして……。私が居なくても、もう甲さんは大丈夫なはずです
+  intent: 表现蕾真实受伤但试图合理化自己的退场。
+  review: 细微动摇是否清楚；不要过度表演。
+  risk: 高。微表情难稳定，建议先出多宫格。
+  recommendation: 先做多宫格
+  segment: SEG-03 约定被拒绝
+  video_task: TASK-05 没有我也没关系
+  prompt_preview: 蕾近景。听到拒绝后，她脸上有极短的动摇，随后把表情压平；她避开甲视线半秒，又强迫自己看回来。 / 静止近景，轻微手持呼吸感。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S007
+  title: 你就是支撑
+  duration: 13.0
+  type: dialogue_two
+  camera: 双人中近景转甲近景，甲抬头直视蕾
+  dialogue: ……そういえば、菜ノ葉に、俺をよろしくとか言ったらしいな？ / ええ……。中尉には、心の支えになってくれる人が必要ですから / 今更、何を言うんだよ。今だって充分に、レインが支えになってくれてるさ
+  intent: 保留菜ノ叶信息但不插回忆，让甲把关系核心说出口。
+  review: 不用新增菜ノ叶资产仍能理解；甲的直视是否有冲击力。
+  risk: 高。三句对白压在一个任务内，需检查节奏。
+  recommendation: 先做多宫格
+  segment: SEG-04 你就是支撑
+  video_task: TASK-06 你就是支撑
+  prompt_preview: 双人中近景。甲从沉默中抬头，提起菜ノ叶；蕾在右侧用平静理由回应；甲向前半步，直视蕾说出她就是支撑。 / 从双人中景缓慢推到甲偏左近景，结尾保留蕾右侧反应。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S008
+  title: 只是恩与仰慕吗
+  duration: 11.0
+  type: closeup
+  camera: 蕾近景到双人静止，蕾回避视线后沉默
+  dialogue: 中尉に恩を感じておりますし、慕ってもいました。……けれど、それは、ただ…… / ただ……なんだって言うんだよ？まさかまた、部下だからとか任務だからとか、そんなことを言うんじゃないだろうな？
+  intent: 用蕾说不出口的停顿替代解释，突出真心被面具挡住。
+  review: 沉默是否有压力；画外甲追问是否能被理解。
+  risk: 中。长近景需要表情细节支撑。
+  recommendation: 先做多宫格
+  segment: SEG-04 你就是支撑
+  video_task: TASK-07 只是恩与仰慕吗
+  prompt_preview: 蕾近景。她移开视线，试图把感情说成恩情和仰慕，却在最后停住；甲追问时画面仍留在蕾沉默的脸上。 / 极慢推近蕾眼睛，甲画外追问时不切走。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S009
+  title: 真心问不出口
+  duration: 10.0
+  type: dialogue_two
+  camera: 双人中景，甲垂下目光，蕾沉默站在右侧
+  dialogue: 本当のことを話しては……くれないのか？ / ……悪かった、レイン。聞き流してくれ……
+  intent: 让甲意识到无法逼出真心，情绪下沉。
+  review: 蕾沉默、甲放弃追问是否明确；停顿是否足够。
+  risk: 中。静止镜头需避免空。
+  recommendation: 先做多宫格
+  segment: SEG-05 沉默与雨前收束
+  video_task: TASK-08 真心问不出口
+  prompt_preview: 双人中景。甲在左侧等待回答，肩膀逐渐放松并垂下目光；蕾在右侧沉默。甲道歉后，两人之间保留明显空隙。 / 静止双人镜头，用停顿表现压力。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S010
+  title: 雨要来了
+  duration: 10.0
+  type: ending
+  camera: 蕾近景转远景拉远，两人继续并肩走入暗巷
+  dialogue: いえ……。急ぎましょう。雨が降りそうですから / ああ……
+  intent: 蕾退回冷静面具，用天气结束对话，章终以雷雨压迫收束。
+  review: 冷静浅笑是否像面具；拉远和雷光是否有章终余韵。
+  risk: 高。近景到远景、雷光和背影身份稳定需要确认。
+  recommendation: 先做多宫格
+  segment: SEG-05 沉默与雨前收束
+  video_task: TASK-09 雨要来了
+  prompt_preview: 蕾微微摇头，重新抬脸，露出克制的浅笑，说雨要来了。甲低声回应。两人重新并肩走向无人暗巷，背影渐小。 / 从蕾近景切到远景缓慢后拉，最后暗转。
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+prompt_policy: 生产 prompt 只使用参考图锚定角色与场景；文字只描述参考图无法提供的构图、走位、动作、表情、视线、镜头运动、光线变化和相对空间关系。避免容易触发拒绝的身份/服装标签。

@@ -1,0 +1,26 @@
+{
+  "submit_id": "d8db1f12-a633-4d63-aa2c-01960eaa1133",
+  "prompt": "生成一段 16:9 动画视频。使用随任务提供的两张角色参考图和一张夜街参考图锁定外观与场景；文字只描述构图、动作、表情、视线、运镜和空间关系。画面不要字幕。\n\n全局空间：甲偏画面左侧，蕾偏画面右侧；正反打保持同一视线轴。\n\n雨前氛围：潮湿反光、低云、远处短暂雷光；不要下大雨。\n\n时间码动作：\n\n[0.0-11.0s] 只是恩与仰慕吗\n景别/位置：蕾近景到双人静止，蕾回避视线后沉默\n动作/表情：蕾近景。她移开视线，试图把感情说成恩情和仰慕，却在最后停住；甲追问时画面仍留在蕾沉默的脸上。\n镜头：极慢推近蕾眼睛，甲画外追问时不切走。\n光线：路灯断续掠过蕾的脸。\n对白/声音：rei:\"中尉に恩を感じておりますし、慕ってもいました。……けれど、それは、ただ……\"（画面内） / kou:\"ただ……なんだって言うんだよ？まさかまた、部下だからとか任務だからとか、そんなことを言うんじゃないだろうな？\"（画外/背对也可）\n避免：不要让蕾突然微笑，不要拥抱或牵手。\n\n全局避免：不要身份漂移，不要跳轴，不要交换左右位置，不要画字幕、文字、水印或镜头编号。对白文本必须逐字保留原游戏语音文本，不得改写。",
+  "gen_status": "success",
+  "result_json": {
+    "images": [],
+    "videos": [
+      {
+        "video_url": "https://v3-artist.vlabvod.com/a57ba9423247a32f7e71646ade8e4bd9/6a1c6dbf/video/tos/cn/tos-cn-v-148450/oo6mQ4BqAggIRoBUSsryqg7S4Gf4H9TfFCBvOH/?a=4066&ch=0&cr=0&dr=0&er=0&cd=0%7C0%7C0%7C0&br=6267&bt=6267&cs=0&ds=12&ft=5QYTUxhhe6BMyq-SdbeJD12Nzj&mime_type=video_mp4&qs=0&rc=NWhmOjdkNTRlZzw8aWZmO0BpM3d2bjxrbzY4OzczNDM7M0BhXmFfXjJeNWAxNC0tYmEyYSNpLmxycWdec2JhLS1kNC9zcw%3D%3D&btag=80000e00008000&dy_q=1780244387&feature_id=04b16e464b574158bb99cac30ccb1f5e&l=202606010015150100000000136116E32",
+        "fps": 24,
+        "width": 1280,
+        "height": 720,
+        "format": "mp4",
+        "duration": 12.042
+      }
+    ]
+  },
+  "credit_count": 132,
+  "queue_info": {
+    "queue_idx": 0,
+    "priority": 1,
+    "queue_status": "Finish",
+    "queue_length": 0,
+    "debug_info": "{\"have_no_dreamina_queue_name\":false,\"dreamina_matrix_queue_name\":\"dreamina_fusion_video40_vision\",\"dreamina_matrix_req_key\":\"DreaminaFusion:Video40_Vision_unified_edit_720p\",\"dreamina_matrix_second_req_key\":\"\",\"have_no_queue_name\":true,\"queue_name\":\"\",\"matrix_req_key\":\"\",\"matrix_second_req_key\":\"\"}"
+  }
+}

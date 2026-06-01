@@ -1,0 +1,75 @@
+schema_version: 1
+project:
+  id: bsd_1_7_5
+  title: BSD 1-7-5 清晨唤醒与新闻播报
+  created_at: '2026-05-30T00:00:00+08:00'
+  source:
+    previs_dir: ../
+settings:
+  default_provider: dryrun
+  live_requires_confirm: true
+  max_concurrent_jobs: 1
+  approved_naming: '{job_id}_{kind}_take_{take:03d}{ext}'
+assets:
+- id: asset_rei
+  type: character
+  label: 桐岛蕾（制服无外套）
+  files:
+  - path: assets/characters/蕾_现代篇_制服_无外套.png
+    role: reference
+- id: asset_kou
+  type: character
+  label: 门仓甲（制服有外套）
+  files:
+  - path: assets/characters/甲_现代篇_制服_有外套.png
+    role: reference
+- id: asset_hotel_room
+  type: scene
+  label: 酒店房间（清晨）
+  files:
+  - path: assets/scenes/现代篇_酒店房间_早晨.jpg
+    role: reference
+- id: asset_storyboard_task01_image_grid_run_20260530_231811
+  type: storyboard
+  label: task01_image_grid reference
+  files:
+  - path: assets/generated/storyboard/task01_image_grid_run_20260530_231811_task01_image_grid_reference.png
+    role: reference
+  provenance:
+    source_job_id: task01_image_grid
+    source_run_id: run_20260530_231811
+    source_output: candidate_01.png
+    promoted_at: '2026-05-30T23:27:38+08:00'
+- id: asset_菜叶_现代篇_常服_无外套
+  type: misc
+  label: 若草菜叶
+  files:
+  - path: assets/misc/菜叶_现代篇_常服_无外套.png
+    role: reference
+- id: asset_candidate_01_mp4___3_0s
+  type: keyframe
+  label: candidate_01.mp4 @ 3.0s
+  files:
+  - path: assets/generated/keyframe/candidate_01_mp4___3_0s.png
+    role: reference
+jobs:
+- id: task01_image_grid
+  kind: image
+  title: 清晨唤醒与新闻播报 - 多宫格分镜图
+  provider: dryrun
+  status: ready
+- id: task01_video
+  kind: video
+  title: 清晨唤醒与新闻播报 - 视频片段
+  provider: dryrun
+  status: ready
+- id: image_001
+  kind: image
+  title: 新图像任务
+  provider: dryrun
+  status: draft
+- id: image_002
+  kind: image
+  title: TASK-01 清晨唤醒与新闻播报 - storyboard grid
+  provider: dryrun
+  status: draft

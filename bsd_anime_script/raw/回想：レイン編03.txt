@@ -1,0 +1,9 @@
+=== 回想：レイン編03.bin ===
+
+[identifier: Logout]
+[identifier: 01.spm]
+[field_id: K_Flash01]
+[field_id: K_Flash01]
+[field_id: K_Flash01]
+[field_id: K_Flash01]
+[field_id: K_Flash01]

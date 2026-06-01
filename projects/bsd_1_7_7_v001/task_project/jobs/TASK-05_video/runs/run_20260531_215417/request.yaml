@@ -1,0 +1,91 @@
+schema_version: 1
+job_id: TASK-05_video
+kind: video
+provider: dreamina_video
+prompt: '【风格】按项目统一动画/漫剧风格；保持参考图一致性。
+
+
+  【参考图锚点】
+
+  - @门仓甲设定图：一名年轻男性角色，拥有深棕色略凌乱短发、蓝色眼睛和白皙皮肤。身穿黑色长款连帽风衣，帽子边缘有浅棕色毛领，内搭浅蓝色圆领T恤，下身深蓝色宽松长裤，黑色高帮战斗靴，黑色露指手套，体型瘦削匀称。。
+
+  - @若草菜ノ叶设定图：一位年轻动漫少女，浅绿色齐肩短发，左侧用金色球形发饰扎侧马尾。
+
+  - @场景参考图：场景、光线、天气、空间结构。
+
+  - @构图参考图：黑白或低饱和线框分镜图，只作为构图、机位、blocking、运动方向参考，不作为画风参考。
+
+
+  【时间码动作】
+
+  [00:00-00:05] 菜ノ叶半步上前近景
+
+  画面与动作：菜ノ叶上前半步，抬头直视画面左侧的甲，神情认真。随后将目光越过甲，投向远处道路尽头像宿舍方向的位置。画面不要出现蕾本人，只通过菜ノ叶视线指向远方。
+  角色外观严格参考对应角色参考图。场景严格参考校园_校园道_白天。
+
+  镜头运动：近景微推，菜ノ叶上前时镜头轻微后退保持构图。
+
+  对白/声音：0.3-2.2s nanoha："甲、いい……？この先、甲にはきっと、支えてくれる人が必要になると思う"（画面内角色对口型） / 2.4-4.9s
+  nanoha："……だから、レインさんを大切にしてあげてね。きっと、あの人なら、ずっと側にいてくれるから"（画面内角色对口型）
+
+
+  [00:05-00:10] 菜ノ叶近景到甲近景
+
+  画面与动作：菜ノ叶近景，她轻轻点头，回忆蕾拜托她的事情，但画面不插入蕾回忆。切到甲近景，他眼神震动、嘴微张，难以置信。甲视线朝画面右侧，菜ノ叶视线朝画面左侧。
+  角色外观严格参考对应角色参考图。场景严格参考校园_校园道_白天。
+
+  镜头运动：正反打剪辑，镜头稳定。
+
+  对白/声音：0.3-2.3s nanoha："何かあったら甲をよろしく、って……。凄く真剣な顔でお願いされちゃった……"（画面内角色对口型） / 2.5-3.5s
+  kou："レインが、そんなことを……？"（画面内角色对口型）
+
+
+  [00:10-00:15] 中景到远景
+
+  画面与动作：菜ノ叶中景。她努力扬起笑容，话到一半停住，像把真正想说的话吞回去，随即故作轻快地笑。甲在画面左侧沉默，张了张嘴却没有说话。菜ノ叶率先转身朝校园道远处走去，回头催甲返回。最后远景，两人一前一后沿校园道返回，画面淡出。
+  角色外观严格参考对应角色参考图。场景严格参考校园_校园道_白天。
+
+  镜头运动：从中景缓慢拉远到远景，跟随菜ノ叶转身，再让甲进入一前一后的构图。
+
+  对白/声音：0.3-2.6s nanoha："うん……でもね。私は……ずっと、甲の側には居てあげられないかもしれない……だから……"（画面内角色对口型） / 2.9-5.9s
+  nanoha："だから……ええと、大丈夫！何かあっても、きっとレインさんが側にいてくれる。たとえ、今は彼女じゃなくたって……"（画面内角色对口型） / 6.1-7.8s
+  nanoha："もう、戻ろう？あまり、レインさんを待たせちゃかわいそうだから"（画面内角色对口型）
+
+
+  '
+negative_prompt: ''
+params:
+  duration_limit: 15
+  aspect_ratio: '16:9'
+  model_version: seedance2.0_vip
+  generate_audio: false
+  real_person_mode: false
+  seed: -1
+refs:
+- asset_id: asset_kou
+  source_path: assets/misc/甲_现代篇_制服_有外套.png
+  usage: identity
+  label: 门仓甲参考图
+  sha256: 1aca0cbd718e17bc5ef9039d89f744491e75fd29395f8c82f17165a8763414a8
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\misc\甲_现代篇_制服_有外套.png
+- asset_id: asset_nanoha
+  source_path: assets/misc/菜叶_现代篇_常服_有外套.png
+  usage: identity
+  label: 若草菜ノ叶参考图
+  sha256: 1f89757816a0cd25edae5ade22fa7e0472d4c41e0f0490f1656f4b9c828f9c09
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\misc\菜叶_现代篇_常服_有外套.png
+- asset_id: asset_scene
+  source_path: assets/misc/校园_校园道_白天.png
+  usage: scene
+  label: 校园校园道白天场景参考图
+  sha256: 4f74db8d0a120315c7a3573afa97ecf83043c2c67ca13c49e202331b690e2438
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\misc\校园_校园道_白天.png
+- asset_id: asset_storyboard_TASK-05_image_grid_run_20260531_202836_candidate_01_png
+  source_path: assets/generated/storyboard/TASK-05_image_grid_run_20260531_202836_candidate_01_png.png
+  usage: composition
+  label: candidate_01.png
+  sha256: aa72d1119459ecd10bba6b2a4249c988a646ed1b6ac691c0c6038380db93f02d
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\generated\storyboard\TASK-05_image_grid_run_20260531_202836_candidate_01_png.png
+run_id: run_20260531_215417
+created_at: '2026-05-31T22:01:38+08:00'
+status: SUCCESS

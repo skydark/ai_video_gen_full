@@ -1,0 +1,53 @@
+schema_version: 1
+job_id: TASK-09_video
+kind: video
+provider: dreamina_video
+prompt: '生成一段 16:9 动画视频。使用随任务提供的两张角色参考图和一张夜街参考图锁定外观与场景；文字只描述构图、动作、表情、视线、运镜和空间关系。画面不要字幕。
+
+
+  全局空间：甲偏画面左侧，蕾偏画面右侧；正反打保持同一视线轴。
+
+
+  雨前氛围：潮湿反光、低云、远处短暂雷光；不要下大雨。
+
+
+  时间码动作：
+
+
+  [0.0-10.0s] 雨要来了
+
+  景别/位置：蕾近景转远景拉远，两人继续并肩走入暗巷
+
+  动作/表情：蕾微微摇头，重新抬脸，露出克制的浅笑，说雨要来了。甲低声回应。两人重新并肩走向无人暗巷，背影渐小。
+
+  镜头：从蕾近景切到远景缓慢后拉，最后暗转。
+
+  光线：霓虹逐渐稀疏，低云压迫，远处冷白雷光短闪。
+
+  对白/声音：rei:"いえ……。急ぎましょう。雨が降りそうですから"（画面内） / kou:"ああ……"（画面内）
+
+  避免：不要下大雨，不要牵手或拥抱，不要新增角色。
+
+
+  全局避免：不要身份漂移，不要跳轴，不要交换左右位置，不要画字幕、文字、水印或镜头编号。对白文本必须逐字保留原游戏语音文本，不得改写。'
+negative_prompt: ''
+params:
+  duration_limit: 15
+  aspect_ratio: '16:9'
+  model_version: seedance2.0fast_vip
+  generate_audio: false
+  real_person_mode: false
+  seed: -1
+refs:
+- asset_id: asset_kou
+  role: character_reference
+  path: assets/misc/甲_现代篇_制服_有外套.png
+- asset_id: asset_rei
+  role: character_reference
+  path: assets/misc/蕾_现代篇_制服_有外套.png
+- asset_id: asset_street
+  role: scene_reference
+  path: assets/misc/现代篇_贫民窟_街道_夜晚.png
+run_id: run_20260601_000005
+created_at: '2026-06-01T00:05:45+08:00'
+status: SUCCESS

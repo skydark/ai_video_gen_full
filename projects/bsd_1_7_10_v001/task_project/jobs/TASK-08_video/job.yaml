@@ -1,0 +1,62 @@
+id: TASK-08_video
+kind: video
+title: 真心问不出口 - 视频任务
+provider: dreamina_video
+prompt: '生成一段 16:9 动画视频。使用随任务提供的两张角色参考图和一张夜街参考图锁定外观与场景；文字只描述构图、动作、表情、视线、运镜和空间关系。画面不要字幕。
+
+
+  全局空间：甲偏画面左侧，蕾偏画面右侧；正反打保持同一视线轴。
+
+
+  雨前氛围：潮湿反光、低云、远处短暂雷光；不要下大雨。
+
+
+  时间码动作：
+
+
+  [0.0-10.0s] 真心问不出口
+
+  景别/位置：双人中景，甲垂下目光，蕾沉默站在右侧
+
+  动作/表情：双人中景。甲在左侧等待回答，肩膀逐渐放松并垂下目光；蕾在右侧沉默。甲道歉后，两人之间保留明显空隙。
+
+  镜头：静止双人镜头，用停顿表现压力。
+
+  光线：低云压住街道，路灯短暂变暗，远处有很弱的雷光。
+
+  对白/声音：kou:"本当のことを話しては……くれないのか？"（画面内） / kou:"……悪かった、レイン。聞き流してくれ……"（画面内）
+
+  避免：不要让蕾开口回答，不要加入新台词。
+
+
+  全局避免：不要身份漂移，不要跳轴，不要交换左右位置，不要画字幕、文字、水印或镜头编号。对白文本必须逐字保留原游戏语音文本，不得改写。'
+params:
+  duration_limit: 10
+  aspect_ratio: '16:9'
+  model_version: seedance2.0fast_vip
+  generate_audio: false
+  real_person_mode: false
+  seed: -1
+source:
+  shot_plan: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_10_v001\shot_plan.json
+  task_id: TASK-08
+  shots:
+  - S009
+  estimated_duration: 10.0
+refs:
+- asset_id: asset_kou
+  role: character_reference
+  path: assets/misc/甲_现代篇_制服_有外套.png
+- asset_id: asset_rei
+  role: character_reference
+  path: assets/misc/蕾_现代篇_制服_有外套.png
+- asset_id: asset_street
+  role: scene_reference
+  path: assets/misc/现代篇_贫民窟_街道_夜晚.png
+outputs: []
+status: succeeded
+updated_at: '2026-06-01T00:19:26+08:00'
+runs:
+- run_20260601_000000
+- run_20260601_001532
+latest_run: run_20260601_001532

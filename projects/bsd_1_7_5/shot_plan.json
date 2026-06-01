@@ -1,0 +1,253 @@
+{
+  "schema_version": "shot-plan-1.0",
+  "sequence_title": "BSD 1-7-5 清晨唤醒与新闻播报",
+  "source_summary": "清城市清晨，蕾叫醒甲，晨间新闻播报米内议员暗杀事件后续。两人随后前往方舟虚拟都市。",
+  "characters": [
+    {
+      "id": "rei",
+      "asset_id": "rei",
+      "name": "桐岛蕾",
+      "variant": "制服无外套",
+      "brief": "金发长直发，灰色马甲+深蓝衬衫OL制服，黑色短裙，灰色过膝袜，气质干练"
+    },
+    {
+      "id": "kou",
+      "asset_id": "kou",
+      "name": "门仓甲",
+      "variant": "制服有外套（刚醒，头发凌乱，可能只穿衬衫）",
+      "brief": "棕色凌乱短发，蓝色瞳孔，刚睡醒状态，头发凌乱"
+    }
+  ],
+  "assets_used": [
+    {"asset_id": "hotel_room_morning", "type": "scene", "usage": "主场景"},
+    {"asset_id": "rei", "type": "character", "usage": "主角"},
+    {"asset_id": "kou", "type": "character", "usage": "主角"}
+  ],
+  "seedance_segments": [
+    {
+      "id": "SEG-01",
+      "title": "清晨唤醒",
+      "shots": ["S001", "S002", "S003", "S004"],
+      "generation_strategy": "先做多宫格确认角色构图和清晨逆光氛围",
+      "prompt_focus": "蕾叫醒甲的自然互动，清晨暖光从右侧窗射入，角色身份一致性"
+    },
+    {
+      "id": "SEG-02",
+      "title": "新闻播报与街景",
+      "shots": ["S005", "S006"],
+      "generation_strategy": "街景蒙太奇可直接生成，数据面板需确认UI风格",
+      "prompt_focus": "数据面板插入镜头 + 清城市街景蒙太奇，新闻画外音叠画"
+    }
+  ],
+  "video_tasks": [
+    {
+      "id": "TASK-01",
+      "title": "清晨唤醒与新闻播报",
+      "segments": ["SEG-01", "SEG-02"],
+      "shots": ["S001", "S002", "S003", "S004", "S005", "S006"],
+      "estimated_duration": 12.5,
+      "reason": "同一酒店场景光线连续，新闻叠画是同一时间线，合并生成保持一致性"
+    }
+  ],
+  "shots": [
+    {
+      "id": "S001",
+      "duration": 2.0,
+      "type": "establishing",
+      "title": "旅馆房间清晨",
+      "camera": "中景，房间全貌，右侧窗透晨光",
+      "scene": "hotel_room_morning",
+      "dialogue": "",
+      "video_prompt": {
+        "visual_action": "中景定场。爱情旅馆房间清晨，阳光从右侧窗户射入形成光束，照亮床铺和地毯。双人床上被褥凌乱，暗示有人睡过。紫色沙发、老式CRT电视机、木质衣柜可见。安静温暖的晨间氛围。",
+        "camera_motion": "镜头静止",
+        "lighting": "清晨暖光从右侧窗射入，柔和逆光，丁达尔光束",
+        "avoid": "不要改变房间布局。保持动漫概念设计风格。"
+      },
+      "intent": "建立场景氛围，让观众知道这是清晨的旅馆房间",
+      "review": "检查房间布局与游戏素材一致，光线方向和色调是否正确",
+      "risk": "低。标准定场镜头。",
+      "recommendation": "可直接生成"
+    },
+    {
+      "id": "S002",
+      "duration": 3.0,
+      "type": "dialogue_ots",
+      "title": "蕾叫醒甲",
+      "camera": "近景，蕾为主体的过肩镜头，甲在画面中景床边",
+      "subject": "rei",
+      "scene": "hotel_room_morning",
+      "dialogue": "蕾：おはようございます、甲さん",
+      "dialogue_timing": [
+        {
+          "speaker": "rei",
+          "text": "おはようございます、甲さん",
+          "voice_id": "v10100718",
+          "start": 0.3,
+          "end": 2.8,
+          "lip_sync": true,
+          "on_screen": true
+        }
+      ],
+      "video_prompt": {
+        "visual_action": "近景/过肩。蕾站在床侧，背对晨光（画面左侧或中央偏左），金发长直发被逆光勾勒出轮廓光。她微倾身，表情温和克制，看向坐在床边的甲。甲在画面右侧中景，坐在床边揉眼，头发凌乱，刚睡醒。前景可含蕾的肩部或手臂。",
+        "camera_motion": "镜头基本静止，仅保留轻微呼吸感手持微动",
+        "lighting": "清晨逆光，蕾背光带轮廓光，甲面部受柔和散射光",
+        "avoid": "不要跳轴。保持蕾在画面左侧、甲在右侧的空间关系。不要改变角色服装和发色。"
+      },
+      "intent": "展示蕾叫醒甲的时刻，建立两人的空间关系和清晨氛围",
+      "review": "检查逆光效果是否自然，蕾的表情是否温和而非冷漠，甲是否看起来刚醒",
+      "risk": "中。逆光场景，需确保角色面部不丢失细节。OTS构图需保持轴线稳定。",
+      "recommendation": "先做多宫格"
+    },
+    {
+      "id": "S003",
+      "duration": 2.5,
+      "type": "closeup",
+      "title": "甲醒来反应",
+      "camera": "近景，甲正面，略俯角",
+      "subject": "kou",
+      "scene": "hotel_room_morning",
+      "dialogue": "甲：ああ、おはよう……",
+      "dialogue_timing": [
+        {
+          "speaker": "kou",
+          "text": "ああ、おはよう……",
+          "voice_id": "v10000905",
+          "start": 0.2,
+          "end": 2.2,
+          "lip_sync": true,
+          "on_screen": true
+        }
+      ],
+      "video_prompt": {
+        "visual_action": "近景/特写。甲坐在床边，头发凌乱，抬头看向蕾的方向（画面右侧或上方）。他打了个哈欠，眼神还带着睡意，表情从迷茫到逐渐清醒。蓝色眼睛，棕色凌乱短发。穿浅蓝色T恤（无外套），背景是旅馆房间模糊的晨光环境。",
+        "camera_motion": "镜头轻微推近（缓慢push in），强调甲逐渐清醒的过程",
+        "lighting": "柔和晨光从右侧来，甲面部半明半暗",
+        "avoid": "不要改变甲的发色和瞳色。不要让甲看起来过于精神——他刚睡醒。"
+      },
+      "intent": "展示甲刚醒来的状态，建立他困倦→逐渐清醒的情绪过渡",
+      "review": "检查甲的面部表情是否自然（困→清醒的过渡），头发凌乱程度是否合适",
+      "risk": "低。单人近景，身份一致性依赖asset锁定。",
+      "recommendation": "可直接生成"
+    },
+    {
+      "id": "S004",
+      "duration": 2.0,
+      "type": "insert",
+      "title": "数据面板弹出",
+      "camera": "插入镜头，半透明数据面板悬浮",
+      "scene": "hotel_room_morning",
+      "dialogue": "机械音：清城市公共放送チャンネルで、米内議員暗殺についての情報が配信されました",
+      "dialogue_timing": [
+        {
+          "speaker": "system",
+          "text": "清城市公共放送チャンネルで、米内議員暗殺についての情報が配信されました",
+          "voice_id": "v12300040",
+          "start": 0.1,
+          "end": 2.0,
+          "lip_sync": false,
+          "on_screen": false
+        }
+      ],
+      "video_prompt": {
+        "visual_action": "插入镜头。甲或蕾的视点：半透明蓝色数据面板在画面中央弹出，显示新闻推送通知。面板上有日文字符和图标。背景虚化为旅馆房间晨光氛围。伴随轻微的提示音视觉效果（闪光/脉冲）。",
+        "camera_motion": "镜头静止，面板从透明渐显",
+        "lighting": "面板自发光，背景环境光",
+        "avoid": "不要让数据面板占据全屏，保持画面有空间感。面板UI风格保持科幻/近未来感。"
+      },
+      "intent": "引入新闻信息触发点——数据面板弹出告知米内议员暗杀新闻",
+      "review": "检查数据面板UI风格是否符合BaldrSky世界观（近未来科幻），面板不要过于花哨",
+      "risk": "中。AI对科幻UI面板的生成可能不稳定，需要参考图。",
+      "recommendation": "先做多宫格"
+    },
+    {
+      "id": "S005",
+      "duration": 4.0,
+      "type": "dialogue_two",
+      "title": "蕾提醒甲看新闻",
+      "camera": "中景，双人镜头，蕾和甲同框",
+      "subject": "rei",
+      "scene": "hotel_room_morning",
+      "dialogue": "蕾：最新のニュースが、ネットに流れたようです。食事の前に、中尉も確認しておいてください / 甲：了解……再生",
+      "dialogue_timing": [
+        {
+          "speaker": "rei",
+          "text": "最新のニュースが、ネットに流れたようです。食事の前に、中尉も確認しておいてください",
+          "voice_id": "v10100719",
+          "start": 0.2,
+          "end": 2.8,
+          "lip_sync": true,
+          "on_screen": true
+        },
+        {
+          "speaker": "kou",
+          "text": "了解……再生",
+          "voice_id": "v10000906",
+          "start": 3.0,
+          "end": 3.8,
+          "lip_sync": true,
+          "on_screen": true
+        }
+      ],
+      "video_prompt": {
+        "visual_action": "中景双人镜头。蕾在画面左侧，微敛神情，侧头看向数据面板来源方向，表情略带严肃。甲在画面右侧，捏了捏鼻梁，然后点头。两人保持稳定的左右位置关系，背景是旅馆房间。蕾站姿挺拔，甲坐在床边。",
+        "camera_motion": "镜头基本静止，轻微手持呼吸感",
+        "lighting": "清晨暖光持续从右侧来",
+        "avoid": "不要交换角色左右位置。保持蕾在左、甲在右。不要改变角色服装。"
+      },
+      "intent": "从数据面板通知过渡到蕾提醒甲关注新闻，展示蕾的干练和甲的服从",
+      "review": "检查蕾的表情（认真但非严厉），甲的动作（捏鼻梁→点头），两人左右位置是否稳定",
+      "risk": "中。双人镜头需确保角色身份和左右位置一致性。",
+      "recommendation": "先做多宫格"
+    },
+    {
+      "id": "S006",
+      "duration": 6.0,
+      "type": "montage",
+      "title": "清城市街景新闻蒙太奇",
+      "camera": "远景，清城市清晨街道，CDF装甲车巡逻",
+      "scene": "city_street_morning",
+      "dialogue": "新闻A+B+C三条画外音叠在街景上",
+      "dialogue_timing": [
+        {
+          "speaker": "news_a",
+          "text": "先日の米内議員暗殺事件に関して、CDFは、議員暗殺の実行犯がドミニオン教会のメンバーであると断定",
+          "voice_id": "v19900029",
+          "start": 0.0,
+          "end": 2.0,
+          "lip_sync": false,
+          "on_screen": false
+        },
+        {
+          "speaker": "news_b",
+          "text": "これに対し、教会側のスポークスマンは、事件との関与を否定、悪質な世論操作であるとCDFを非難しております",
+          "voice_id": "v19900030",
+          "start": 2.0,
+          "end": 4.0,
+          "lip_sync": false,
+          "on_screen": false
+        },
+        {
+          "speaker": "news_c",
+          "text": "一方、都市駐留のGOATは、教会拠点捜索のため、CDFへの協力を惜しまないとの声明を発表しており……",
+          "voice_id": "v19900031",
+          "start": 4.0,
+          "end": 6.0,
+          "lip_sync": false,
+          "on_screen": false
+        }
+      ],
+      "video_prompt": {
+        "visual_action": "远景蒙太奇。清城市清晨街道，阳光从建筑间洒落。CDF装甲车在街道上缓慢巡逻。画面从旅馆房间叠画过渡而来。三条新闻画外音叠在街景上方。街景可以有少量行人、建筑立面、天空。色调偏冷（清城市晨间），与旅馆暖色调形成对比。最后画面淡出。",
+        "camera_motion": "镜头缓慢横移（slow pan），从街道一侧移到另一侧，或从高处缓慢下降",
+        "lighting": "清城市清晨自然光，冷色调，建筑阴影",
+        "avoid": "不要出现角色特写。不要加入旅馆房间元素。保持街景为远景/中景。"
+      },
+      "intent": "通过新闻蒙太奇推进世界观剧情——米内议员暗杀事件的后续发展，为后续剧情埋下伏笔",
+      "review": "检查街景是否符合BaldrSky清城市的近未来风格，CDF装甲车设计是否合理，天空和建筑比例",
+      "risk": "高。蒙太奇场景没有角色锁定，但城市风格和装甲车设计容易跑偏。建议提供清城市参考图。",
+      "recommendation": "先做多宫格（或者为街景单做一张场景关键帧）"
+    }
+  ]
+}

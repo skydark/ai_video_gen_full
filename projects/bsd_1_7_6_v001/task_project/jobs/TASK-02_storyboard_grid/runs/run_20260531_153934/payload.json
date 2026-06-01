@@ -1,0 +1,10 @@
+{
+  "prompt": "# 多宫格分镜 - TASK-02 战斗刀+蕾入场+双人对话\n\n目标：6格黑白或低饱和分镜草稿contact sheet。粗线条、灰阶阴影、清晰分格。16:9画幅。使用参考图锁定角色身份和场景。\n\n## 分格内容\n\n**格1 - 战斗刀砧板特写**：极近俯角特写。黑色战斗刀垂直剁入木质砧板，砧板碎裂成条状，木屑飞散。砧板旁肉末。不显示手、身体或厨房。画外音：菜ノ叶尖叫「わわわわっ……！？まな板まで千切りにしてどうするんですか〜〜っ！」。\n**格2 - 蕾走出厨房**：中景，甲POV角度——如月寮后门。蕾推门走出，垂双肩，右手攥战斗刀（刀尖朝下），一脸沮丧。她站在建筑阴影边缘，即将步入阳光。\n**格3 - 蕾走向甲**：蕾沿花园小径走向甲。已步入花园阳光，金发被照亮。甲在近景POV视点。刀收起。她说着「はい、台所を追い出されてしまいました」。\n**格4 - 双人中景建立**：双人中景。甲在画面左，右手撑膝从蹲姿站起。蕾在画面右，自嘲苦笑。甲视线右、蕾视线左——轴线建立。甲笑问「それよりレインって、ひょっとして料理が苦手だったりするのか？」。\n**格5 - 甲调侃**：甲站直拍膝上草屑，带轻松笑意。蕾保持苦笑。背景花园菜园栅栏。\n**格6 - 蕾回答**：蕾回答「はい……今となっては、花嫁修業を拒絶していたのが悔やまれます」，表情自嘲中透认真。甲笑意转为倾听。\n\n## Avoid\n- 蕾出场必须保持从花园POV看厨房入口，不要跳轴\n- 双人中景：甲在左、蕾在右，甲视线向右看蕾、蕾视线向左看甲\n- 蕾服装：金发长直+灰色马甲深蓝衬衫+黑色短裙+灰色过膝袜+战术背带+角状发饰\n- 刀在格1是焦点，之后蕾手持刀时刀尖始终朝下\n",
+  "aspectRatio": "16:9",
+  "resolution": "2k",
+  "imageUrls": [
+    "https://rh-images-switch-1252422369.cos.ap-guangzhou.myqcloud.com/input/openapi/1aca0cbd718e17bc5ef9039d89f744491e75fd29395f8c82f17165a8763414a8.png?q-sign-algorithm=sha1&q-ak=AKIDv56FISEJUsKsMeELk0gmbNCGKTYSaZ3N&q-sign-time=1780213176%3B1780299576&q-key-time=1780213176%3B1780299576&q-header-list=host&q-url-param-list=&q-signature=dcb2504929667d45d9d0e5b764a7f6b5513e370a",
+    "https://rh-images-switch-1252422369.cos.ap-guangzhou.myqcloud.com/input/openapi/05fcc80981910bebdc9527e780663f12a7548e282d9896365e8f0e6440abcf16.png?q-sign-algorithm=sha1&q-ak=AKIDv56FISEJUsKsMeELk0gmbNCGKTYSaZ3N&q-sign-time=1780213177%3B1780299577&q-key-time=1780213177%3B1780299577&q-header-list=host&q-url-param-list=&q-signature=54e2b45393fcdb23186b0a9c2ef14fb587717134",
+    "https://rh-images-switch-1252422369.cos.ap-guangzhou.myqcloud.com/input/openapi/84f16a31671c13f58c7728a032332c473ad7c782c33c143dc7f93c94aeee1b83.png?q-sign-algorithm=sha1&q-ak=AKIDv56FISEJUsKsMeELk0gmbNCGKTYSaZ3N&q-sign-time=1780213180%3B1780299580&q-key-time=1780213180%3B1780299580&q-header-list=host&q-url-param-list=&q-signature=5212867f46dd3b1f13a23774656f5902d5a6efc9"
+  ]
+}

@@ -1,0 +1,90 @@
+schema_version: 1
+project:
+  id: bsd_1_7_7_v001
+  title: BSD 1-7-7 旧校道散步与菜ノ叶的叮嘱
+  created_at: '2026-05-31T20:04:22+08:00'
+  source:
+    script: bsd_anime_script/bsd_1_7_7.md
+    shot_plan_dir: ..
+    generation_packet_dir: ../generation_packet_v001
+settings:
+  default_provider: dryrun
+  live_requires_confirm: true
+  max_concurrent_jobs: 1
+  approved_naming: '{job_id}_{kind}_take_{take:03d}{ext}'
+assets:
+- id: asset_kou
+  type: character
+  label: 门仓甲参考图（制服有外套）
+  files:
+  - path: assets/misc/甲_现代篇_制服_有外套.png
+    role: reference
+  - path: assets/misc/甲_现代篇_制服_有外套.yaml
+    role: metadata
+- id: asset_nanoha
+  type: character
+  label: 若草菜ノ叶参考图（常服有外套）
+  files:
+  - path: assets/misc/菜叶_现代篇_常服_有外套.png
+    role: reference
+  - path: assets/misc/菜叶_现代篇_常服_有外套.yaml
+    role: metadata
+- id: asset_scene
+  type: scene
+  label: 校园校园道白天参考图
+  files:
+  - path: assets/misc/校园_校园道_白天.png
+    role: reference
+  - path: assets/misc/校园_校园道_白天.yaml
+    role: metadata
+jobs:
+- id: TASK-01_image_grid
+  kind: image
+  title: 空操场与千夏话题 - 多宫格分镜图
+  provider: dryrun
+  status: ready
+- id: TASK-01_video
+  kind: video
+  title: 空操场与千夏话题 - 视频片段
+  provider: dryrun
+  status: ready
+- id: TASK-02_image_grid
+  kind: image
+  title: 追问水无月姐妹 - 多宫格分镜图
+  provider: dryrun
+  status: ready
+- id: TASK-02_video
+  kind: video
+  title: 追问水无月姐妹 - 视频片段
+  provider: dryrun
+  status: ready
+- id: TASK-03_image_grid
+  kind: image
+  title: 不要强迫回忆 - 多宫格分镜图
+  provider: dryrun
+  status: ready
+- id: TASK-03_video
+  kind: video
+  title: 不要强迫回忆 - 视频片段
+  provider: dryrun
+  status: ready
+- id: TASK-04_image_grid
+  kind: image
+  title: 甲决定面对真相 - 多宫格分镜图
+  provider: dryrun
+  status: ready
+- id: TASK-04_video
+  kind: video
+  title: 甲决定面对真相 - 视频片段
+  provider: dryrun
+  status: ready
+- id: TASK-05_image_grid
+  kind: image
+  title: 蕾的伏笔与返回 - 多宫格分镜图
+  provider: dryrun
+  status: ready
+- id: TASK-05_video
+  kind: video
+  title: 蕾的伏笔与返回 - 视频片段
+  provider: dryrun
+  status: ready

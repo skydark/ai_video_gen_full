@@ -1,0 +1,115 @@
+schema_version: 1
+job_id: TASK-02_video
+kind: video
+provider: dreamina_video
+prompt: '【风格】按项目统一动画/漫剧风格；保持参考图一致性。
+
+
+  【时长】约 12.5 秒。
+
+
+  【参考图锚点】
+
+  - @门仓甲设定图：一名年轻男性角色，拥有深棕色略凌乱短发、蓝色眼睛和白皙皮肤。身穿黑色长款连帽风衣，帽子边缘有浅棕色毛领，内搭浅蓝色圆领T恤，下身深蓝色宽松长裤，黑色高帮战斗靴，黑色露指手套，体型瘦削匀称。。
+
+  - @若草菜ノ叶设定图：一位年轻动漫少女，浅绿色齐肩短发，左侧用金色球形发饰扎侧马尾，紫红色瞳孔，白皙皮肤。身穿粉红色连帽派克外套，白色毛绒边饰，内搭浅蓝绿色高领毛衣，下身黑色紧身裤和粉色短靴，体型纤细娇小。。
+
+  - @场景参考图：场景、光线、天气、空间结构。
+
+  - @构图参考图：黑白或低饱和线框分镜图，只作为构图、机位、blocking、运动方向参考，不作为画风参考。
+
+
+  【全局要求】
+
+  - 使用上方 @参考图 锁定角色身份、配色、轮廓和场景。
+
+  - 使用 approved storyboard/关键帧锁定构图、camera side、screen direction 和运动方向。
+
+  - 对话镜头保持同一 180 度轴线，不交换左右关系。
+
+  - 背景烟尘、爆炸和碎片只做辅助运动，不遮挡主体。
+
+
+  【时间码动作】
+
+  [00:00-00:04] 菜ノ叶近景慢推
+
+  画面与动作：菜ノ叶近景。她惊讶过后目光逐渐柔和，手仍搭在护栏上，望向远处空操场和天空，脸上是怀念的微笑，不出现任何回忆画面。 角色外观严格参考对应角色参考图。场景严格参考校园_校园道_白天。
+
+  镜头运动：缓慢推近菜ノ叶侧脸。
+
+  对白/声音：0.3-2s nanoha："千夏先輩もここに来られればいいのに。私も千夏先輩に会いたいなぁ"（画面内角色对口型）
+
+  避免：不要出现第三名角色、千夏、蕾、空、真、回忆闪回、未来都市或虚拟都市元素；不要身份漂移，不要跳轴，不要服装互换。
+
+
+  [00:04-00:08] 甲近景
+
+  画面与动作：甲看着菜ノ叶的侧脸，然后低头沉默；风轻轻吹动棕色刘海和风衣毛领。再抬头时神情转为严肃，视线朝画面右侧的菜ノ叶。 角色外观严格参考对应角色参考图。场景严格参考校园_校园道_白天。
+
+  镜头运动：镜头静止，靠低头再抬头完成情绪转折。
+
+  对白/声音：0.3-1.8s kou："なあ、菜ノ叶……空と真ちゃん、どうしてるか知ってるか？"（画面内角色对口型）
+
+  避免：不要出现第三名角色、千夏、蕾、空、真、回忆闪回、未来都市或虚拟都市元素；不要身份漂移，不要跳轴，不要服装互换。
+
+
+  [00:08-00:13] 菜ノ叶近景到双人中景
+
+  画面与动作：菜ノ叶垂下眼帘，难受地轻轻摇头。切到双人中景，甲在画面左侧，菜ノ叶在右侧。甲放缓语气安抚，菜ノ叶仍低头回应。 角色外观严格参考对应角色参考图。场景严格参考校园_校园道_白天。
+
+  镜头运动：从菜ノ叶近景切到双人中景，镜头稳定。
+
+  对白/声音：0.3-1.3s nanoha："……ごめんね"（画面内角色对口型） / 1.6-2.5s kou："いや、知らないならいいんだ"（画面内角色对口型）
+  / 2.8-3.8s nanoha："うん……"（画面内角色对口型）
+
+  避免：不要出现第三名角色、千夏、蕾、空、真、回忆闪回、未来都市或虚拟都市元素；不要身份漂移，不要跳轴，不要服装互换。
+
+
+  【避免】
+
+  - 不要身份漂移，不要改变角色配色、服装、武器或轮廓。
+
+  - 不要跳轴，不要互换左右位置，不要反转视线方向。
+
+  - 不要把镜头编号、分镜编号或文字标签画进画面。
+
+  - 不要让爆炸、烟尘或背景特效抢走主体。
+
+  '
+negative_prompt: ''
+params:
+  duration_limit: 15
+  aspect_ratio: '16:9'
+  model_version: seedance2.0_vip
+  generate_audio: false
+  real_person_mode: false
+  seed: -1
+refs:
+- asset_id: asset_kou
+  source_path: assets/misc/甲_现代篇_制服_有外套.png
+  usage: identity
+  label: 门仓甲参考图
+  sha256: 1aca0cbd718e17bc5ef9039d89f744491e75fd29395f8c82f17165a8763414a8
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\misc\甲_现代篇_制服_有外套.png
+- asset_id: asset_nanoha
+  source_path: assets/misc/菜叶_现代篇_常服_有外套.png
+  usage: identity
+  label: 若草菜ノ叶参考图
+  sha256: 1f89757816a0cd25edae5ade22fa7e0472d4c41e0f0490f1656f4b9c828f9c09
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\misc\菜叶_现代篇_常服_有外套.png
+- asset_id: asset_scene
+  source_path: assets/misc/校园_校园道_白天.png
+  usage: scene
+  label: 校园校园道白天场景参考图
+  sha256: 4f74db8d0a120315c7a3573afa97ecf83043c2c67ca13c49e202331b690e2438
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\misc\校园_校园道_白天.png
+- asset_id: asset_storyboard_TASK-02_image_grid_run_20260531_202810_candidate_01_png
+  source_path: assets/generated/storyboard/TASK-02_image_grid_run_20260531_202810_candidate_01_png.png
+  usage: composition
+  label: candidate_01.png
+  sha256: b323618949280fcc6a6ff1708a781afb2a6c90403bb51906a1468534f9436dbe
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\generated\storyboard\TASK-02_image_grid_run_20260531_202810_candidate_01_png.png
+run_id: run_20260531_212924
+created_at: '2026-05-31T21:29:55+08:00'
+status: FAILED

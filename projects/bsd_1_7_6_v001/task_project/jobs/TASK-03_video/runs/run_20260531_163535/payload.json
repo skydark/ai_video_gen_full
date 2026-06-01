@@ -1,0 +1,26 @@
+{
+  "command": [
+    "C:\\Users\\skydark\\bin\\dreamina.exe",
+    "multimodal2video",
+    "--prompt=# Seedance Prompt - TASK-03 正反打情感递进\n\n【风格】动画/漫剧风格，保持参考图一致性。\n\n【时长】约 12.5 秒。\n\n【参考图锚点】\n- @甲_现代篇_制服_有外套.png：棕色短发、蓝色眼睛、黑色长款连帽风衣毛领。\n- @蕾_现代篇_制服_无外套.png：金发长直发、蓝色瞳孔、灰色马甲+深蓝衬衫、黑色短裙、灰色过膝袜、战术背带、角状发饰。\n- @如月寮_后院_白天.png：花园午后场景、光斑、菜园背景。\n\n【全局要求】\n- 三镜保持同一180度轴线（甲左蕾右）：甲视线向右，蕾视线向左。\n- 午后光线和光斑三镜统一。\n\n【时间码动作】\n\n[00:00-00:03] 甲近景 / 一怔\n近景甲正面。听到蕾说「花嫁修業を拒絶した」之后，甲表情从轻松转为怔住——眉毛微抬嘴微张，重复道：「花嫁修業を拒絶……？」。视线朝右（蕾方向）。背景为如月寮后院。\n镜头运动：静止。\n避免：不夸张震惊——是怔住。\n\n[00:03-00:08] 蕾近景 / 拒婚独白\n近景蕾。目光从甲移开→缓缓飘向画面左侧花丛——像看过去。她用克制而缓慢的语调说：「……結婚なんて、愛せない男性に生涯、奴隷として仕えること。少女時代の私は、そう思い込んでいたのです」。表情从平静→嘴角微沉→视线低垂。5秒独白克制但沉重。光斑透过树叶洒金发侧脸。刀尖朝下非焦点。\n镜头运动：基本静止，可极缓推近强化情感。\n避免：不哭泣不崩溃——克制沉重。刀尖朝下。\n\n[00:08-00:12.5] 双人中景 / 甲安慰\n切回双人中景（与之前双人对话镜头同机位：甲在画面左侧，蕾在画面右侧）。甲静静听完，目落蕾身，温和坚定地说：「結婚だけが人生じゃないし、綺麗な花嫁になれなくたって、人の価値には関係ないさ」。蕾微微抬头。不煽情，保持距离。\n镜头运动：基本静止，轻微呼吸感。\n避免：机位必须与之前双人对话镜头一致（甲左蕾右）。\n\n【Negative / 避免】\n- 不要跳轴或交换左右\n- 不要过度戏剧化蕾独白\n- 不要改变双人镜机位（甲左蕾右）\n- 不要丢失蕾战术背带和甲风衣毛领\n",
+    "--poll=420",
+    "--image",
+    "E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_6_v001\\task_project\\assets\\chars\\甲_现代篇_制服_有外套.png",
+    "--image",
+    "E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_6_v001\\task_project\\assets\\chars\\蕾_现代篇_制服_无外套.png",
+    "--image",
+    "E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_6_v001\\task_project\\assets\\scenes\\如月寮_后院_白天.png",
+    "--image",
+    "E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_6_v001\\task_project\\assets\\generated\\storyboard\\TASK-03_storyboard_grid_run_20260531_161434_candidate_01_png.png",
+    "--duration=15",
+    "--ratio=16:9",
+    "--model_version=seedance2.0fast_vip",
+    "--video_resolution=720p"
+  ],
+  "download_command": [
+    "C:\\Users\\skydark\\bin\\dreamina.exe",
+    "query_result",
+    "--submit_id=44e91a98-fe7f-4195-83ff-ad5d430b82f4",
+    "--download_dir=E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_6_v001\\task_project\\jobs\\TASK-03_video\\runs\\run_20260531_163535\\outputs"
+  ]
+}

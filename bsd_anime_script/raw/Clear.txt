@@ -1,0 +1,14 @@
+=== Clear.bin ===
+
+[identifier: MessageBox]
+  タイトル画面でＣＧモードが選べるようになりました
+[identifier: MessageBox]
+  タイトル画面で音楽モードが選べるようになりました
+[identifier: MessageBox]
+  タイトル画面で回想モードが選べるようになりました
+[identifier: MessageBox]
+  タイトル画面でサバイバルモードが選べるようになりました
+[identifier: MessageBox]
+  クリアデータを保存します
+[-> 01：レイン編01.bin]
+[-> System.bin]

@@ -1,0 +1,65 @@
+schema_version: 1
+job_id: TASK-02_storyboard_grid
+kind: image
+provider: runninghub_gpt_image
+prompt: '# 多宫格分镜 - TASK-02 战斗刀+蕾入场+双人对话
+
+
+  目标：6格黑白或低饱和分镜草稿contact sheet。粗线条、灰阶阴影、清晰分格。16:9画幅。使用参考图锁定角色身份和场景。
+
+
+  ## 分格内容
+
+
+  **格1 - 战斗刀砧板特写**：极近俯角特写。黑色战斗刀垂直剁入木质砧板，砧板碎裂成条状，木屑飞散。砧板旁肉末。不显示手、身体或厨房。画外音：菜ノ叶尖叫「わわわわっ……！？まな板まで千切りにしてどうするんですか〜〜っ！」。
+
+  **格2 - 蕾走出厨房**：中景，甲POV角度——如月寮后门。蕾推门走出，垂双肩，右手攥战斗刀（刀尖朝下），一脸沮丧。她站在建筑阴影边缘，即将步入阳光。
+
+  **格3 - 蕾走向甲**：蕾沿花园小径走向甲。已步入花园阳光，金发被照亮。甲在近景POV视点。刀收起。她说着「はい、台所を追い出されてしまいました」。
+
+  **格4 - 双人中景建立**：双人中景。甲在画面左，右手撑膝从蹲姿站起。蕾在画面右，自嘲苦笑。甲视线右、蕾视线左——轴线建立。甲笑问「それよりレインって、ひょっとして料理が苦手だったりするのか？」。
+
+  **格5 - 甲调侃**：甲站直拍膝上草屑，带轻松笑意。蕾保持苦笑。背景花园菜园栅栏。
+
+  **格6 - 蕾回答**：蕾回答「はい……今となっては、花嫁修業を拒絶していたのが悔やまれます」，表情自嘲中透认真。甲笑意转为倾听。
+
+
+  ## Avoid
+
+  - 蕾出场必须保持从花园POV看厨房入口，不要跳轴
+
+  - 双人中景：甲在左、蕾在右，甲视线向右看蕾、蕾视线向左看甲
+
+  - 蕾服装：金发长直+灰色马甲深蓝衬衫+黑色短裙+灰色过膝袜+战术背带+角状发饰
+
+  - 刀在格1是焦点，之后蕾手持刀时刀尖始终朝下
+
+  '
+negative_prompt: ''
+params:
+  aspect_ratio: '16:9'
+  resolution: 2k
+  model_version: gpt-image-2
+  seed: ''
+refs:
+- asset_id: asset_kou
+  source_path: assets/chars/甲_现代篇_制服_有外套.png
+  usage: identity
+  label: 门仓甲参考图
+  sha256: 1aca0cbd718e17bc5ef9039d89f744491e75fd29395f8c82f17165a8763414a8
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_6_v001\task_project\assets\chars\甲_现代篇_制服_有外套.png
+- asset_id: asset_rei
+  source_path: assets/chars/蕾_现代篇_制服_无外套.png
+  usage: identity
+  label: 桐岛蕾参考图
+  sha256: 05fcc80981910bebdc9527e780663f12a7548e282d9896365e8f0e6440abcf16
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_6_v001\task_project\assets\chars\蕾_现代篇_制服_无外套.png
+- asset_id: asset_scene
+  source_path: assets/scenes/如月寮_后院_白天.png
+  usage: scene
+  label: 如月寮后院场景参考图
+  sha256: 84f16a31671c13f58c7728a032332c473ad7c782c33c143dc7f93c94aeee1b83
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_6_v001\task_project\assets\scenes\如月寮_后院_白天.png
+run_id: run_20260531_153934
+created_at: '2026-05-31T15:42:55+08:00'
+status: SUCCESS

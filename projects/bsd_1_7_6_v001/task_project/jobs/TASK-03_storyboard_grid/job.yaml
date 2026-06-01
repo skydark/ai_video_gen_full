@@ -1,0 +1,64 @@
+schema_version: 1
+id: TASK-03_storyboard_grid
+kind: image
+title: TASK-03 正反打情感递进 - 多宫格分镜
+provider: runninghub_gpt_image
+status: succeeded
+version: 1
+refs:
+- asset_id: asset_kou
+  source_path: assets/chars/甲_现代篇_制服_有外套.png
+  usage: identity
+  label: 门仓甲参考图
+- asset_id: asset_rei
+  source_path: assets/chars/蕾_现代篇_制服_无外套.png
+  usage: identity
+  label: 桐岛蕾参考图
+- asset_id: asset_scene
+  source_path: assets/scenes/如月寮_后院_白天.png
+  usage: scene
+  label: 如月寮后院场景参考图
+prompt: '# 多宫格分镜 - TASK-03 正反打情感递进
+
+
+  目标：6格黑白或低饱和分镜草稿contact sheet。粗线条、灰阶阴影、清晰分格。16:9画幅。三镜同一180度轴线（甲左蕾右），甲视线向右看蕾、蕾视线向左看甲。花园午后光斑统一。
+
+
+  ## 分格内容
+
+
+  **格1 - 甲一怔起**：近景甲正面。表情从轻松转怔住——眉毛微抬嘴微张。视线朝右(蕾方向)。听到蕾说「花嫁修業を拒絶した」。背景为如月寮后院。
+
+  **格2 - 甲一怔终**：同机位。甲重复「花嫁修業を拒絶……？」——困惑+认真。蓝色眼睛清晰。
+
+  **格3 - 蕾独白起**：近景蕾。目光从甲移开，飘向画面左侧花丛。表情克制平静。她用缓慢语调开始说「……結婚なんて、愛せない男性に生涯、奴隷として仕えること」。金发上树叶光斑。
+
+  **格4 - 蕾独白终**：同机位。5秒独白终点——嘴角微沉、视线低垂，说完「……そう思い込んでいたのです」。克制但沉重。光斑依旧。刀尖朝下已非焦点。
+
+  **格5 - 甲安慰起**：双人中景（必须与前一个双人镜同机位：甲在画面左侧、蕾在画面右侧）。甲目光落蕾身上，温和地说「結婚だけが人生じゃないし……」。蕾微微抬头。
+
+  **格6 - 甲安慰终**：同机位。甲说完「……人の価値には関係ないさ」后的静止瞬间。蕾表情从沉重→被触动。两人间安静张力。
+
+
+  ## Avoid
+
+  - 三镜保持同一轴线（甲左蕾右，甲视右蕾视左）
+
+  - 蕾独白表情需渐进，不要一跳到位
+
+  - 双人镜机位必须与前一个双人对话镜头保持一致（甲左蕾右）
+
+  - 光斑风格三镜统一
+
+  '
+negative_prompt: ''
+params:
+  aspect_ratio: '16:9'
+  resolution: 2k
+  model_version: gpt-image-2
+  seed: ''
+updated_at: '2026-05-31T16:18:53+08:00'
+runs:
+- run_20260531_154457
+- run_20260531_161434
+latest_run: run_20260531_161434

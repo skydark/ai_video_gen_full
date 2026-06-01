@@ -1,0 +1,24 @@
+{
+  "command": [
+    "C:\\Users\\skydark\\bin\\dreamina.exe",
+    "multimodal2video",
+    "--prompt=生成一段 16:9 动画视频。使用随任务提供的两张角色参考图和一张夜街参考图锁定外观与场景；文字只描述构图、动作、表情、视线、运镜和空间关系。画面不要字幕。\n\n全局空间：甲偏画面左侧，蕾偏画面右侧；正反打保持同一视线轴。\n\n雨前氛围：潮湿反光、低云、远处短暂雷光；不要下大雨。\n\n时间码动作：\n\n景别/位置：蕾近景，路灯频闪掠过面庞，甲肩部在前景虚化\n动作/表情：蕾近景。她视线从甲移到地面，声音转低；甲肩部只作为前景虚化轮廓。\n镜头：极慢推近蕾的眼神，结尾停在她压住情绪的表情。\n光线：路灯短暂闪烁，远处冷色霓虹变弱。\n对白/声音：rei:\"……でも、そう言いたくなる気持ちもわかる気がします\"（画面内） / rei:\"沢山、死に別れましたから……私も、甲さんも……\"（画面内）\n\n全局避免：不要身份漂移，不要跳轴，不要交换左右位置，不要画字幕、文字、水印或镜头编号。对白文本必须逐字保留原游戏语音文本，不得改写。",
+    "--poll=420",
+    "--image",
+    "E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_10_v001\\task_project\\assets\\misc\\甲_现代篇_制服_有外套.png",
+    "--image",
+    "E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_10_v001\\task_project\\assets\\misc\\蕾_现代篇_制服_有外套.png",
+    "--image",
+    "E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_10_v001\\task_project\\assets\\misc\\现代篇_贫民窟_街道_夜晚.png",
+    "--duration=10",
+    "--ratio=16:9",
+    "--model_version=seedance2.0fast_vip",
+    "--video_resolution=720p"
+  ],
+  "download_command": [
+    "C:\\Users\\skydark\\bin\\dreamina.exe",
+    "query_result",
+    "--submit_id=3626afd8-ee6b-497a-a32d-f7bd55a4c621",
+    "--download_dir=E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_10_v001\\task_project\\jobs\\TASK-02_video\\runs\\run_20260601_001354\\outputs"
+  ]
+}

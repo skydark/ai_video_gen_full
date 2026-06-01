@@ -1,0 +1,4 @@
+interface:
+  display_name: "Animation Generation Packet"
+  short_description: "Package references for video generation."
+  default_prompt: "Create generation packets from my approved shot plan, storyboard refs, and project assets."

@@ -1,0 +1,26 @@
+{
+  "submit_id": "dbed9f57-f057-4b57-9dfa-e71647e830a1",
+  "prompt": "生成一段 16:9 动画视频。使用随任务提供的两张角色参考图和一张夜街参考图锁定外观与场景；文字只描述构图、动作、表情、视线、运镜和空间关系。画面不要字幕。\n\n全局空间：甲偏画面左侧，蕾偏画面右侧；正反打保持同一视线轴。\n\n雨前氛围：潮湿反光、低云、远处短暂雷光；不要下大雨。\n\n时间码动作：\n\n[0.0-6.0s] 夜道迎接\n景别/位置：远景到双人中景，夜道，甲偏左走入，蕾从右侧路灯下迎上\n动作/表情：夜道远景。甲从画面左侧进入，蕾在画面右侧路灯下等待；两人短暂对视后并肩向街道深处走。\n镜头：缓慢推近，从环境远景到双人中景；保持甲左、蕾右。\n光线：潮湿地面有霓虹反光，雨前低云，路灯轻微闪烁。\n对白/声音：rei:\"迎えに来ました、甲さん\"（画面内） / kou:\"ああ、ご苦労さん\"（画面内）\n避免：不要新增主要路人，不要交换左右位置，不要画字幕或文字。\n\n[6.0-15.0s] 朋友让脸色变亮\n景别/位置：并肩跟拍中近景，蕾侧脸偏右，甲听她说话\n动作/表情：并肩行走中近景。蕾在右侧微微转头看甲，语气柔和；甲在左侧听着，表情稍意外但不打断。\n镜头：侧向跟拍，偶尔让路灯柱从前景掠过。\n光线：昏黄路灯和冷色霓虹交替扫过两人脸部。\n对白/声音：rei:\"やっぱり、友達って重要ですね……\"（画面内） / rei:\"最近、甲さんの顔色が明るくて、見ていると正直、ホッとします\"（画面内）\n\n全局避免：不要身份漂移，不要跳轴，不要交换左右位置，不要画字幕、文字、水印或镜头编号。对白文本必须逐字保留原游戏语音文本，不得改写。",
+  "gen_status": "success",
+  "result_json": {
+    "images": [],
+    "videos": [
+      {
+        "video_url": "https://v6-artist.vlabvod.com/025115f279472808a878d7693e1ce8ff/6a1c69f4/video/tos/cn/tos-cn-v-148450/oUf0Z1x7Q6SuICBHYgZCfWHWATFBVBDcqT8UgA/?a=4066&ch=0&cr=0&dr=0&er=0&cd=0%7C0%7C0%7C0&br=6245&bt=6245&cs=0&ds=12&ft=5QYTUxhhe6BMyqI-dbeJD12Nzj&mime_type=video_mp4&qs=0&rc=NjM6NmVnZzo7aDk2Z2Y2O0BpMzM6dDdrb2g4OzczNDM7M0BgL2AyYmA1Xy4xYS8vLjE2YSMzaGBzcWdua2JhLS1kNC9zcw%3D%3D&btag=80000e00010000&dy_q=1780243413&feature_id=04b16e464b574158bb99cac30ccb1f5e&l=20260531235915010000000013142497F",
+        "fps": 24,
+        "width": 1280,
+        "height": 720,
+        "format": "mp4",
+        "duration": 15.042
+      }
+    ]
+  },
+  "credit_count": 165,
+  "queue_info": {
+    "queue_idx": 0,
+    "priority": 1,
+    "queue_status": "Finish",
+    "queue_length": 0,
+    "debug_info": "{\"have_no_dreamina_queue_name\":false,\"dreamina_matrix_queue_name\":\"dreamina_fusion_video40_vision\",\"dreamina_matrix_req_key\":\"DreaminaFusion:Video40_Vision_unified_edit_720p\",\"dreamina_matrix_second_req_key\":\"\",\"have_no_queue_name\":true,\"queue_name\":\"\",\"matrix_req_key\":\"\",\"matrix_second_req_key\":\"\"}"
+  }
+}

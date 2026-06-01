@@ -1,0 +1,109 @@
+schema_version: 1
+project:
+  id: bsd_1_7_10_v001
+  title: BSD 1-7-10 贫民街夜道与雨前沉默
+  created_at: '2026-05-31T23:18:11+08:00'
+  source:
+    script: bsd_anime_script/bsd_1_7_10.md
+    shot_plan_dir: ..
+settings:
+  default_provider: dryrun
+  live_requires_confirm: true
+  max_concurrent_jobs: 1
+  approved_naming: '{job_id}_{kind}_take_{take:03d}{ext}'
+assets:
+- id: asset_kou
+  type: character
+  label: 门仓甲参考图（制服有外套）
+  files:
+  - path: assets/misc/甲_现代篇_制服_有外套.png
+    role: reference
+  - path: assets/misc/甲_现代篇_制服_有外套.yaml
+    role: metadata
+- id: asset_rei
+  type: character
+  label: 桐岛蕾参考图（制服有外套）
+  files:
+  - path: assets/misc/蕾_现代篇_制服_有外套.png
+    role: reference
+  - path: assets/misc/蕾_现代篇_制服_有外套.yaml
+    role: metadata
+- id: asset_street
+  type: scene
+  label: 贫民窟街道夜晚参考图
+  files:
+  - path: assets/misc/现代篇_贫民窟_街道_夜晚.png
+    role: reference
+  - path: assets/misc/现代篇_贫民窟_街道_夜晚.yaml
+    role: metadata
+jobs:
+- id: GRID-01_image_grid
+  kind: image
+  title: 迎接与朋友话题 - 多宫格分镜图
+  path: jobs/GRID-01_image_grid/job.yaml
+  status: pending
+- id: GRID-02_image_grid
+  kind: image
+  title: 死别阴影与请求 - 多宫格分镜图
+  path: jobs/GRID-02_image_grid/job.yaml
+  status: pending
+- id: GRID-03_image_grid
+  kind: image
+  title: 约定被拒绝 - 多宫格分镜图
+  path: jobs/GRID-03_image_grid/job.yaml
+  status: pending
+- id: GRID-04_image_grid
+  kind: image
+  title: 你就是支撑 - 多宫格分镜图
+  path: jobs/GRID-04_image_grid/job.yaml
+  status: pending
+- id: GRID-05_image_grid
+  kind: image
+  title: 沉默与雨前收束 - 多宫格分镜图
+  path: jobs/GRID-05_image_grid/job.yaml
+  status: pending
+- id: TASK-01_video
+  kind: video
+  title: 迎接与朋友话题 - 视频任务
+  path: jobs/TASK-01_video/job.yaml
+  status: pending
+- id: TASK-02_video
+  kind: video
+  title: 死别阴影 - 视频任务
+  path: jobs/TASK-02_video/job.yaml
+  status: pending
+- id: TASK-03_video
+  kind: video
+  title: 如果我出事请离开 - 视频任务
+  path: jobs/TASK-03_video/job.yaml
+  status: pending
+- id: TASK-04_video
+  kind: video
+  title: 约定与拒绝 - 视频任务
+  path: jobs/TASK-04_video/job.yaml
+  status: pending
+- id: TASK-05_video
+  kind: video
+  title: 没有我也没关系 - 视频任务
+  path: jobs/TASK-05_video/job.yaml
+  status: pending
+- id: TASK-06_video
+  kind: video
+  title: 你就是支撑 - 视频任务
+  path: jobs/TASK-06_video/job.yaml
+  status: pending
+- id: TASK-07_video
+  kind: video
+  title: 只是恩与仰慕吗 - 视频任务
+  path: jobs/TASK-07_video/job.yaml
+  status: pending
+- id: TASK-08_video
+  kind: video
+  title: 真心问不出口 - 视频任务
+  path: jobs/TASK-08_video/job.yaml
+  status: pending
+- id: TASK-09_video
+  kind: video
+  title: 雨要来了 - 视频任务
+  path: jobs/TASK-09_video/job.yaml
+  status: pending

@@ -1,0 +1,212 @@
+{
+  "schema_version": 1,
+  "project": {
+    "id": "bsd_1_7_8_v001",
+    "title": "BSD 1-7-8 雅首次登场与现实酒吧约定",
+    "created_at": "2026-05-31T21:48:12.410007+08:00",
+    "source": {
+      "script": "bsd_anime_script/bsd_1_7_8.md",
+      "shot_plan_dir": ".."
+    }
+  },
+  "settings": {
+    "default_provider": "dryrun",
+    "live_requires_confirm": true,
+    "max_concurrent_jobs": 1,
+    "approved_naming": "{job_id}_{kind}_take_{take:03d}{ext}"
+  },
+  "assets": [
+    {
+      "id": "asset_kou",
+      "type": "character",
+      "label": "门仓甲参考图（制服有外套）",
+      "files": [
+        {
+          "path": "assets/misc/甲_现代篇_制服_有外套.png",
+          "role": "reference"
+        },
+        {
+          "path": "assets/misc/甲_现代篇_制服_有外套.yaml",
+          "role": "metadata"
+        }
+      ]
+    },
+    {
+      "id": "asset_miyabi",
+      "type": "character",
+      "label": "须藤雅参考图（制服有外套）",
+      "files": [
+        {
+          "path": "assets/misc/雅_现代篇_制服_有外套.png",
+          "role": "reference"
+        },
+        {
+          "path": "assets/misc/雅_现代篇_制服_有外套.yaml",
+          "role": "metadata"
+        }
+      ]
+    },
+    {
+      "id": "asset_rei",
+      "type": "character",
+      "label": "桐岛蕾参考图（制服无外套）",
+      "files": [
+        {
+          "path": "assets/misc/蕾_现代篇_制服_无外套.png",
+          "role": "reference"
+        },
+        {
+          "path": "assets/misc/蕾_现代篇_制服_无外套.yaml",
+          "role": "metadata"
+        }
+      ]
+    },
+    {
+      "id": "asset_nanoha",
+      "type": "character",
+      "label": "若草菜叶参考图（常服有外套）",
+      "files": [
+        {
+          "path": "assets/misc/菜叶_现代篇_常服_有外套.png",
+          "role": "reference"
+        },
+        {
+          "path": "assets/misc/菜叶_现代篇_常服_有外套.yaml",
+          "role": "metadata"
+        }
+      ]
+    },
+    {
+      "id": "asset_genkan",
+      "type": "scene",
+      "label": "如月寮玄关白天参考图",
+      "files": [
+        {
+          "path": "assets/misc/如月寮_玄关_白天.png",
+          "role": "reference"
+        },
+        {
+          "path": "assets/misc/如月寮_玄关_白天.yaml",
+          "role": "metadata"
+        }
+      ]
+    },
+    {
+      "id": "asset_living",
+      "type": "scene",
+      "label": "如月寮客厅白天参考图",
+      "files": [
+        {
+          "path": "assets/misc/如月寮_客厅_白天.png",
+          "role": "reference"
+        },
+        {
+          "path": "assets/misc/如月寮_客厅_白天.yaml",
+          "role": "metadata"
+        }
+      ]
+    },
+    {
+      "id": "asset_outside",
+      "type": "scene",
+      "label": "如月寮门外白天参考图",
+      "files": [
+        {
+          "path": "assets/misc/如月寮_门外_白天.png",
+          "role": "reference"
+        },
+        {
+          "path": "assets/misc/如月寮_门外_白天.yaml",
+          "role": "metadata"
+        }
+      ]
+    },
+    {
+      "id": "asset_bar",
+      "type": "scene",
+      "label": "现实酒吧参考图",
+      "files": [
+        {
+          "path": "assets/misc/现代篇_酒吧.png",
+          "role": "reference"
+        },
+        {
+          "path": "assets/misc/现代篇_酒吧.yaml",
+          "role": "metadata"
+        }
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "id": "TASK-01_image_grid",
+      "kind": "image",
+      "title": "屋外归来与客厅来客揭示 - 多宫格分镜图",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-01_video",
+      "kind": "video",
+      "title": "屋外归来与客厅来客揭示 - 视频片段",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-02_image_grid",
+      "kind": "image",
+      "title": "重逢拥抱与玩笑擒摔 - 多宫格分镜图",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-02_video",
+      "kind": "video",
+      "title": "重逢拥抱与玩笑擒摔 - 视频片段",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-03_image_grid",
+      "kind": "image",
+      "title": "说漏前被拖走与雅回来 - 多宫格分镜图",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-03_video",
+      "kind": "video",
+      "title": "说漏前被拖走与雅回来 - 视频片段",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-04_image_grid",
+      "kind": "image",
+      "title": "门外识破CDF身份 - 多宫格分镜图",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-04_video",
+      "kind": "video",
+      "title": "门外识破CDF身份 - 视频片段",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-05_image_grid",
+      "kind": "image",
+      "title": "现实酒吧约定与收束 - 多宫格分镜图",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-05_video",
+      "kind": "video",
+      "title": "现实酒吧约定与收束 - 视频片段",
+      "provider": "dryrun",
+      "status": "ready"
+    }
+  ]
+}

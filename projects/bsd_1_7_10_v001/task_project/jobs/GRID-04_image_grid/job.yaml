@@ -1,0 +1,61 @@
+id: GRID-04_image_grid
+kind: image
+title: 你就是支撑 - 多宫格分镜图
+provider: runninghub_gpt_image
+prompt: '生成一张 16:9 低饱和动画分镜草稿，多宫格清晰分隔，用来检查构图、轴线、走位、表情和情绪节奏。
+
+
+  使用随任务提供的两张角色参考图和一张夜街参考图锁定外观与场景；不要在画面里写字。
+
+
+  全局空间：甲始终偏画面左侧，蕾始终偏画面右侧；停步后正反打保持同一视线轴。
+
+
+  雨前氛围：潮湿反光、低云、远处短暂雷光；不要下大雨。
+
+
+  对白只用于口型/声音节奏，必须逐字保留。
+
+
+  分格内容：
+
+
+  1. 你就是支撑。双人中近景转甲近景，甲抬头直视蕾。动作/表情：双人中近景。甲从沉默中抬头，提起菜ノ叶；蕾在右侧用平静理由回应；甲向前半步，直视蕾说出她就是支撑。 镜头：从双人中景缓慢推到甲偏左近景，结尾保留蕾右侧反应。 光线：两人之间的湿地反光形成分隔线，路灯闪烁减弱。
+  对白：kou:"……そういえば、菜ノ葉に、俺をよろしくとか言ったらしいな？" / rei:"ええ……。中尉には、心の支えになってくれる人が必要ですから" / kou:"今更、何を言うんだよ。今だって充分に、レインが支えになってくれてるさ"
+  避免：不要生成菜ノ叶画面或第三人，不要画字幕。
+
+
+  2. 只是恩与仰慕吗。蕾近景到双人静止，蕾回避视线后沉默。动作/表情：蕾近景。她移开视线，试图把感情说成恩情和仰慕，却在最后停住；甲追问时画面仍留在蕾沉默的脸上。 镜头：极慢推近蕾眼睛，甲画外追问时不切走。 光线：路灯断续掠过蕾的脸，眼中有霓虹碎光。
+  对白：rei:"中尉に恩を感じておりますし、慕ってもいました。……けれど、それは、ただ……" / kou:"ただ……なんだって言うんだよ？まさかまた、部下だからとか任務だからとか、そんなことを言うんじゃないだろうな？" 避免：不要让蕾突然微笑，不要拥抱或牵手。
+
+
+  全局避免：不要身份漂移，不要跳轴，不要交换左右位置，不要画字幕、文字、水印或镜头编号。对白文本必须逐字保留原游戏语音文本，不得改写。'
+params:
+  aspect_ratio: '16:9'
+  resolution: 2k
+  model_version: gpt-image-2
+  seed: -1
+  duration_limit: 0
+  generate_audio: false
+source:
+  shot_plan: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_10_v001\shot_plan.json
+  task_id: GRID-04
+  shots:
+  - S007
+  - S008
+refs:
+- asset_id: asset_kou
+  role: character_reference
+  path: assets/misc/甲_现代篇_制服_有外套.png
+- asset_id: asset_rei
+  role: character_reference
+  path: assets/misc/蕾_现代篇_制服_有外套.png
+- asset_id: asset_street
+  role: scene_reference
+  path: assets/misc/现代篇_贫民窟_街道_夜晚.png
+outputs: []
+status: succeeded
+updated_at: '2026-05-31T23:39:04+08:00'
+runs:
+- run_20260531_233603
+latest_run: run_20260531_233603

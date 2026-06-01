@@ -1,0 +1,26 @@
+{
+  "submit_id": "9e56a81d-5521-4782-8c40-88c73f7d2902",
+  "prompt": "生成一段 16:9 动画视频。使用随任务提供的两张角色参考图和一张夜街参考图锁定外观与场景；文字只描述构图、动作、表情、视线、运镜和空间关系。画面不要字幕。\n\n全局空间：甲偏画面左侧，蕾偏画面右侧；正反打保持同一视线轴。\n\n雨前氛围：潮湿反光、低云、远处短暂雷光；不要下大雨。\n\n时间码动作：\n\n[0.0-13.0s] 你就是支撑\n景别/位置：双人中近景转甲近景，甲抬头直视蕾\n动作/表情：双人中近景。甲从沉默中抬头，提起菜ノ叶；蕾在右侧用平静理由回应；甲向前半步，直视蕾说出她就是支撑。\n镜头：从双人中景缓慢推到甲偏左近景，结尾保留蕾右侧反应。\n光线：两人之间的湿地反光形成分隔线，路灯闪烁减弱。\n对白/声音：kou:\"……そういえば、菜ノ葉に、俺をよろしくとか言ったらしいな？\"（画面内） / rei:\"ええ……。中尉には、心の支えになってくれる人が必要ですから\"（画面内） / kou:\"今更、何を言うんだよ。今だって充分に、レインが支えになってくれてるさ\"（画面内）\n避免：不要生成菜ノ叶画面或第三人，不要画字幕。\n\n全局避免：不要身份漂移，不要跳轴，不要交换左右位置，不要画字幕、文字、水印或镜头编号。对白文本必须逐字保留原游戏语音文本，不得改写。",
+  "gen_status": "success",
+  "result_json": {
+    "images": [],
+    "videos": [
+      {
+        "video_url": "https://v6-artist.vlabvod.com/fcf8a894ea62bf7469847f3b4c21fbe3/6a1c6a2b/video/tos/cn/tos-cn-v-148450/o42JZaPHgvmBSQffqWIoQ566HRA4CFVtBWgwx9/?a=4066&ch=0&cr=0&dr=0&er=0&cd=0%7C0%7C0%7C0&br=6241&bt=6241&cs=0&ds=12&ft=5QYTUxhhe6BMyqbTdbeJD12Nzj&mime_type=video_mp4&qs=0&rc=aTw5ODM2Ojs1Ozo4Nzw6NUBpM2V4PDxrb3c4OzczNDM7M0A0MF9jMTNfNTUxMWItLy4tYSNgZS5ncWdma2JhLS1kNC9zcw%3D%3D&btag=80000e00010000&dy_q=1780243468&feature_id=04b16e464b574158bb99cac30ccb1f5e&l=20260531235949010000000013760459C",
+        "fps": 24,
+        "width": 1280,
+        "height": 720,
+        "format": "mp4",
+        "duration": 15.042
+      }
+    ]
+  },
+  "credit_count": 165,
+  "queue_info": {
+    "queue_idx": 0,
+    "priority": 1,
+    "queue_status": "Finish",
+    "queue_length": 0,
+    "debug_info": "{\"have_no_dreamina_queue_name\":false,\"dreamina_matrix_queue_name\":\"dreamina_fusion_video40_vision\",\"dreamina_matrix_req_key\":\"DreaminaFusion:Video40_Vision_unified_edit_720p\",\"dreamina_matrix_second_req_key\":\"\",\"have_no_queue_name\":true,\"queue_name\":\"\",\"matrix_req_key\":\"\",\"matrix_second_req_key\":\"\"}"
+  }
+}

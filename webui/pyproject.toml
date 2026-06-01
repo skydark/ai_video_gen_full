@@ -1,0 +1,17 @@
+[project]
+name = "ai-video-genui"
+version = "0.1.0"
+description = "Local single-user AI video generation task orchestrator."
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.111.0",
+  "uvicorn[standard]>=0.30.0",
+  "pyyaml>=6.0.1",
+  "pillow>=10.3.0",
+  "requests>=2.34.2",
+  "python-dotenv>=1.2.2",
+  "python-multipart>=0.0.29",
+]
+
+[tool.uv]
+dev-dependencies = []

@@ -1,0 +1,66 @@
+schema_version: 1
+job_id: TASK-01_video
+kind: video
+provider: dreamina_video
+prompt: '生成一段 16:9 动画视频。使用随任务提供的两张角色参考图和一张夜街参考图锁定外观与场景；文字只描述构图、动作、表情、视线、运镜和空间关系。画面不要字幕。
+
+
+  全局空间：甲偏画面左侧，蕾偏画面右侧；正反打保持同一视线轴。
+
+
+  雨前氛围：潮湿反光、低云、远处短暂雷光；不要下大雨。
+
+
+  时间码动作：
+
+
+  [0.0-6.0s] 夜道迎接
+
+  景别/位置：远景到双人中景，贫民街夜道，甲偏左走入，蕾从右侧路灯下迎上
+
+  动作/表情：夜道远景。甲从画面左侧进入，蕾在画面右侧路灯下等待；两人短暂对视后并肩向街道深处走。
+
+  镜头：缓慢推近，从环境远景到双人中景；保持甲左、蕾右。
+
+  光线：潮湿地面有霓虹反光，雨前低云，路灯轻微闪烁。
+
+  对白/声音：rei:"迎えに来ました、甲さん"（画面内） / kou:"ああ、ご苦労さん"（画面内）
+
+  避免：不要新增主要路人，不要交换左右位置，不要画字幕或文字。
+
+
+  [6.0-15.0s] 朋友让脸色变亮
+
+  景别/位置：并肩跟拍中近景，蕾侧脸偏右，甲听她说话
+
+  动作/表情：并肩行走中近景。蕾在右侧微微转头看甲，语气柔和；甲在左侧听着，表情稍意外但不打断。
+
+  镜头：侧向跟拍，偶尔让路灯柱从前景掠过。
+
+  光线：昏黄路灯和冷色霓虹交替扫过两人脸部。
+
+  对白/声音：rei:"やっぱり、友達って重要ですね……"（画面内） / rei:"最近、甲さんの顔色が明るくて、見ていると正直、ホッとします"（画面内）
+
+
+  全局避免：不要身份漂移，不要跳轴，不要交换左右位置，不要画字幕、文字、水印或镜头编号。对白文本必须逐字保留原游戏语音文本，不得改写。'
+negative_prompt: ''
+params:
+  duration_limit: 15
+  aspect_ratio: '16:9'
+  model_version: seedance2.0_vip
+  generate_audio: false
+  real_person_mode: false
+  seed: -1
+refs:
+- asset_id: asset_kou
+  role: character_reference
+  path: assets/misc/甲_现代篇_制服_有外套.png
+- asset_id: asset_rei
+  role: character_reference
+  path: assets/misc/蕾_现代篇_制服_有外套.png
+- asset_id: asset_street
+  role: scene_reference
+  path: assets/misc/现代篇_贫民窟_街道_夜晚.png
+run_id: run_20260531_235343
+created_at: '2026-05-31T23:53:43+08:00'
+status: FAILED

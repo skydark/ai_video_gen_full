@@ -1,0 +1,16 @@
+=== Survival.bin ===
+
+  リプレイデータを保存しますか？
+[identifier: Logout]
+[identifier: 01.spm]
+[identifier: Scifi_Cloak_Activate2]
+[identifier: Rocket_JumpJetThruster2]
+[identifier: MessageBox]
+  タイトル画面で妄想極秘ファイルが選べるようになりました
+[identifier: MessageBox]
+  妄想極秘ファイルに『亜季』が追加されました
+[identifier: MessageBox]
+  妄想極秘ファイルに『真』が追加されました
+[identifier: MessageBox]
+  妄想極秘ファイルに『空』が追加されました
+[identifier: Scifi_Cloak_Activate2]

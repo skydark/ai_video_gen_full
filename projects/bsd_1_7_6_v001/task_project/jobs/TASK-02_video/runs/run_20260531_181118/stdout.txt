@@ -1,0 +1,26 @@
+{
+  "submit_id": "cff49b94-36ee-40da-b339-49bb582eb383",
+  "prompt": "# Seedance Prompt - TASK-02 战斗刀+蕾入场+双人对话\n\n【风格】动画/漫剧风格，保持参考图一致性。\n\n【时长】约 11.5 秒。\n\n【参考图锚点】\n- @甲_现代篇_制服_有外套.png：棕色短发、蓝色眼睛、黑色长款连帽风衣毛领。\n- @蕾_现代篇_制服_无外套.png：金发长直发、蓝色瞳孔、灰色马甲+深蓝衬衫、黑色短裙、灰色过膝袜、战术背带、角状发饰。\n- @如月寮_后院_白天.png：后院场景。\n\n【全局要求】\n- 双人镜确立的正反打轴线（甲在画面左侧、蕾在画面右侧，甲视线向右、蕾视线向左）必须严格保持。\n- 蕾走出厨房时手持刀（尖朝下），进入双人对话前收起刀（插入腰间战术背带），之后不再出现刀。\n\n【时间码动作】\n\n[00:00-00:02] 插入特写 / 战斗刀砧板\n俯角特写。黑色战斗刀向木质砧板上的韭菜竖劈，一刀将菜和砧板一同劈碎，砧板碎裂成条状、木屑飞散。在旁。画外传来菜ノ叶的尖叫：「わわわわっ……！？まな板まで千切りにしてどうするんですか〜〜っ！」。剁板声骤停。\n镜头运动：静止。\n避免：不显示手或厨房环境。\n\n[00:02-00:07] 中景POV / 蕾入场\n从甲POV看如月寮后门。蕾推门走出，垂双肩，右手攥刀（尖朝下），一脸沮丧，沿小径走向甲。从建筑阴影走入阳光，金发被照亮。甲在POV前景。她说着：「はい、台所を追い出されてしまいました」，语气无奈。\n镜头运动：基本静止POV，蕾走近时微弱呼吸感。\n避免：POV方向必须朝向厨房入口（承接前一个镜头横摇方向）。不显示厨房内部。\n\n[00:07-00:11.5] 双人中景 / 料理对话\n双人中景，甲在画面左侧，蕾在画面右侧。甲右手撑膝站起，拍草屑，轻松笑问：「それよりレインって、ひょっとして料理が苦手だったりするのか？」。蕾已将刀收起，垂肩，自嘲苦笑回答：「はい……今となっては、花嫁修業を拒絶していたのが悔やまれます」。甲视线向右看蕾、蕾视线向左看甲——确立全段轴线。观众注意点应在两人表情和对话上，不应再看到刀。\n镜头运动：基本静止，轻微呼吸感。\n避免：不交换左右位置。蕾服装发色一致。刀已收起不可见。\n\n【Negative / 避免】\n- 不要身份漂移\n- 不要跳轴或交换左右\n- 蕾进入双人对话前收起刀，之后不可见\n- 蕾出场POV方向承接前一个镜头",
+  "gen_status": "success",
+  "result_json": {
+    "images": [],
+    "videos": [
+      {
+        "video_url": "https://v3-artist.vlabvod.com/a35c8907c193905d29f3d637e2aab9df/6a1c18be/video/tos/cn/tos-cn-v-148450/oceRApq4hQALgx1DlF6wgDVg4AQJisVs9gSAIQ/?a=4066&ch=0&cr=0&dr=0&er=0&cd=0%7C0%7C0%7C0&br=5081&bt=5081&cs=0&ds=12&ft=5QYTUxhhe6BMyqHKNbeJD12Nzj&mime_type=video_mp4&qs=0&rc=ZDg6ODk6aDU6ODtlOGY0aEBpM2RtZDNrbzMzOzczNDM7M0AxYDBeLy5iXy4xLTIuMTUvYSNwZTM2cWdeaWJhLS1kNC9zcw%3D%3D&btag=80000e00010000&dy_q=1780222623&feature_id=04b16e464b574158bb99cac30ccb1f5e&l=2026053118111901000000001318345EC",
+        "fps": 24,
+        "width": 1280,
+        "height": 720,
+        "format": "mp4",
+        "duration": 15.042
+      }
+    ]
+  },
+  "credit_count": 210,
+  "queue_info": {
+    "queue_idx": 0,
+    "priority": 1,
+    "queue_status": "Finish",
+    "queue_length": 0,
+    "debug_info": "{\"have_no_dreamina_queue_name\":false,\"dreamina_matrix_queue_name\":\"dreamina_fusion_video40_pro_vision\",\"dreamina_matrix_req_key\":\"DreaminaFusion:Video40_Pro_Vision_unified_edit_720p\",\"dreamina_matrix_second_req_key\":\"\",\"have_no_queue_name\":true,\"queue_name\":\"\",\"matrix_req_key\":\"\",\"matrix_second_req_key\":\"\"}"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "prompt": "参考图1：女性角色蕾（桐岛蕾），气质干练冷艳。 参考图2：男性角色甲（门仓甲）。本片段中甲刚睡醒，头发凌乱，不穿外套。 参考图3：场景——酒店房间清晨，暖光从右侧窗射入。 参考图4：多宫格分镜构图参考。保持此构图的镜头顺序、景别和角色左右位置。\n风格：动漫/漫剧，16:9画幅。无字幕。视频静音，不生成任何语音或音效。\n[00:00-00:02] 定场。中景，旅馆房间全貌。晨光从右侧窗形成光束照亮床铺，被褥凌乱。安静温暖的清晨氛围。镜头静止。\n[00:02-00:05] 近景过肩。蕾在画面左侧，背对晨光形成金色轮廓光。她微倾身，嘴唇微动说话（口型同步），表情温和。甲在画面右侧床边揉眼，头发凌乱。\"おはようございます、甲さん\"。镜头轻微手持呼吸感。\n[00:05-00:07.5] 近景。甲正面，头发凌乱，打了个哈欠，眼神从困倦逐渐清醒。嘴唇微动（口型同步）。\"ああ、おはよう……\"。镜头缓慢推近。\n[00:07.5-00:09.5] 插入镜头。半透明蓝色科幻UI面板在画面中央弹出，显示日文新闻推送文字和图标。面板自发光，弹出时有微弱脉冲光效。背景虚化。此镜头无角色。\n[00:09.5-00:13.5] 中景双人镜头。蕾在画面左侧，微敛神情看向面板方向，表情略带严肃，嘴唇微动（口型同步）。甲在画面右侧，先捏了捏鼻梁，然后点头，嘴唇微动回应。蕾、甲分别位于画面左、右。\"最新のニュースが、ネットに流れたようです。食事の前に、中尉も確認しておいてください\" / \"了解……再生\"。镜头基本静止。\n[00:13.5-00:15.0] 街景蒙太奇。从旅馆画面叠画过渡到远景清城市清晨街道，冷色调。CDF装甲车在街道缓慢巡逻。此镜头无角色，三条新闻画外音叠在画面上（不需对口型）。镜头缓慢横移，最后淡出。\n禁止：在画面中生成字幕或文字；生成任何语音或音效；街景中出现角色。\n",
+  "resolution": "720p",
+  "duration": "15",
+  "imageUrls": [
+    "https://rh-images-switch-1252422369.cos.ap-guangzhou.myqcloud.com/input/openapi/05fcc80981910bebdc9527e780663f12a7548e282d9896365e8f0e6440abcf16.png?q-sign-algorithm=sha1&q-ak=AKIDv56FISEJUsKsMeELk0gmbNCGKTYSaZ3N&q-sign-time=1780164004%3B1780250404&q-key-time=1780164004%3B1780250404&q-header-list=host&q-url-param-list=&q-signature=df9da4315108e9f2c602aa11e2da0dfb91faebd8",
+    "https://rh-images-switch-1252422369.cos.ap-guangzhou.myqcloud.com/input/openapi/1aca0cbd718e17bc5ef9039d89f744491e75fd29395f8c82f17165a8763414a8.png?q-sign-algorithm=sha1&q-ak=AKIDv56FISEJUsKsMeELk0gmbNCGKTYSaZ3N&q-sign-time=1780164006%3B1780250406&q-key-time=1780164006%3B1780250406&q-header-list=host&q-url-param-list=&q-signature=64f290db60d4a77a6391dd618e519ab389c26640",
+    "https://rh-images-switch-1252422369.cos.ap-guangzhou.myqcloud.com/input/openapi/97c2e8ce2c6a757af2d7f0c363da6b699c045b8060742e90cca5e5fb69b6d2d4.jpg?q-sign-algorithm=sha1&q-ak=AKIDv56FISEJUsKsMeELk0gmbNCGKTYSaZ3N&q-sign-time=1780164006%3B1780250406&q-key-time=1780164006%3B1780250406&q-header-list=host&q-url-param-list=&q-signature=c3652453fe431b089ea4f89e751912a3a607229e",
+    "https://rh-images-switch-1252422369.cos.ap-guangzhou.myqcloud.com/input/openapi/536388c38f5e9175c25eaacb1acdd90943c0365195959f5355ab7f197801dfd2.png?q-sign-algorithm=sha1&q-ak=AKIDv56FISEJUsKsMeELk0gmbNCGKTYSaZ3N&q-sign-time=1780164008%3B1780250408&q-key-time=1780164008%3B1780250408&q-header-list=host&q-url-param-list=&q-signature=7fdf2cfe4a1ad94404c43a6aa53f653a5ee54605"
+  ],
+  "videoUrls": [],
+  "audioUrls": [],
+  "generateAudio": true,
+  "ratio": "16:9",
+  "realPersonMode": false,
+  "conversionSlots": [
+    "all"
+  ],
+  "returnLastFrame": false,
+  "seed": -1
+}

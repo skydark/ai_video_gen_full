@@ -1,0 +1,7 @@
+{
+  "status": "FAILED",
+  "returncode": 0,
+  "submit_id": "0d288b57-da33-464e-b56b-385ab8837f8b",
+  "fail_reason": "generation failed: pre-TNS check did not pass",
+  "credit_count": 210
+}

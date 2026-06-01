@@ -1,0 +1,215 @@
+schema_version: 1
+project:
+  id: bsd_1_7_9_v001
+  title: BSD 1-7-9 贫民街酒吧密会与阿南よしお线索
+  created_at: '2026-05-31T14:37:35.701Z'
+  source:
+    script: bsd_anime_script/bsd_1_7_9.md
+    shot_plan_dir: ..
+settings:
+  default_provider: dryrun
+  live_requires_confirm: true
+  max_concurrent_jobs: 1
+  approved_naming: '{job_id}_{kind}_take_{take:03d}{ext}'
+assets:
+- id: asset_kou
+  type: character
+  label: 门仓甲参考图（制服有外套）
+  files:
+  - path: assets/misc/甲_现代篇_制服_有外套.png
+    role: reference
+  - path: assets/misc/甲_现代篇_制服_有外套.yaml
+    role: metadata
+- id: asset_miyabi
+  type: character
+  label: 须藤雅参考图（制服有外套）
+  files:
+  - path: assets/misc/雅_现代篇_制服_有外套.png
+    role: reference
+  - path: assets/misc/雅_现代篇_制服_有外套.yaml
+    role: metadata
+- id: asset_bar
+  type: scene
+  label: 地下酒吧参考图
+  files:
+  - path: assets/misc/现代篇_酒吧.png
+    role: reference
+  - path: assets/misc/现代篇_酒吧.yaml
+    role: metadata
+- id: asset_street
+  type: scene
+  label: 贫民窟街道夜晚参考图
+  files:
+  - path: assets/misc/现代篇_贫民窟_街道_夜晚.png
+    role: reference
+  - path: assets/misc/现代篇_贫民窟_街道_夜晚.yaml
+    role: metadata
+- id: asset_storyboard_TASK-02_image_grid_run_20260531_225706_candidate_01_png
+  type: storyboard
+  label: candidate_01.png
+  files:
+  - path: assets/generated/storyboard/TASK-02_image_grid_run_20260531_225706_candidate_01_png.png
+    role: reference
+  provenance:
+    source_job_id: TASK-02_image_grid
+    source_run_id: run_20260531_225706
+    source_output: candidate_01.png
+    promoted_at: '2026-05-31T23:08:39+08:00'
+- id: asset_storyboard_TASK-03_image_grid_run_20260531_225709_candidate_01_png
+  type: storyboard
+  label: candidate_01.png
+  files:
+  - path: assets/generated/storyboard/TASK-03_image_grid_run_20260531_225709_candidate_01_png.png
+    role: reference
+  provenance:
+    source_job_id: TASK-03_image_grid
+    source_run_id: run_20260531_225709
+    source_output: candidate_01.png
+    promoted_at: '2026-05-31T23:09:11+08:00'
+- id: asset_storyboard_TASK-04_image_grid_run_20260531_225712_candidate_01_png
+  type: storyboard
+  label: candidate_01.png
+  files:
+  - path: assets/generated/storyboard/TASK-04_image_grid_run_20260531_225712_candidate_01_png.png
+    role: reference
+  provenance:
+    source_job_id: TASK-04_image_grid
+    source_run_id: run_20260531_225712
+    source_output: candidate_01.png
+    promoted_at: '2026-05-31T23:09:29+08:00'
+- id: asset_storyboard_TASK-05_image_grid_run_20260531_225715_candidate_01_png
+  type: storyboard
+  label: candidate_01.png
+  files:
+  - path: assets/generated/storyboard/TASK-05_image_grid_run_20260531_225715_candidate_01_png.png
+    role: reference
+  provenance:
+    source_job_id: TASK-05_image_grid
+    source_run_id: run_20260531_225715
+    source_output: candidate_01.png
+    promoted_at: '2026-05-31T23:09:43+08:00'
+- id: asset_storyboard_TASK-06_image_grid_run_20260531_225718_candidate_01_png
+  type: storyboard
+  label: candidate_01.png
+  files:
+  - path: assets/generated/storyboard/TASK-06_image_grid_run_20260531_225718_candidate_01_png.png
+    role: reference
+  provenance:
+    source_job_id: TASK-06_image_grid
+    source_run_id: run_20260531_225718
+    source_output: candidate_01.png
+    promoted_at: '2026-05-31T23:09:55+08:00'
+- id: asset_storyboard_TASK-07_image_grid_run_20260531_225722_candidate_01_png
+  type: storyboard
+  label: candidate_01.png
+  files:
+  - path: assets/generated/storyboard/TASK-07_image_grid_run_20260531_225722_candidate_01_png.png
+    role: reference
+  provenance:
+    source_job_id: TASK-07_image_grid
+    source_run_id: run_20260531_225722
+    source_output: candidate_01.png
+    promoted_at: '2026-05-31T23:10:09+08:00'
+- id: asset_storyboard_TASK-08_image_grid_run_20260531_225726_candidate_01_png
+  type: storyboard
+  label: candidate_01.png
+  files:
+  - path: assets/generated/storyboard/TASK-08_image_grid_run_20260531_225726_candidate_01_png.png
+    role: reference
+  provenance:
+    source_job_id: TASK-08_image_grid
+    source_run_id: run_20260531_225726
+    source_output: candidate_01.png
+    promoted_at: '2026-05-31T23:10:24+08:00'
+- id: asset_storyboard_TASK-01_image_grid_run_20260531_230811_candidate_01_png
+  type: storyboard
+  label: candidate_01.png
+  files:
+  - path: assets/generated/storyboard/TASK-01_image_grid_run_20260531_230811_candidate_01_png.png
+    role: reference
+  provenance:
+    source_job_id: TASK-01_image_grid
+    source_run_id: run_20260531_230811
+    source_output: candidate_01.png
+    promoted_at: '2026-05-31T23:31:44+08:00'
+jobs:
+- id: TASK-01_image_grid
+  kind: image
+  title: 地下酒吧接头 - 多宫格分镜图
+  provider: dryrun
+  status: ready
+- id: TASK-01_video
+  kind: video
+  title: 地下酒吧接头 - 视频片段
+  provider: dryrun
+  status: ready
+- id: TASK-02_image_grid
+  kind: image
+  title: Drexler爆炸简述 - 多宫格分镜图
+  provider: dryrun
+  status: ready
+- id: TASK-02_video
+  kind: video
+  title: Drexler爆炸简述 - 视频片段
+  provider: dryrun
+  status: ready
+- id: TASK-03_image_grid
+  kind: image
+  title: 追捕警告与拒逃 - 多宫格分镜图
+  provider: dryrun
+  status: ready
+- id: TASK-03_video
+  kind: video
+  title: 追捕警告与拒逃 - 视频片段
+  provider: dryrun
+  status: ready
+- id: TASK-04_image_grid
+  kind: image
+  title: 灰色圣诞节与头痛 - 多宫格分镜图
+  provider: dryrun
+  status: ready
+- id: TASK-04_video
+  kind: video
+  title: 灰色圣诞节与头痛 - 视频片段
+  provider: dryrun
+  status: ready
+- id: TASK-05_image_grid
+  kind: image
+  title: 追问过去与雅改口 - 多宫格分镜图
+  provider: dryrun
+  status: ready
+- id: TASK-05_video
+  kind: video
+  title: 追问过去与雅改口 - 视频片段
+  provider: dryrun
+  status: ready
+- id: TASK-06_image_grid
+  kind: image
+  title: 饮尽离席与街外告别 - 多宫格分镜图
+  provider: dryrun
+  status: ready
+- id: TASK-06_video
+  kind: video
+  title: 饮尽离席与街外告别 - 视频片段
+  provider: dryrun
+  status: ready
+- id: TASK-07_image_grid
+  kind: image
+  title: 阿南よしお线索 - 多宫格分镜图
+  provider: dryrun
+  status: ready
+- id: TASK-07_video
+  kind: video
+  title: 阿南よしお线索 - 视频片段
+  provider: dryrun
+  status: ready
+- id: TASK-08_image_grid
+  kind: image
+  title: 绝对别死 - 多宫格分镜图
+  provider: dryrun
+  status: ready
+- id: TASK-08_video
+  kind: video
+  title: 绝对别死 - 视频片段
+  provider: dryrun
+  status: ready

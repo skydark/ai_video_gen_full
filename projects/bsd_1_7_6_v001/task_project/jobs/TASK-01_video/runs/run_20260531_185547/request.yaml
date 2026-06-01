@@ -1,0 +1,91 @@
+schema_version: 1
+job_id: TASK-01_video
+kind: video
+provider: dreamina_video
+prompt: '# Seedance Prompt - TASK-01 花园定场+厨房骚动
+
+
+  【风格】动画/漫剧风格，保持参考图一致性。
+
+
+  【时长】约 15 秒。
+
+
+  【参考图锚点】
+
+  - @甲_现代篇_制服_有外套.png：棕色凌乱短发、蓝色眼睛、黑色长款连帽风衣毛领、蓝色长裤、黑色高帮战靴。
+
+  - @如月寮_后院_白天.png：两层深棕木屋、青绿瓦片、菜园、木栅栏、远山白云、午后阳光。
+
+
+  【全局要求】
+
+  - 午后阳光从画面左上方斜照，暖色调，地面菜畦有清晰投影。
+
+  - 严禁显示厨房窗内任何人物或内部细节。
+
+
+  【时间码动作】
+
+
+  [00:00-00:03] 远景→中景缓推 / 花园定场
+
+  远景如月寮后院全貌。镜头缓推至花园菜畦旁——甲独自蹲着，抬头望画面右上方。午后阳光洒在他身上。
+
+  镜头运动：远景→中景均匀缓推。
+
+  避免：不要改变如月寮建筑布局。
+
+
+  [00:03-00:15] 近景→横摇推 / 厨房骚动
+
+  近景甲侧脸。画外突然传来菜ノ叶的尖叫：「あっ、ちょっと、レインさん、何をしているんですかっ！？」——甲微侧头，视线转向画面右侧。镜头顺其视线方向缓慢向右横摇+微推，越过花园花草菜畦，朝向如月寮建筑右侧厨房一侧外立面。
+
+  随后画外陆续传来：蕾困惑应答「え……これは切ってはいけませんでしたかっ！？」、菜ノ叶抱怨「いいんですけど、肉をみじん切りにしなくても……！って言うか、ちゃんと包丁使ってくださいよ〜〜っ！」、蕾道歉「す、すみませんっ……！このナイフに慣れ親しんでいるので、つい……」。
+
+  镜头终点停在厨房一侧建筑外墙——不透过窗看内部，仅以声音和方向建立空间关系。甲在前半保持侧耳姿态。
+
+  镜头运动：从甲侧脸近景向右横摇+微推，速度均匀。
+
+  避免：不显示窗内人物，不跳轴。
+
+
+  【Negative / 避免】
+
+  - 不要显示厨房内部或窗内人物
+
+  - 不要身份漂移
+
+  - 不要跳轴
+
+  '
+negative_prompt: 不要身份漂移，不要显示厨房内部，不要跳轴。
+params:
+  duration_limit: 15
+  aspect_ratio: '16:9'
+  model_version: seedance2.0_vip
+  generate_audio: false
+  real_person_mode: false
+  seed: -1
+refs:
+- asset_id: asset_kou
+  source_path: assets/chars/甲_现代篇_制服_有外套.png
+  usage: identity
+  label: 门仓甲参考图
+  sha256: 1aca0cbd718e17bc5ef9039d89f744491e75fd29395f8c82f17165a8763414a8
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_6_v001\task_project\assets\chars\甲_现代篇_制服_有外套.png
+- asset_id: asset_scene
+  source_path: assets/scenes/如月寮_后院_白天.png
+  usage: scene
+  label: 如月寮后院场景参考图
+  sha256: 84f16a31671c13f58c7728a032332c473ad7c782c33c143dc7f93c94aeee1b83
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_6_v001\task_project\assets\scenes\如月寮_后院_白天.png
+- asset_id: asset_storyboard_TASK-01_storyboard_grid_run_20260531_152158
+  source_path: assets/generated/storyboard/TASK-01_storyboard_grid_run_20260531_152158_candidate_01_png.png
+  usage: composition
+  label: candidate_01.png
+  sha256: 2f3dcba6eb52429f028b52f69641122f8ea73c70cbb020fbfaed4e83aeed97af
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_6_v001\task_project\assets\generated\storyboard\TASK-01_storyboard_grid_run_20260531_152158_candidate_01_png.png
+run_id: run_20260531_185547
+created_at: '2026-05-31T18:56:16+08:00'
+status: FAILED

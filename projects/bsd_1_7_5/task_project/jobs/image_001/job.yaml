@@ -1,0 +1,14 @@
+schema_version: 1
+id: image_001
+kind: image
+title: 新图像任务
+provider: dryrun
+status: draft
+version: 1
+refs: []
+prompt: ''
+params:
+  aspect_ratio: '16:9'
+  resolution: 2k
+runs: []
+created_at: '2026-05-31T08:32:55+08:00'

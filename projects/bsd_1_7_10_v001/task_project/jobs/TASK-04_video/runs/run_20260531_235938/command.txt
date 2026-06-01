@@ -1,0 +1,17 @@
+C:\Users\skydark\bin\dreamina.exe multimodal2video "--prompt=生成一段 16:9 动画视频。使用随任务提供的两张角色参考图和一张夜街参考图锁定外观与场景；文字只描述构图、动作、表情、视线、运镜和空间关系。画面不要字幕。
+
+全局空间：甲偏画面左侧，蕾偏画面右侧；正反打保持同一视线轴。
+
+雨前氛围：潮湿反光、低云、远处短暂雷光；不要下大雨。
+
+时间码动作：
+
+[0.0-12.0s] 约定与拒绝
+景别/位置：蕾肩后过肩拍甲，甲低声但坚定拒绝
+动作/表情：反打甲近景。蕾的肩部在前景右侧虚化；甲在左中位置先垂眼听完，然后抬眼直视蕾，低声坚定拒绝。
+镜头：静止近景，甲说出拒绝时轻微推近。
+光线：甲脸部有冷暖交错反光，地面反光轻微晃动。
+对白/声音：rei:"万が一のことを話しているのです。……約束してくれますね、甲さん？"（画外/背对也可） / kou:"ダメだね。そんな事、約束なんかできっこない"（画面内）
+避免：不要让甲吼叫或夸张挥手，不要跳轴。
+
+全局避免：不要身份漂移，不要跳轴，不要交换左右位置，不要画字幕、文字、水印或镜头编号。对白文本必须逐字保留原游戏语音文本，不得改写。" --poll=420 --image E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_10_v001\task_project\assets\misc\甲_现代篇_制服_有外套.png --image E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_10_v001\task_project\assets\misc\蕾_现代篇_制服_有外套.png --image E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_10_v001\task_project\assets\misc\现代篇_贫民窟_街道_夜晚.png --duration=15 --ratio=16:9 --model_version=seedance2.0fast_vip --video_resolution=720p

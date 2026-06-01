@@ -1,0 +1,26 @@
+{
+  "submit_id": "65071fe0-abe3-47b4-86cd-d4f47cee477b",
+  "prompt": "# Seedance Prompt - TASK-01 花园定场+厨房骚动\n\n【风格】动画/漫剧风格，保持参考图一致性。\n\n【时长】约 15 秒。\n\n【参考图锚点】\n- @甲_现代篇_制服_有外套.png：棕色凌乱短发、蓝色眼睛、黑色长款连帽风衣毛领、蓝色长裤、黑色高帮战靴。\n- @如月寮_后院_白天.png：两层深棕木屋、青绿瓦片、菜园、木栅栏、远山白云、午后阳光。\n\n【全局要求】\n- 午后阳光从画面左上方斜照，暖色调，地面菜畦有清晰投影。\n- 严禁显示厨房窗内任何人物或内部细节。\n\n【时间码动作】\n\n[00:00-00:03] 远景→中景缓推 / 花园定场\n远景如月寮后院全貌。镜头缓推至花园菜畦旁——甲独自蹲着，抬头望画面右上方。午后阳光洒在他身上。\n镜头运动：远景→中景均匀缓推。\n避免：不要改变如月寮建筑布局。\n\n[00:03-00:15] 近景→横摇推 / 厨房骚动\n近景甲侧脸。画外突然传来菜ノ叶的尖叫：「あっ、ちょっと、レインさん、何をしているんですかっ！？」——甲微侧头，视线转向画面右侧。镜头顺其视线方向缓慢向右横摇+微推，越过花园花草菜畦，朝向如月寮建筑右侧厨房一侧外立面。\n随后画外陆续传来：蕾困惑应答「え……これは切ってはいけませんでしたかっ！？」、菜ノ叶抱怨「いいんですけど、肉をみじん切りにしなくても……！って言うか、ちゃんと包丁使ってくださいよ〜〜っ！」、蕾道歉「す、すみませんっ……！このナイフに慣れ親しんでいるので、つい……」。\n镜头终点停在厨房一侧建筑外墙——不透过窗看内部，仅以声音和方向建立空间关系。甲在前半保持侧耳姿态。\n镜头运动：从甲侧脸近景向右横摇+微推，速度均匀。\n避免：不显示窗内人物，不跳轴。\n\n【Negative / 避免】\n- 不要显示厨房内部或窗内人物\n- 不要身份漂移\n- 不要跳轴",
+  "gen_status": "success",
+  "result_json": {
+    "images": [],
+    "videos": [
+      {
+        "path": "E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_6_v001\\task_project\\jobs\\TASK-01_video\\runs\\run_20260601_084413\\outputs\\65071fe0-abe3-47b4-86cd-d4f47cee477b_video_1.mp4",
+        "fps": 24,
+        "width": 1280,
+        "height": 720,
+        "format": "mp4",
+        "duration": 15.042
+      }
+    ]
+  },
+  "credit_count": 210,
+  "queue_info": {
+    "queue_idx": 0,
+    "priority": 1,
+    "queue_status": "Finish",
+    "queue_length": 0,
+    "debug_info": "{\"have_no_dreamina_queue_name\":false,\"dreamina_matrix_queue_name\":\"dreamina_fusion_video40_pro_vision\",\"dreamina_matrix_req_key\":\"DreaminaFusion:Video40_Pro_Vision_unified_edit_720p\",\"dreamina_matrix_second_req_key\":\"\",\"have_no_queue_name\":true,\"queue_name\":\"\",\"matrix_req_key\":\"\",\"matrix_second_req_key\":\"\"}"
+  }
+}

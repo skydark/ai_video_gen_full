@@ -1,0 +1,49 @@
+schema_version: 1
+id: task01_image_grid
+kind: image
+title: 清晨唤醒与新闻播报 - 多宫格分镜图
+provider: runninghub_gpt_image
+status: succeeded
+version: 1
+refs:
+- asset_id: asset_rei
+  source_path: assets/characters/蕾_现代篇_制服_无外套.png
+  usage: identity
+  label: 桐岛蕾参考图
+- asset_id: asset_kou
+  source_path: assets/characters/甲_现代篇_制服_有外套.png
+  usage: identity
+  label: 门仓甲参考图
+- asset_id: asset_hotel_room
+  source_path: assets/scenes/现代篇_酒店房间_早晨.jpg
+  usage: scene
+  label: 酒店房间场景参考
+prompt: 'Goal: 生成6格黑白或低饱和分镜草稿，按时间从左到右、从上到下排列。16:9 contact sheet。
+
+  Style: 清晰线稿、灰阶阴影、少量角色主色标识、分格明确。
+
+
+  格1-定场: 旅馆房间全貌，晨光右侧射入，被褥凌乱。
+
+  格2-蕾叫醒甲: 近景过肩，蕾(金发/马甲/短裙)左背光，甲(棕发/蓝T恤)右床边揉眼。
+
+  格3-甲反应: 近景，甲正面打哈欠，头发凌乱，浅蓝T恤。
+
+  格4-数据面板: 半透明蓝色面板弹出，日文推送，背景虚化旅馆晨光。
+
+  格5-双人镜头: 中景，蕾左甲右，蕾看面板，甲捏鼻梁点头。
+
+  格6-街景: 远景清城市清晨街道，冷色调，CDF装甲车巡逻。
+
+
+  Character axis: 蕾左甲右。Avoid: 不交换左右位置，不改变发色/瞳色/服装。
+
+  '
+negative_prompt: 不要跳轴，不要交换角色身份、颜色或左右位置。不要改变蕾的金发。不要改变甲的发色。
+params:
+  aspect_ratio: '16:9'
+  resolution: 2k
+updated_at: '2026-05-30T23:21:56+08:00'
+runs:
+- run_20260530_231811
+latest_run: run_20260530_231811

@@ -1,0 +1,26 @@
+{
+  "command": [
+    "C:\\Users\\skydark\\bin\\dreamina.exe",
+    "multimodal2video",
+    "--prompt=参考图1：女性角色蕾（桐岛蕾），气质干练冷艳。 参考图2：男性角色甲（门仓甲）。本片段中甲刚睡醒，头发凌乱，不穿外套。 参考图3：场景——酒店房间清晨，暖光从右侧窗射入。 参考图4：多宫格分镜构图参考。保持此构图的镜头顺序、景别和角色左右位置。\n风格：动漫/漫剧，16:9画幅。无字幕。视频静音，不生成任何语音或音效。\n[00:00-00:02] 定场。中景，旅馆房间全貌。晨光从右侧窗形成光束照亮床铺，被褥凌乱。安静温暖的清晨氛围。镜头静止。\n[00:02-00:05] 近景过肩。蕾在画面左侧，背对晨光形成金色轮廓光。她微倾身，嘴唇微动说话（口型同步），表情温和。甲在画面右侧床边揉眼，头发凌乱。\"おはようございます、甲さん\"。镜头轻微手持呼吸感。\n[00:05-00:07.5] 近景。甲正面，头发凌乱，打了个哈欠，眼神从困倦逐渐清醒。嘴唇微动（口型同步）。\"ああ、おはよう……\"。镜头缓慢推近。\n[00:07.5-00:09.5] 插入镜头。半透明蓝色科幻UI面板在画面中央弹出，显示日文新闻推送文字和图标。面板自发光，弹出时有微弱脉冲光效。背景虚化。此镜头无角色。\n[00:09.5-00:13.5] 中景双人镜头。蕾在画面左侧，微敛神情看向面板方向，表情略带严肃，嘴唇微动（口型同步）。甲在画面右侧，先捏了捏鼻梁，然后点头，嘴唇微动回应。蕾、甲分别位于画面左、右。\"最新のニュースが、ネットに流れたようです。食事の前に、中尉も確認しておいてください\" / \"了解……再生\"。镜头基本静止。\n[00:13.5-00:15.0] 街景蒙太奇。从旅馆画面叠画过渡到远景清城市清晨街道，冷色调。CDF装甲车在街道缓慢巡逻。此镜头无角色，三条新闻画外音叠在画面上（不需对口型）。镜头缓慢横移，最后淡出。\n禁止：在画面中生成字幕或文字；生成任何语音或音效；街景中出现角色。\n",
+    "--poll=420",
+    "--image",
+    "E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_5\\task_project\\assets\\characters\\蕾_现代篇_制服_无外套.png",
+    "--image",
+    "E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_5\\task_project\\assets\\characters\\甲_现代篇_制服_有外套.png",
+    "--image",
+    "E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_5\\task_project\\assets\\scenes\\现代篇_酒店房间_早晨.jpg",
+    "--image",
+    "E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_5\\task_project\\assets\\generated\\storyboard\\task01_image_grid_run_20260530_231811_task01_image_grid_reference.png",
+    "--duration=15",
+    "--ratio=16:9",
+    "--model_version=seedance2.0fast_vip",
+    "--video_resolution=720p"
+  ],
+  "download_command": [
+    "C:\\Users\\skydark\\bin\\dreamina.exe",
+    "query_result",
+    "--submit_id=03a7add9-632e-499f-9895-808f4116e816",
+    "--download_dir=E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_5\\task_project\\jobs\\task01_video\\runs\\run_20260531_015905\\outputs"
+  ]
+}

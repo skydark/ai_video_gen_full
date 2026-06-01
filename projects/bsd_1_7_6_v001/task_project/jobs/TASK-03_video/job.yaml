@@ -1,0 +1,102 @@
+schema_version: 1
+id: TASK-03_video
+kind: video
+title: TASK-03 正反打情感递进 - 视频
+provider: dreamina_video
+status: succeeded
+version: 1
+refs:
+- asset_id: asset_kou
+  source_path: assets/chars/甲_现代篇_制服_有外套.png
+  usage: identity
+  label: 门仓甲参考图
+- asset_id: asset_rei
+  source_path: assets/chars/蕾_现代篇_制服_无外套.png
+  usage: identity
+  label: 桐岛蕾参考图
+- asset_id: asset_scene
+  source_path: assets/scenes/如月寮_后院_白天.png
+  usage: scene
+  label: 如月寮后院场景参考图
+- asset_id: asset_storyboard_TASK-03_storyboard_grid_run_20260531_161434
+  source_path: assets/generated/storyboard/TASK-03_storyboard_grid_run_20260531_161434_candidate_01_png.png
+  usage: composition
+  label: candidate_01.png
+prompt: '# Seedance Prompt - TASK-03 正反打情感递进
+
+
+  【风格】动画/漫剧风格，保持参考图一致性。
+
+
+  【时长】约 12.5 秒。
+
+
+  【参考图锚点】
+
+  - @甲_现代篇_制服_有外套.png：棕色短发、蓝色眼睛、黑色长款连帽风衣毛领。
+
+  - @蕾_现代篇_制服_无外套.png：金发长直发、蓝色瞳孔、灰色马甲+深蓝衬衫、黑色短裙、灰色过膝袜、战术背带、角状发饰。
+
+  - @如月寮_后院_白天.png：花园午后场景、光斑、菜园背景。
+
+
+  【全局要求】
+
+  - 三镜保持同一180度轴线（甲左蕾右）：甲视线向右，蕾视线向左。
+
+  - 午后光线和光斑三镜统一。
+
+
+  【时间码动作】
+
+
+  [00:00-00:03] 甲近景 / 一怔
+
+  近景甲正面。听到蕾说「花嫁修業を拒絶した」之后，甲表情从轻松转为怔住——眉毛微抬嘴微张，重复道：「花嫁修業を拒絶……？」。视线朝右（蕾方向）。背景为如月寮后院。
+
+  镜头运动：静止。
+
+  避免：不夸张震惊——是怔住。
+
+
+  [00:03-00:08] 蕾近景 / 拒婚独白
+
+  近景蕾。目光从甲移开→缓缓飘向画面左侧花丛——像看过去。她用克制而缓慢的语调说：「……結婚なんて、愛せない男性に生涯、奴隷として仕えること。少女時代の私は、そう思い込んでいたのです」。表情从平静→嘴角微沉→视线低垂。5秒独白克制但沉重。光斑透过树叶洒金发侧脸。刀尖朝下非焦点。
+
+  镜头运动：基本静止，可极缓推近强化情感。
+
+  避免：不哭泣不崩溃——克制沉重。刀尖朝下。
+
+
+  [00:08-00:12.5] 双人中景 / 甲安慰
+
+  切回双人中景（与之前双人对话镜头同机位：甲在画面左侧，蕾在画面右侧）。甲静静听完，目落蕾身，温和坚定地说：「結婚だけが人生じゃないし、綺麗な花嫁になれなくたって、人の価値には関係ないさ」。蕾微微抬头。不煽情，保持距离。
+
+  镜头运动：基本静止，轻微呼吸感。
+
+  避免：机位必须与之前双人对话镜头一致（甲左蕾右）。
+
+
+  【Negative / 避免】
+
+  - 不要跳轴或交换左右
+
+  - 不要过度戏剧化蕾独白
+
+  - 不要改变双人镜机位（甲左蕾右）
+
+  - 不要丢失蕾战术背带和甲风衣毛领
+
+  '
+negative_prompt: 不要身份漂移，不要跳轴，不要过度煽情。
+params:
+  duration_limit: 15
+  aspect_ratio: '16:9'
+  model_version: seedance2.0fast_vip
+  generate_audio: false
+  real_person_mode: false
+  seed: -1
+updated_at: '2026-05-31T16:40:35+08:00'
+runs:
+- run_20260531_163535
+latest_run: run_20260531_163535

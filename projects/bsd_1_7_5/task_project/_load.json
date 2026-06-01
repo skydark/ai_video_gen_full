@@ -1,0 +1,148 @@
+[rtk] /!\ No hook installed — run `rtk init -g` for automatic token savings
+{
+  approved:
+  [{
+      abs_path: string[128],
+      name: string,
+      path: string[52]
+    }] (2)
+  assets:
+  [{
+      abs_path: string[128],
+      id: string,
+      is_image: bool,
+      label: string,
+      path: string[52],
+      type: string
+    }] (4)
+  jobs:
+  [{
+      _dir: string[98],
+      id: string,
+      kind: string,
+      latest_run: string,
+      negative_prompt: string[120],
+      params:
+      {
+        aspect_ratio: string,
+        resolution: string
+      }
+      prompt: string[797],
+      provider: string,
+      refs:
+      [{
+          asset_id: string,
+          label: string,
+          source_path: string[52],
+          usage: string
+        }] (3)
+      runs:
+      [
+        {
+          cost:
+          {
+            actual: ...,
+            currency: ...,
+            estimated: ...,
+            provider_unit: ...
+          }
+          created_at: string,
+          credit_count: null,
+          dir: string[123],
+          fail_reason: null,
+          id: string,
+          outputs:
+          [
+            ...
+          ]
+          provider: string,
+          status: string
+        }
+      ]
+      schema_version: int,
+      status: string,
+      title: string,
+      updated_at: string,
+      version: int
+    }] (2)
+  review:
+  {
+    _path: string[94],
+    created_at: string,
+    global_feedback: string,
+    items:
+    [{
+        camera: string,
+        dialogue: string,
+        duration: float,
+        feedback: string,
+        id: string,
+        intent: string[63],
+        locked: bool,
+        prompt_preview: string[258],
+        recommendation: string,
+        review: string[75],
+        risk: string,
+        segment: string,
+        status: string,
+        tags:
+        []
+        title: string,
+        type: string,
+        ... +1 more keys
+      }] (6)
+    previs:
+    {
+      dir: string[62],
+      index_html: string,
+      sequence_title: string,
+      shot_plan: string[77]
+    }
+    schema_version: int,
+    status: string,
+    updated_at: string
+  }
+  root: string[75],
+  task:
+  {
+    assets:
+    [{
+        files:
+        [
+          {
+            path: ...,
+            role: ...
+          }
+        ]
+        id: string,
+        label: string,
+        type: string
+      }] (4)
+    jobs:
+    [{
+        id: string,
+        kind: string,
+        provider: string,
+        status: string,
+        title: string
+      }] (2)
+    project:
+    {
+      created_at: string,
+      id: string,
+      source:
+      {
+        previs_dir: string
+      }
+      title: string
+    }
+    schema_version: int,
+    settings:
+    {
+      approved_naming: string,
+      default_provider: string,
+      live_requires_confirm: bool,
+      max_concurrent_jobs: int
+    }
+  }
+}

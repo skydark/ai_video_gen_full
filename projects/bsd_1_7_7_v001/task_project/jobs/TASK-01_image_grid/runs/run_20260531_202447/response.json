@@ -1,0 +1,55 @@
+{
+  "status": "SUCCESS",
+  "submit_response": {
+    "taskId": "2061061355884384257",
+    "status": "QUEUED",
+    "errorCode": "",
+    "errorMessage": "",
+    "results": null,
+    "clientId": "",
+    "promptTips": "",
+    "failedReason": {},
+    "usage": null,
+    "parentTaskId": null,
+    "taskUsageList": null
+  },
+  "query_response": {
+    "taskId": "2061061355884384257",
+    "status": "SUCCESS",
+    "errorCode": "",
+    "errorMessage": "",
+    "results": [
+      {
+        "url": "https://rh-images-1252422369.cos.ap-beijing.myqcloud.com/c4233951783b04950fb7c2e0f227495b/output/15fe2ddb-579b-494f-a753-43e210bbe6b2.png",
+        "outputType": "png",
+        "text": null
+      }
+    ],
+    "clientId": "",
+    "promptTips": "",
+    "failedReason": {},
+    "usage": {
+      "consumeMoney": null,
+      "consumeCoins": null,
+      "taskCostTime": "0",
+      "thirdPartyConsumeMoney": "0.015"
+    },
+    "parentTaskId": null,
+    "taskUsageList": [
+      {
+        "taskId": "2061061355884384257",
+        "parentTaskId": null,
+        "taskStatus": "SUCCESS",
+        "usage": {
+          "consumeMoney": null,
+          "consumeCoins": null,
+          "taskCostTime": "0",
+          "thirdPartyConsumeMoney": "0.015"
+        }
+      }
+    ]
+  },
+  "outputs": [
+    "E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_7_v001\\task_project\\jobs\\TASK-01_image_grid\\runs\\run_20260531_202447\\outputs\\candidate_01.png"
+  ]
+}

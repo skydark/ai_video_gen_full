@@ -1,0 +1,9 @@
+{
+  "prompt": "# 多宫格分镜 - TASK-01 花园定场+厨房骚动\n\n目标：6格黑白或低饱和分镜草稿contact sheet。粗线条、灰阶阴影、清晰分格。16:9画幅，从左到右从上到下排列。使用参考图锁定角色和场景。\n\n## 分格内容\n\n**格1 - 花园远景**：远景，如月寮后院全貌——两层深棕木屋、青绿瓦顶、菜园卷心菜大葱、栅栏、远山白云。画面右下方小人物甲蹲在菜畦旁。午后阳光左上斜照。\n**格2 - 推至甲中景**：中景推近，甲蹲在菜畦旁仰头望画面右上方。光斑洒他身上。棕色短发、黑色长款连帽风衣毛领。\n**格3 - 甲听见骚动**：近景甲侧脸，他微侧头，视线转向画面右侧。画外传来菜ノ叶尖叫：「あっ、ちょっと、レインさん、何をしているんですかっ！？」。\n**格4 - 横摇中**：镜头正顺甲视线向右横摇——前景花草菜畦掠过，背景如月寮建筑逐渐占据画面。方向从花园中心移向建筑右侧厨房一侧。陆续传来蕾困惑应答和菜ノ叶抱怨的画外音。\n**格5 - 横摇终点**：横摇终点——如月寮建筑右侧外立面。**不显示窗内人物或细节。**花园植物前景。箭头标注声音来源：画外音从建筑右侧厨房一侧传来。\n**格6 - 完整路径**：同一分格用箭头标注完整镜头运动路径：甲近景→向右横摇+微推→厨房方向外墙。标注四句画外对话的时间节点（尖叫→困惑→抱怨→道歉）。\n\n## Avoid\n- 严禁显示厨房窗内人物或内部细节\n- 不要改变甲服装发色\n- 不要跳轴\n- 建筑结构必须与场景参考图一致\n",
+  "aspectRatio": "16:9",
+  "resolution": "2k",
+  "imageUrls": [
+    "https://rh-images-switch-1252422369.cos.ap-guangzhou.myqcloud.com/input/openapi/1aca0cbd718e17bc5ef9039d89f744491e75fd29395f8c82f17165a8763414a8.png?q-sign-algorithm=sha1&q-ak=AKIDv56FISEJUsKsMeELk0gmbNCGKTYSaZ3N&q-sign-time=1780212120%3B1780298520&q-key-time=1780212120%3B1780298520&q-header-list=host&q-url-param-list=&q-signature=a0b76d4b0b9dccd318fe3af0e3dfea590864b955",
+    "https://rh-images-switch-1252422369.cos.ap-guangzhou.myqcloud.com/input/openapi/84f16a31671c13f58c7728a032332c473ad7c782c33c143dc7f93c94aeee1b83.png?q-sign-algorithm=sha1&q-ak=AKIDv56FISEJUsKsMeELk0gmbNCGKTYSaZ3N&q-sign-time=1780212124%3B1780298524&q-key-time=1780212124%3B1780298524&q-header-list=host&q-url-param-list=&q-signature=30d536a5dcc0be74d77daa4ecf24cc066f7c6dc8"
+  ]
+}

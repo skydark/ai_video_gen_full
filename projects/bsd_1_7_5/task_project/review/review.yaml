@@ -1,0 +1,120 @@
+schema_version: 1
+status: in_review
+created_at: '2026-05-30T22:44:55+08:00'
+updated_at: '2026-05-30T22:44:55+08:00'
+previs:
+  dir: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_5
+  index_html: ''
+  shot_plan: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_5\shot_plan.json
+  sequence_title: BSD 1-7-5 清晨唤醒与新闻播报
+global_feedback: ''
+items:
+- id: S001
+  title: 旅馆房间清晨
+  duration: 2.0
+  type: establishing
+  camera: 中景，房间全貌，右侧窗透晨光
+  dialogue: ''
+  intent: 建立场景氛围，让观众知道这是清晨的旅馆房间
+  review: 检查房间布局与游戏素材一致，光线方向和色调是否正确
+  risk: 低。标准定场镜头。
+  recommendation: 可直接生成
+  segment: SEG-01 清晨唤醒
+  video_task: TASK-01 清晨唤醒与新闻播报
+  prompt_preview: 中景定场。爱情旅馆房间清晨，阳光从右侧窗户射入形成光束，照亮床铺和地毯。双人床上被褥凌乱，暗示有人睡过。紫色沙发、老式CRT电视机、木质衣柜可见。安静温暖的晨间氛围。
+    / 镜头静止
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S002
+  title: 蕾叫醒甲
+  duration: 3.0
+  type: dialogue_ots
+  camera: 近景，蕾为主体的过肩镜头，甲在画面中景床边
+  dialogue: おはようございます、甲さん
+  intent: 展示蕾叫醒甲的时刻，建立两人的空间关系和清晨氛围
+  review: 检查逆光效果是否自然，蕾的表情是否温和而非冷漠，甲是否看起来刚醒
+  risk: 中。逆光场景，需确保角色面部不丢失细节。OTS构图需保持轴线稳定。
+  recommendation: 先做多宫格
+  segment: SEG-01 清晨唤醒
+  video_task: TASK-01 清晨唤醒与新闻播报
+  prompt_preview: 近景/过肩。蕾站在床侧，背对晨光（画面左侧或中央偏左），金发长直发被逆光勾勒出轮廓光。她微倾身，表情温和克制，看向坐在床边的甲。甲在画面右侧中景，坐在床边揉眼，头发凌乱，刚睡醒。前景可含蕾的肩部或手臂。
+    / 镜头基本静止，仅保留轻微呼吸感手持微动
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S003
+  title: 甲醒来反应
+  duration: 2.5
+  type: closeup
+  camera: 近景，甲正面，略俯角
+  dialogue: ああ、おはよう……
+  intent: 展示甲刚醒来的状态，建立他困倦→逐渐清醒的情绪过渡
+  review: 检查甲的面部表情是否自然（困→清醒的过渡），头发凌乱程度是否合适
+  risk: 低。单人近景，身份一致性依赖asset锁定。
+  recommendation: 可直接生成
+  segment: SEG-01 清晨唤醒
+  video_task: TASK-01 清晨唤醒与新闻播报
+  prompt_preview: 近景/特写。甲坐在床边，头发凌乱，抬头看向蕾的方向（画面右侧或上方）。他打了个哈欠，眼神还带着睡意，表情从迷茫到逐渐清醒。蓝色眼睛，棕色凌乱短发。穿浅蓝色T恤（无外套），背景是旅馆房间模糊的晨光环境。
+    / 镜头轻微推近（缓慢push in），强调甲逐渐清醒的过程
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S004
+  title: 数据面板弹出
+  duration: 2.0
+  type: insert
+  camera: 插入镜头，半透明数据面板悬浮
+  dialogue: 清城市公共放送チャンネルで、米内議員暗殺についての情報が配信されました
+  intent: 引入新闻信息触发点——数据面板弹出告知米内议员暗杀新闻
+  review: 检查数据面板UI风格是否符合BaldrSky世界观（近未来科幻），面板不要过于花哨
+  risk: 中。AI对科幻UI面板的生成可能不稳定，需要参考图。
+  recommendation: 先做多宫格
+  segment: SEG-01 清晨唤醒
+  video_task: TASK-01 清晨唤醒与新闻播报
+  prompt_preview: 插入镜头。甲或蕾的视点：半透明蓝色数据面板在画面中央弹出，显示新闻推送通知。面板上有日文字符和图标。背景虚化为旅馆房间晨光氛围。伴随轻微的提示音视觉效果（闪光/脉冲）。
+    / 镜头静止，面板从透明渐显
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S005
+  title: 蕾提醒甲看新闻
+  duration: 4.0
+  type: dialogue_two
+  camera: 中景，双人镜头，蕾和甲同框
+  dialogue: 最新のニュースが、ネットに流れたようです。食事の前に、中尉も確認しておいてください / 了解……再生
+  intent: 从数据面板通知过渡到蕾提醒甲关注新闻，展示蕾的干练和甲的服从
+  review: 检查蕾的表情（认真但非严厉），甲的动作（捏鼻梁→点头），两人左右位置是否稳定
+  risk: 中。双人镜头需确保角色身份和左右位置一致性。
+  recommendation: 先做多宫格
+  segment: SEG-02 新闻播报与街景
+  video_task: TASK-01 清晨唤醒与新闻播报
+  prompt_preview: 中景双人镜头。蕾在画面左侧，微敛神情，侧头看向数据面板来源方向，表情略带严肃。甲在画面右侧，捏了捏鼻梁，然后点头。两人保持稳定的左右位置关系，背景是旅馆房间。蕾站姿挺拔，甲坐在床边。
+    / 镜头基本静止，轻微手持呼吸感
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false
+- id: S006
+  title: 清城市街景新闻蒙太奇
+  duration: 6.0
+  type: montage
+  camera: 远景，清城市清晨街道，CDF装甲车巡逻
+  dialogue: 先日の米内議員暗殺事件に関して、CDFは、議員暗殺の実行犯がドミニオン教会のメンバーであると断定 / これに対し、教会側のスポークスマンは、事件との関与を否定、悪質な世論操作であるとCDFを非難しております
+    / 一方、都市駐留のGOATは、教会拠点捜索のため、CDFへの協力を惜しまないとの声明を発表しており……
+  intent: 通过新闻蒙太奇推进世界观剧情——米内议员暗杀事件的后续发展，为后续剧情埋下伏笔
+  review: 检查街景是否符合BaldrSky清城市的近未来风格，CDF装甲车设计是否合理，天空和建筑比例
+  risk: 高。蒙太奇场景没有角色锁定，但城市风格和装甲车设计容易跑偏。建议提供清城市参考图。
+  recommendation: 先做多宫格（或者为街景单做一张场景关键帧）
+  segment: SEG-02 新闻播报与街景
+  video_task: TASK-01 清晨唤醒与新闻播报
+  prompt_preview: 远景蒙太奇。清城市清晨街道，阳光从建筑间洒落。CDF装甲车在街道上缓慢巡逻。画面从旅馆房间叠画过渡而来。三条新闻画外音叠在街景上方。街景可以有少量行人、建筑立面、天空。色调偏冷（清城市晨间），与旅馆暖色调形成对比。最后画面淡出。
+    / 镜头缓慢横移（slow pan），从街道一侧移到另一侧，或从高处缓慢下降
+  status: pending
+  feedback: ''
+  tags: []
+  locked: false

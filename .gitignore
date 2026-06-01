@@ -1,0 +1,10 @@
+.venv/
+node_modules/
+dist/
+__pycache__/
+*.pyc
+.uv-cache/
+
+.env
+
+.claude/

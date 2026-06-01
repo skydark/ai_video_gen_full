@@ -1,0 +1,4 @@
+interface:
+  display_name: "Storyboard to Project"
+  short_description: "Create shot plans and WebUI projects from anime scripts."
+  default_prompt: "Create a WebUI-reviewable animation storyboard project from my script."

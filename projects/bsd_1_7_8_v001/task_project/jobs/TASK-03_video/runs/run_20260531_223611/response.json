@@ -1,0 +1,11 @@
+{
+  "status": "SUCCESS",
+  "returncode": 0,
+  "submit_id": "1b19845e-1f62-438d-ba8e-1600a971f084",
+  "fail_reason": null,
+  "credit_count": 210,
+  "outputs": [
+    "E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_8_v001\\task_project\\jobs\\TASK-03_video\\runs\\run_20260531_223611\\outputs\\1b19845e-1f62-438d-ba8e-1600a971f084_video_1.mp4"
+  ],
+  "retried_download_at": "2026-05-31T22:51:46+08:00"
+}

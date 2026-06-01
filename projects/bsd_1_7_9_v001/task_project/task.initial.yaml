@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "project": {
+    "id": "bsd_1_7_9_v001",
+    "title": "BSD 1-7-9 贫民街酒吧密会与阿南よしお线索",
+    "created_at": "2026-05-31T14:37:35.701Z",
+    "source": {
+      "script": "bsd_anime_script/bsd_1_7_9.md",
+      "shot_plan_dir": ".."
+    }
+  },
+  "settings": {
+    "default_provider": "dryrun",
+    "live_requires_confirm": true,
+    "max_concurrent_jobs": 1,
+    "approved_naming": "{job_id}_{kind}_take_{take:03d}{ext}"
+  },
+  "assets": [
+    {
+      "id": "asset_kou",
+      "type": "character",
+      "label": "门仓甲参考图（制服有外套）",
+      "files": [
+        {
+          "path": "assets/misc/甲_现代篇_制服_有外套.png",
+          "role": "reference"
+        },
+        {
+          "path": "assets/misc/甲_现代篇_制服_有外套.yaml",
+          "role": "metadata"
+        }
+      ]
+    },
+    {
+      "id": "asset_miyabi",
+      "type": "character",
+      "label": "须藤雅参考图（制服有外套）",
+      "files": [
+        {
+          "path": "assets/misc/雅_现代篇_制服_有外套.png",
+          "role": "reference"
+        },
+        {
+          "path": "assets/misc/雅_现代篇_制服_有外套.yaml",
+          "role": "metadata"
+        }
+      ]
+    },
+    {
+      "id": "asset_bar",
+      "type": "scene",
+      "label": "地下酒吧参考图",
+      "files": [
+        {
+          "path": "assets/misc/现代篇_酒吧.png",
+          "role": "reference"
+        },
+        {
+          "path": "assets/misc/现代篇_酒吧.yaml",
+          "role": "metadata"
+        }
+      ]
+    },
+    {
+      "id": "asset_street",
+      "type": "scene",
+      "label": "贫民窟街道夜晚参考图",
+      "files": [
+        {
+          "path": "assets/misc/现代篇_贫民窟_街道_夜晚.png",
+          "role": "reference"
+        },
+        {
+          "path": "assets/misc/现代篇_贫民窟_街道_夜晚.yaml",
+          "role": "metadata"
+        }
+      ]
+    }
+  ],
+  "jobs": [
+    {
+      "id": "TASK-01_image_grid",
+      "kind": "image",
+      "title": "地下酒吧接头 - 多宫格分镜图",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-01_video",
+      "kind": "video",
+      "title": "地下酒吧接头 - 视频片段",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-02_image_grid",
+      "kind": "image",
+      "title": "Drexler爆炸简述 - 多宫格分镜图",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-02_video",
+      "kind": "video",
+      "title": "Drexler爆炸简述 - 视频片段",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-03_image_grid",
+      "kind": "image",
+      "title": "追捕警告与拒逃 - 多宫格分镜图",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-03_video",
+      "kind": "video",
+      "title": "追捕警告与拒逃 - 视频片段",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-04_image_grid",
+      "kind": "image",
+      "title": "灰色圣诞节与头痛 - 多宫格分镜图",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-04_video",
+      "kind": "video",
+      "title": "灰色圣诞节与头痛 - 视频片段",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-05_image_grid",
+      "kind": "image",
+      "title": "追问过去与雅改口 - 多宫格分镜图",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-05_video",
+      "kind": "video",
+      "title": "追问过去与雅改口 - 视频片段",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-06_image_grid",
+      "kind": "image",
+      "title": "饮尽离席与街外告别 - 多宫格分镜图",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-06_video",
+      "kind": "video",
+      "title": "饮尽离席与街外告别 - 视频片段",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-07_image_grid",
+      "kind": "image",
+      "title": "阿南よしお线索 - 多宫格分镜图",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-07_video",
+      "kind": "video",
+      "title": "阿南よしお线索 - 视频片段",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-08_image_grid",
+      "kind": "image",
+      "title": "绝对别死 - 多宫格分镜图",
+      "provider": "dryrun",
+      "status": "ready"
+    },
+    {
+      "id": "TASK-08_video",
+      "kind": "video",
+      "title": "绝对别死 - 视频片段",
+      "provider": "dryrun",
+      "status": "ready"
+    }
+  ]
+}

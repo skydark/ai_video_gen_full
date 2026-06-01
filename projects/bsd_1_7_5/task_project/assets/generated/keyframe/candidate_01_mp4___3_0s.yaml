@@ -1,0 +1,12 @@
+id: candidate_01_mp4___3_0s
+name: candidate_01.mp4 @ 3.0s
+type: keyframe
+ref_image: candidate_01_mp4___3_0s.png
+
+brief: |
+  Snapshot captured from candidate_01.mp4 at 3.00s.
+
+detail: |
+  Snapshot captured from candidate_01.mp4 at 3.00s.
+
+tags: [video_snapshot, keyframe]

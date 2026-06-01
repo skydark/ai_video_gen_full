@@ -1,0 +1,67 @@
+schema_version: 1
+job_id: TASK-04_storyboard_grid
+kind: image
+provider: runninghub_gpt_image
+prompt: '# 多宫格分镜 - TASK-04 闹别扭特写+收尾
+
+
+  目标：6格黑白或低饱和分镜草稿contact sheet。粗线条、灰阶阴影、清晰分格。16:9画幅。**闹别扭表情格是全段关键——必须优先验证。**
+
+
+  ## 分格内容
+
+
+  **格1 - 蕾微笑**：近景蕾。她微微笑了——不是开心，是「知道甲说得对但我仍不安」的复杂微笑。视线朝左(看甲)。说着「そうでしょうけど……」。金发微风轻动。
+
+  **格2 - 视线飘移→黯淡**：同机位。笑容消失。视线从甲方向(左)→飘向画面右侧厨房方向。表情黯淡，低声继续：「……それでも、菜ノ葉さんを見ていると、身につまされるものを感じてしまいます」。眼神有羡慕和自我对比。
+
+  **格3 - 闹别扭特写 ★关键**：特写蕾侧脸（偏右侧，面朝左）。闹别扭神情（すねた顔）：嘴角微撇一侧、视线偏下/侧方、眉头微蹙、脸颊极淡红晕。不生不悲——是幼稚、不设防、信任状态。她语带微不满说：「なんです？中尉」。微风拂金发。阳光柔和高光。黑色角状发饰可见。
+
+  **格4 - 闹别扭中帧**：同特写。蕾察觉甲在凝视她，表情中带被盯着看的不自在。甲画外轻声笑答：「いや、なんでもないよ」。
+
+  **格5 - 甲轻笑**：近景甲。听到闹别扭语气后轻轻笑——温暖、短暂。觉得她难得露这一面有意思。然后移开目光。不是嘲笑。
+
+  **格6 - 两人转头**：双人中景（保持甲左蕾右构图）。画外厨房方向传来菜ノ叶元气大喊：「ふたりとも〜〜っ……！ご飯が炊けたよ〜〜っ！」。两人几乎同时转头朝向厨房所在的宿舍建筑方向（微差）。微风。淡出前定格。
+
+
+  ## Avoid
+
+  - 闹别扭绝对不能画成生气或悲伤——核心是「すねた表情」（赌气/闹别扭）
+
+  - 蕾视线方向从左→右转换要清晰
+
+  - 双人镜保持甲左蕾右轴线
+
+  - 蕾金发长直+黑色角状发饰+灰色马甲必须与角色参考图一致
+
+  - 脸颊红晕不能过度
+
+  '
+negative_prompt: ''
+params:
+  aspect_ratio: '16:9'
+  resolution: 2k
+  model_version: gpt-image-2
+  seed: ''
+refs:
+- asset_id: asset_kou
+  source_path: assets/chars/甲_现代篇_制服_有外套.png
+  usage: identity
+  label: 门仓甲参考图
+  sha256: 1aca0cbd718e17bc5ef9039d89f744491e75fd29395f8c82f17165a8763414a8
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_6_v001\task_project\assets\chars\甲_现代篇_制服_有外套.png
+- asset_id: asset_rei
+  source_path: assets/chars/蕾_现代篇_制服_无外套.png
+  usage: identity
+  label: 桐岛蕾参考图
+  sha256: 05fcc80981910bebdc9527e780663f12a7548e282d9896365e8f0e6440abcf16
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_6_v001\task_project\assets\chars\蕾_现代篇_制服_无外套.png
+- asset_id: asset_scene
+  source_path: assets/scenes/如月寮_后院_白天.png
+  usage: scene
+  label: 如月寮后院场景参考图
+  sha256: 84f16a31671c13f58c7728a032332c473ad7c782c33c143dc7f93c94aeee1b83
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_6_v001\task_project\assets\scenes\如月寮_后院_白天.png
+run_id: run_20260531_161437
+created_at: '2026-05-31T16:18:49+08:00'
+status: SUCCESS

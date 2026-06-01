@@ -1,0 +1,17 @@
+C:\Users\skydark\bin\dreamina.exe multimodal2video "--prompt=生成一段 16:9 动画视频。使用随任务提供的两张角色参考图和一张夜街参考图锁定外观与场景；文字只描述构图、动作、表情、视线、运镜和空间关系。画面不要字幕。
+
+全局空间：甲偏画面左侧，蕾偏画面右侧；正反打保持同一视线轴。
+
+雨前氛围：潮湿反光、低云、远处短暂雷光；不要下大雨。
+
+时间码动作：
+
+[0.0-12.0s] 如果我出事请离开
+景别/位置：甲肩后过肩拍蕾，蕾停步正面看向甲
+动作/表情：两人停步。以前景甲肩部过肩拍蕾；蕾在右中位置正面看向甲，站姿克制，像是在压住不安。
+镜头：从并肩跟拍切到稳定过肩，轻微推近蕾。
+光线：蕾半边脸在路灯下，半边落入阴影；远处霓虹轻闪。
+对白/声音：rei:"……甲さん、ひとつ、お願いがあります"（画面内） / kou:"なんだ……？"（画外/背对也可） / rei:"私に何かあったら、この清城市を脱出し、事件から身を引いてください"（画面内）
+避免：不要跳轴，不要让蕾显得愤怒或命令式。
+
+全局避免：不要身份漂移，不要跳轴，不要交换左右位置，不要画字幕、文字、水印或镜头编号。对白文本必须逐字保留原游戏语音文本，不得改写。" --poll=420 --image E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_10_v001\task_project\assets\misc\甲_现代篇_制服_有外套.png --image E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_10_v001\task_project\assets\misc\蕾_现代篇_制服_有外套.png --image E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_10_v001\task_project\assets\misc\现代篇_贫民窟_街道_夜晚.png --duration=15 --ratio=16:9 --model_version=seedance2.0fast_vip --video_resolution=720p

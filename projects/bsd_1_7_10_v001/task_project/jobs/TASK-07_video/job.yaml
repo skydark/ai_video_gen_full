@@ -1,0 +1,62 @@
+id: TASK-07_video
+kind: video
+title: 只是恩与仰慕吗 - 视频任务
+provider: dreamina_video
+prompt: '生成一段 16:9 动画视频。使用随任务提供的两张角色参考图和一张夜街参考图锁定外观与场景；文字只描述构图、动作、表情、视线、运镜和空间关系。画面不要字幕。
+
+
+  全局空间：甲偏画面左侧，蕾偏画面右侧；正反打保持同一视线轴。
+
+
+  雨前氛围：潮湿反光、低云、远处短暂雷光；不要下大雨。
+
+
+  时间码动作：
+
+
+  [0.0-11.0s] 只是恩与仰慕吗
+
+  景别/位置：蕾近景到双人静止，蕾回避视线后沉默
+
+  动作/表情：蕾近景。她移开视线，试图把感情说成恩情和仰慕，却在最后停住；甲追问时画面仍留在蕾沉默的脸上。
+
+  镜头：极慢推近蕾眼睛，甲画外追问时不切走。
+
+  光线：路灯断续掠过蕾的脸。
+
+  对白/声音：rei:"中尉に恩を感じておりますし、慕ってもいました。……けれど、それは、ただ……"（画面内） / kou:"ただ……なんだって言うんだよ？まさかまた、部下だからとか任務だからとか、そんなことを言うんじゃないだろうな？"（画外/背对也可）
+
+  避免：不要让蕾突然微笑，不要拥抱或牵手。
+
+
+  全局避免：不要身份漂移，不要跳轴，不要交换左右位置，不要画字幕、文字、水印或镜头编号。对白文本必须逐字保留原游戏语音文本，不得改写。'
+params:
+  duration_limit: 12
+  aspect_ratio: '16:9'
+  model_version: seedance2.0fast_vip
+  generate_audio: false
+  real_person_mode: false
+  seed: -1
+source:
+  shot_plan: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_10_v001\shot_plan.json
+  task_id: TASK-07
+  shots:
+  - S008
+  estimated_duration: 11.0
+refs:
+- asset_id: asset_kou
+  role: character_reference
+  path: assets/misc/甲_现代篇_制服_有外套.png
+- asset_id: asset_rei
+  role: character_reference
+  path: assets/misc/蕾_现代篇_制服_有外套.png
+- asset_id: asset_street
+  role: scene_reference
+  path: assets/misc/现代篇_贫民窟_街道_夜晚.png
+outputs: []
+status: succeeded
+updated_at: '2026-06-01T00:19:54+08:00'
+runs:
+- run_20260531_235956
+- run_20260601_001515
+latest_run: run_20260601_001515

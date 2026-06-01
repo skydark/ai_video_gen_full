@@ -1,0 +1,87 @@
+schema_version: 1
+project:
+  id: bsd_1_7_6_v001
+  title: BSD 1-7-6 蕾的料理惨剧与婚姻观
+  created_at: '2026-05-31T00:00:00+08:00'
+  source:
+    script: bsd_anime_script/bsd_1_7_6.md
+    shot_plan_dir: ..
+settings:
+  default_provider: dryrun
+  live_requires_confirm: true
+  max_concurrent_jobs: 1
+  approved_naming: '{job_id}_{kind}_take_{take:03d}{ext}'
+assets:
+- id: asset_kou
+  type: character
+  label: 门仓甲参考图（制服有外套）
+  files:
+  - path: assets/chars/甲_现代篇_制服_有外套.png
+    role: reference
+  - path: assets/chars/甲_现代篇_制服_有外套.yaml
+    role: metadata
+- id: asset_rei
+  type: character
+  label: 桐岛蕾参考图（制服无外套）
+  files:
+  - path: assets/chars/蕾_现代篇_制服_无外套.png
+    role: reference
+  - path: assets/chars/蕾_现代篇_制服_无外套.yaml
+    role: metadata
+- id: asset_scene
+  type: scene
+  label: 如月寮后院午后参考图
+  files:
+  - path: assets/scenes/如月寮_后院_白天.png
+    role: reference
+  - path: assets/scenes/如月寮_后院_白天.yaml
+    role: metadata
+- id: asset_nanoha
+  type: character
+  label: 若草菜叶参考图（画外音角色）
+  files:
+  - path: assets/chars/菜叶_现代篇_常服_有外套.png
+    role: reference
+  - path: assets/chars/菜叶_现代篇_常服_有外套.yaml
+    role: metadata
+jobs:
+- id: TASK-01_storyboard_grid
+  kind: image
+  title: TASK-01 花园定场+厨房骚动 - 多宫格分镜
+  provider: dryrun
+  status: ready
+- id: TASK-02_storyboard_grid
+  kind: image
+  title: TASK-02 战斗刀+蕾入场+双人对话 - 多宫格分镜
+  provider: dryrun
+  status: ready
+- id: TASK-03_storyboard_grid
+  kind: image
+  title: TASK-03 正反打情感递进 - 多宫格分镜
+  provider: dryrun
+  status: ready
+- id: TASK-04_storyboard_grid
+  kind: image
+  title: TASK-04 闹别扭特写+收尾 - 多宫格分镜
+  provider: dryrun
+  status: ready
+- id: TASK-01_video
+  kind: video
+  title: TASK-01 花园定场+厨房骚动 - 视频
+  provider: dryrun
+  status: ready
+- id: TASK-02_video
+  kind: video
+  title: TASK-02 战斗刀+蕾入场+双人对话 - 视频
+  provider: dryrun
+  status: ready
+- id: TASK-03_video
+  kind: video
+  title: TASK-03 正反打情感递进 - 视频
+  provider: dryrun
+  status: ready
+- id: TASK-04_video
+  kind: video
+  title: TASK-04 闹别扭特写+收尾 - 视频
+  provider: dryrun
+  status: ready
