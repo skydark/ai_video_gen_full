@@ -8,6 +8,11 @@
 
 看不懂镜头或构图不确定时，优先生成 GPT-image 多宫格分镜图，再在 WebUI 中审阅和迭代。
 
+## Screenshots
+
+[Screenshot1](./screenshot1.png)
+[Screenshot2](./screenshot2.png)
+
 ## 快速启动 WebUI
 
 后端会直接托管已构建前端：
