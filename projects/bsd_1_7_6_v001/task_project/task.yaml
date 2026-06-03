@@ -88,6 +88,18 @@ assets:
     source_run_id: run_20260531_161437
     source_output: candidate_01.png
     promoted_at: '2026-05-31T16:34:34+08:00'
+- id: asset_如月寮_厨房_白天
+  type: scene
+  label: 如月寮厨房
+  files:
+  - path: assets/scenes/如月寮_厨房_白天.png
+    role: reference
+- id: asset_菜叶_现代篇_常服_无外套
+  type: misc
+  label: 若草菜叶
+  files:
+  - path: assets/misc/菜叶_现代篇_常服_无外套.png
+    role: reference
 jobs:
 - id: TASK-01_storyboard_grid
   kind: image
@@ -129,3 +141,8 @@ jobs:
   title: TASK-04 闹别扭特写+收尾 - 视频
   provider: dryrun
   status: ready
+- id: video_001
+  kind: video
+  title: 新视频任务
+  provider: dryrun
+  status: draft

@@ -155,11 +155,16 @@ def main():
 
     for image_path, is_char in tasks:
         try:
+            # 输出到图片同目录的 yaml 文件
+            yaml_path = Path(image_path).with_suffix(".yaml")
+            # 如果已存在且不覆盖，则跳过
+            if yaml_path.exists():
+                print(f"  已存在，跳过: {yaml_path.name}\n")
+                continue
+
             raw = analyze_image(image_path, is_char)
             parsed = parse_analysis(raw)
 
-            # 输出到图片同目录的 yaml 文件
-            yaml_path = Path(image_path).with_suffix(".yaml")
             asset_type = "character" if is_char else "scene"
             name = parsed.get("name_guess", Path(image_path).stem)
 

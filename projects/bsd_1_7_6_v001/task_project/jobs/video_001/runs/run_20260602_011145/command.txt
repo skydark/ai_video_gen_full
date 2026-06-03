@@ -1,0 +1,2 @@
+C:\Users\skydark\bin\dreamina.exe multimodal2video --prompt=图2中的女孩在图1的厨房中做菜。缓慢平移特写厨房灶边热腾腾的韭菜炒肉。侧面中近景静止镜头，女孩向左侧(窗外)大喊，然后端起盘子开心地向右侧(门边)走去。
+无字幕，无音乐，无语音，有音效。 --poll=420 --image E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_6_v001\task_project\assets\scenes\如月寮_厨房_白天.png --image E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_6_v001\task_project\assets\misc\菜叶_现代篇_常服_无外套.png --duration=8 --ratio=16:9 --model_version=seedance2.0fast_vip --video_resolution=720p

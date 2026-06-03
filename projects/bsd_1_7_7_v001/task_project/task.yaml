@@ -92,6 +92,12 @@ assets:
     source_run_id: run_20260531_202836
     source_output: candidate_01.png
     promoted_at: '2026-05-31T21:05:25+08:00'
+- id: asset_38d5a5b2-f54b-4973-b188-ff5ec8a89383_video_1_mp4___14_8s
+  type: keyframe
+  label: 38d5a5b2-f54b-4973-b188-ff5ec8a89383_video_1.mp4 @ 14.8s
+  files:
+  - path: assets/generated/keyframe/38d5a5b2-f54b-4973-b188-ff5ec8a89383_video_1_mp4___14_8s.png
+    role: reference
 jobs:
 - id: TASK-01_image_grid
   kind: image
@@ -143,3 +149,8 @@ jobs:
   title: 蕾的伏笔与返回 - 视频片段
   provider: dryrun
   status: ready
+- id: video_001
+  kind: video
+  title: 新视频任务
+  provider: dryrun
+  status: draft

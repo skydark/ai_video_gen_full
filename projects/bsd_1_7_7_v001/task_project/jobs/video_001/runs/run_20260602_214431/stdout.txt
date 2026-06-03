@@ -1,0 +1,15 @@
+{
+  "submit_id": "0e060b5b-c8e5-494d-8178-f51ae68956b0",
+  "prompt": "【风格】按项目统一动画/漫剧风格；保持参考图一致性。\n\n【参考图锚点】\n- @门仓甲设定图：一名年轻男性角色。\n- @若草菜ノ叶设定图：一位年轻动漫少女。\n- @场景参考图：场景、光线、天气、空间结构。\n- @前一个镜头尾帧：上一个镜头的尾帧，作为构图、机位、运动方向参考。\n\n【时间码动作】\n[00:00-00:05] 菜ノ叶半步上前近景\n画面与动作：菜ノ叶上前半步，抬头直视画面左侧的甲，神情认真。镜头在甲背后越肩视角，聚焦菜ノ叶方向。\n镜头运动：近景微推，菜ノ叶上前时镜头轻微后退保持构图。\n对白/声音：菜叶：\"甲，听好……请好好珍惜蕾小姐。\"\n\n[00:05-00:10] 菜ノ叶近景到甲近景\n画面与动作：菜ノ叶近景，她轻轻点头，回忆蕾拜托她的事情，但画面不插入蕾回忆。切到甲近景，他眼神震动、嘴微张，难以置信。甲在左侧视线朝画面右侧，菜ノ叶在右侧视线朝画面左侧。 \n镜头运动：正反打剪辑，镜头稳定。\n对白/声音：菜叶：\"‘万一有什么事，甲就拜托你了’……她这么拜托我的……\"\n\n[00:10-00:15] 甲近景震惊\n画面与动作：低视角近景仰视甲震惊表情。 \n镜头运动：镜头微推靠近\n对白/声音：甲：\"蕾，说了那种话……？\"\n\n【避免】\n- 不要身份漂移，不要改变角色配色、服装、武器或轮廓。\n- 不要跳轴，不要互换左右位置，不要反转视线方向。\n- 不要把镜头编号、分镜编号或文字标签画进画面。\n- 无字幕，无音乐",
+  "logid": "20260602214432010000000013094EC60",
+  "gen_status": "fail",
+  "fail_reason": "generation failed: final generation failed",
+  "credit_count": 210,
+  "queue_info": {
+    "queue_idx": 0,
+    "priority": 1,
+    "queue_status": "Finish",
+    "queue_length": 0,
+    "debug_info": "{\"have_no_dreamina_queue_name\":false,\"dreamina_matrix_queue_name\":\"dreamina_fusion_video40_pro_vision\",\"dreamina_matrix_req_key\":\"DreaminaFusion:Video40_Pro_Vision_unified_edit_720p\",\"dreamina_matrix_second_req_key\":\"\",\"have_no_queue_name\":true,\"queue_name\":\"\",\"matrix_req_key\":\"\",\"matrix_second_req_key\":\"\"}"
+  }
+}

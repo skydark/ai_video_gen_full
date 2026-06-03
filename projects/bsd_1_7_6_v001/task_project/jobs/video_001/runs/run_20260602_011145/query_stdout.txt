@@ -1,0 +1,26 @@
+{
+  "submit_id": "d583ecd2-e2b0-4562-a7c2-724c0637a0bd",
+  "prompt": "图2中的女孩在图1的厨房中做菜。缓慢平移特写厨房灶边热腾腾的韭菜炒肉。侧面中近景静止镜头，女孩向左侧(窗外)大喊，然后端起盘子开心地向右侧(门边)走去。\n无字幕，无音乐，无语音，有音效。",
+  "gen_status": "success",
+  "result_json": {
+    "images": [],
+    "videos": [
+      {
+        "path": "E:\\VideoProjects\\BSDAnime\\ai_video_gen_full\\projects\\bsd_1_7_6_v001\\task_project\\jobs\\video_001\\runs\\run_20260602_011145\\outputs\\d583ecd2-e2b0-4562-a7c2-724c0637a0bd_video_1.mp4",
+        "fps": 24,
+        "width": 1280,
+        "height": 720,
+        "format": "mp4",
+        "duration": 8.042
+      }
+    ]
+  },
+  "credit_count": 88,
+  "queue_info": {
+    "queue_idx": 0,
+    "priority": 1,
+    "queue_status": "Finish",
+    "queue_length": 0,
+    "debug_info": "{\"have_no_dreamina_queue_name\":false,\"dreamina_matrix_queue_name\":\"dreamina_fusion_video40_vision\",\"dreamina_matrix_req_key\":\"DreaminaFusion:Video40_Vision_unified_edit_720p\",\"dreamina_matrix_second_req_key\":\"\",\"have_no_queue_name\":true,\"queue_name\":\"\",\"matrix_req_key\":\"\",\"matrix_second_req_key\":\"\"}"
+  }
+}

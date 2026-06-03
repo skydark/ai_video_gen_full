@@ -1,21 +1,22 @@
-import { Archive, Download, FolderOpen, Info, Link, Star, Trash2 } from 'lucide-react';
+import { Archive, Download, FolderOpen, Info, Link, RefreshCw, Star, Trash2 } from 'lucide-react';
 import { useState } from 'react';
 import { fileUrl } from '../lib/api';
 import type { Job, Output, Run } from '../lib/types';
 
-export function RunCard({ job, run, onPreview, onApprove, onPromote, onApproveBind, onPromoteAsset, onOpenDir, onDelete, onRetryDownload }: {
-  job: Job; run: Run; onPreview: (item: any) => void; onApprove: (job: Job, run: Run, output: Output) => void; onPromote: (payload: any) => void; onApproveBind?: (payload: any) => void; onPromoteAsset?: (payload: any) => void; onOpenDir: (path?: string) => void; onDelete: (run: Run) => void; onRetryDownload?: (run: Run) => void;
+export function RunCard({ job, run, onPreview, onApprove, onPromote, onApproveBind, onPromoteAsset, onOpenDir, onDelete, onRetryDownload, onRefreshStatus }: {
+  job: Job; run: Run; onPreview: (item: any) => void; onApprove: (job: Job, run: Run, output: Output) => void; onPromote: (payload: any) => void; onApproveBind?: (payload: any) => void; onPromoteAsset?: (payload: any) => void; onOpenDir: (path?: string) => void; onDelete: (run: Run) => void; onRetryDownload?: (run: Run) => void; onRefreshStatus?: (run: Run) => void;
 }) {
   const [detailsOpen, setDetailsOpen] = useState(false);
   const outputs = run.outputs || [];
   const primary = outputs.find(o => o.is_video) || outputs.find(o => o.is_image) || outputs[0];
   const status = String(run.status || 'unknown').toLowerCase();
   const failed = ['failed', 'failure', 'error'].includes(status);
+  const canRefreshStatus = !['success', 'succeeded'].includes(status);
   const successWithoutOutput = !primary && ['success', 'succeeded'].includes(status);
   const approved = !!(primary as any)?.approved;
   const promotePayload = primary ? { job_id: job.id, run_id: run.id, output_name: primary.name, asset_type: job.kind === 'image' ? 'storyboard' : 'keyframe', usage: job.kind === 'image' ? 'composition' : 'keyframe', label: primary.name, target_job_ids: [] } : null;
   return <div className={`runCard compactRun ${status} ${approved ? 'approvedRun' : ''}`}>
-    <div className="runHead compact"><div className="runTitle"><b title={run.id}>{run.id}</b><span className={`badge ${status}`}>{status}</span>{approved && <span className="badge approved">APPROVED</span>}</div><div className="iconActions"><button title="Run details" onClick={() => setDetailsOpen(true)}><Info size={15}/></button><button title="Open run directory" onClick={() => onOpenDir(run.dir)}><FolderOpen size={15}/></button><button title="Delete run record" onClick={() => onDelete(run)}><Trash2 size={15}/></button></div></div>
+    <div className="runHead compact"><div className="runTitle"><b title={run.id}>{run.id}</b><span className={`badge ${status}`}>{status}</span>{approved && <span className="badge approved">APPROVED</span>}</div><div className="iconActions">{canRefreshStatus && <button title="Force refresh task status" onClick={() => onRefreshStatus?.(run)}><RefreshCw size={15}/></button>}<button title="Run details" onClick={() => setDetailsOpen(true)}><Info size={15}/></button><button title="Open run directory" onClick={() => onOpenDir(run.dir)}><FolderOpen size={15}/></button><button title="Delete run record" onClick={() => onDelete(run)}><Trash2 size={15}/></button></div></div>
     {primary ? <button className="runHero" onClick={() => onPreview({ name: primary.name, path: primary.path, is_image: primary.is_image, is_video: primary.is_video })}>{primary.is_video ? <video src={fileUrl(primary.path)} muted preload="metadata" /> : primary.is_image ? <img src={fileUrl(primary.path)} /> : <span>FILE</span>}{primary.is_video && <em>▶</em>}</button> : successWithoutOutput ? <div className="missingOutput"><b>No downloaded output</b><span>Provider reported success, but no file exists locally.</span><button onClick={() => onRetryDownload?.(run)}><Download size={15}/> Retry download</button></div> : failed ? null : <div className="runHero emptyHero">Processing…</div>}
     {run.fail_reason && <p className="errorText compactText">{run.fail_reason}</p>}
     <div className="runStatusLine"><span>{run.provider || job.provider}</span><span>{run.created_at || '-'}</span><span>credits: {run.credit_count ?? (run.cost as any)?.actual ?? '-'}</span></div>

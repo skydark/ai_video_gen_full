@@ -1,0 +1,50 @@
+schema_version: 1
+job_id: TASK-04_video
+kind: video
+provider: dreamina_video
+prompt: "【风格】按项目统一动画/漫剧风格；保持参考图一致性。\n\n【时长】约 13.5 秒。\n\n【参考图锚点】\n- @门仓甲设定图：一名年轻男性角色，表情温柔。\n\
+  - @若草菜ノ叶设定图：一位年轻动漫少女，表情忧郁。\n- @场景参考图：场景、光线、天气、空间结构。\n- @构图参考图：黑白或低饱和线框分镜图，只作为构图、机位、blocking、运动方向参考，不作为画风参考。\n\
+  \n【时间码动作】\n[00:00-00:05] 甲近景慢推\n画面与动作：甲近景。他先是面朝画面左侧，然后转过头面向右侧，缓缓但坚定地摇头，抬眼看向画面右侧的菜ノ叶。语气平静，但眼神已经下定决心。\n\
+  镜头运动：轻微推近，强调决心。\n对白/声音：0.3-1.5s kou：\"逃げてても、記憶は戻ってきちゃうと思うんだ\"（画面内角色对口型）\n\n[00:05-00:10]\
+  \ 甲近景到侧面中近景\n画面与动作：甲继续说话。镜头从甲正面近景轻轻移到侧面中近景，露出他身后的空操场和护栏。说到最后一句时，他握紧拳头又放松，目光没有躲开菜ノ叶。\
+  \ \n镜头运动：轻微侧移和慢推，保持平稳。\n对白/声音：0.3-3s kou：\"それに俺自身、やっぱり、どうしても思い出したいんだ。たとえ辛くても、俺は知らなきゃならないんだよ\"\
+  （画面内角色对口型）\n\n[00:10-00:14] 菜ノ叶近景\n画面与动作：菜ノ叶怔怔看着画面左侧的甲，像被甲的话触动。短暂停顿后，她露出很轻、带着悲伤理解的微笑。\
+  \ \n镜头运动：镜头静止，允许表情细微变化。\n对白/声音：0.3-2.5s nanoha：\"そうだよね……大切なことを忘れたままでいるなんて、誰だって耐えられないよね……？\"\
+  （画面内角色对口型）\n\n【避免】\n- 不要身份漂移，不要改变角色配色、服装、武器或轮廓。\n- 不要跳轴，不要互换左右位置，不要反转视线方向。\n- 不要把镜头编号、分镜编号或文字标签画进画面。\n\
+  - 不要让爆炸、烟尘或背景特效抢走主体。\n- 无字幕，无音乐\n"
+negative_prompt: ''
+params:
+  duration_limit: 15
+  aspect_ratio: '16:9'
+  model_version: seedance2.0_vip
+  generate_audio: false
+  real_person_mode: false
+  seed: -1
+refs:
+- asset_id: asset_kou
+  source_path: assets/misc/甲_现代篇_制服_有外套.png
+  usage: identity
+  label: 门仓甲参考图
+  sha256: 1aca0cbd718e17bc5ef9039d89f744491e75fd29395f8c82f17165a8763414a8
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\misc\甲_现代篇_制服_有外套.png
+- asset_id: asset_nanoha
+  source_path: assets/misc/菜叶_现代篇_常服_有外套.png
+  usage: identity
+  label: 若草菜ノ叶参考图
+  sha256: 1f89757816a0cd25edae5ade22fa7e0472d4c41e0f0490f1656f4b9c828f9c09
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\misc\菜叶_现代篇_常服_有外套.png
+- asset_id: asset_scene
+  source_path: assets/misc/校园_校园道_白天.png
+  usage: scene
+  label: 校园校园道白天场景参考图
+  sha256: 4f74db8d0a120315c7a3573afa97ecf83043c2c67ca13c49e202331b690e2438
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\misc\校园_校园道_白天.png
+- asset_id: asset_storyboard_TASK-04_image_grid_run_20260531_202829_candidate_01_png
+  source_path: assets/generated/storyboard/TASK-04_image_grid_run_20260531_202829_candidate_01_png.png
+  usage: composition
+  label: candidate_01.png
+  sha256: e9963d9aa2cb5da843dcc1130ab7cb687b4ce4b3a59a6a831329b9e4db88ba82
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\generated\storyboard\TASK-04_image_grid_run_20260531_202829_candidate_01_png.png
+run_id: run_20260602_210808
+created_at: '2026-06-02T21:15:54+08:00'
+status: FAILED

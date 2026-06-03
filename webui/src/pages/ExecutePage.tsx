@@ -84,6 +84,18 @@ export function ExecutePage({ project, setProject, selectedJobId, setSelectedJob
       setBusy(false);
     }
   }
+  async function refreshRunStatus(run: Run) {
+    if (!selected) return;
+    setBusy(true);
+    try {
+      const data = await call('/api/run/refresh-status', { root: project.root, job_id: selected.id, run_id: run.id });
+      setProject(data.project); setMessage(`Run status refreshed: ${data.result?.run?.status || 'unknown'}`);
+    } catch (e: any) {
+      setMessage(`Refresh status failed: ${e.message}`);
+    } finally {
+      setBusy(false);
+    }
+  }
   async function openDir(path?: string) { if (path) await call('/api/open-dir', { path }); }
   async function openCurrentJobApproved() {
     if (!selected || !project?.root) return;
@@ -96,7 +108,7 @@ export function ExecutePage({ project, setProject, selectedJobId, setSelectedJob
     <section className="panel editorPanel">{selected ? <><div className="panelHead"><b>Edit Job</b><div className="iconActions"><button title="Move up" onClick={() => moveJob('up')}><ArrowUp size={15}/></button><button title="Move down" onClick={() => moveJob('down')}><ArrowDown size={15}/></button><button title="Save" onClick={() => saveJob()}><Save size={15}/></button><button title="Run selected provider" className="primary" onClick={runJob} disabled={busy}><Play size={15}/>{selected.provider === 'dryrun' ? 'Dryrun' : 'Run'}</button><button title="Delete job" onClick={deleteJob}><Trash2 size={15}/></button></div></div>
       <JobEditorCore job={selected} assets={project.assets || []} patch={patch} onPreview={setPreview} />
     </> : <p className="muted pad">No job selected.</p>}</section>
-    <aside className="panel runsPanel"><div className="panelHead"><b>Runs</b><div className="iconActions"><button title="Open current job runs/approved folders" onClick={openCurrentJobApproved}><FolderOpen size={15}/></button><button title="Refresh project" onClick={() => call('/api/project/load', { root: project.root }).then((d: any) => setProject(d))}><RefreshCw size={15}/></button></div></div><div className="runList">{selected?.runs?.length ? [...selected.runs].reverse().map(run => <RunCard key={run.id} job={selected} run={run} onPreview={setPreview} onApprove={approveOutput} onPromote={setPromote} onApproveBind={(payload: any) => promoteOutput?.({ ...payload, bind_mode: 'matching_video', approve: true })} onPromoteAsset={(payload: any) => promoteOutput?.({ ...payload, bind_mode: 'none', approve: false })} onOpenDir={openDir} onDelete={deleteRun} onRetryDownload={retryDownload} />) : <p className="muted pad">No runs.</p>}</div></aside>
+    <aside className="panel runsPanel"><div className="panelHead"><b>Runs</b><div className="iconActions"><button title="Open current job runs/approved folders" onClick={openCurrentJobApproved}><FolderOpen size={15}/></button><button title="Refresh project" onClick={() => call('/api/project/load', { root: project.root }).then((d: any) => setProject(d))}><RefreshCw size={15}/></button></div></div><div className="runList">{selected?.runs?.length ? [...selected.runs].reverse().map(run => <RunCard key={run.id} job={selected} run={run} onPreview={setPreview} onApprove={approveOutput} onPromote={setPromote} onApproveBind={(payload: any) => promoteOutput?.({ ...payload, bind_mode: 'matching_video', approve: true })} onPromoteAsset={(payload: any) => promoteOutput?.({ ...payload, bind_mode: 'none', approve: false })} onOpenDir={openDir} onDelete={deleteRun} onRetryDownload={retryDownload} onRefreshStatus={refreshRunStatus} />) : <p className="muted pad">No runs.</p>}</div></aside>
   </div>;
 }
 

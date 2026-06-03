@@ -202,6 +202,62 @@ def retry_download_outputs(root: Path, job_id: str, run_id: str) -> dict[str, An
     return {"downloaded": [str(path) for path in downloaded], "run": list_runs(job_dir)[-1]}
 
 
+def refresh_run_status(root: Path, job_id: str, run_id: str) -> dict[str, Any]:
+    job_dir = root / "jobs" / job_id
+    run_dir = job_dir / "runs" / run_id
+    out_dir = run_dir / "outputs"
+    out_dir.mkdir(parents=True, exist_ok=True)
+    job = read_yaml(job_dir / "job.yaml")
+    request_data = read_yaml(run_dir / "request.yaml")
+    provider = str(request_data.get("provider") or job.get("provider") or "")
+    response_path = run_dir / "response.json"
+    response = json.loads(response_path.read_text(encoding="utf-8")) if response_path.exists() else {}
+    payload_path = run_dir / "payload.json"
+    payload = json.loads(payload_path.read_text(encoding="utf-8")) if payload_path.exists() else {}
+
+    if provider.startswith("runninghub"):
+        task_id = extract_runninghub_task_id(response) or extract_runninghub_task_id(payload)
+        if not task_id:
+            raise RuntimeError("RunningHub taskId not found in run response or payload.")
+        query_response = post_json("/openapi/v2/query", {"taskId": task_id}, load_api_key(root))
+        submit_response = response.get("submit_response") or {}
+        status = str(query_response.get("status") or (query_response.get("data") or {}).get("status") or response.get("status") or "SUBMITTED")
+        response.update({"status": status, "submit_response": submit_response, "query_response": query_response, "refreshed_at": now_iso()})
+        if status.upper() in {"SUCCESS", "SUCCEEDED"}:
+            downloaded = download_runninghub_results(out_dir, query_response)
+            if downloaded:
+                response["outputs"] = [str(path) for path in downloaded]
+    elif provider.startswith("dreamina"):
+        submit_id = response.get("submit_id") or extract_submit_id(json.dumps(response, ensure_ascii=False)) or extract_submit_id(json.dumps(payload, ensure_ascii=False))
+        if not submit_id:
+            raise RuntimeError("Dreamina submit_id not found in run response or payload.")
+        command = [dreamina_bin(), "query_result", f"--submit_id={submit_id}", f"--download_dir={out_dir}"]
+        proc = subprocess.run(command, text=True, capture_output=True, timeout=600, encoding="utf-8", errors="replace")
+        (run_dir / "refresh_query_stdout.txt").write_text(proc.stdout or "", encoding="utf-8")
+        (run_dir / "refresh_query_stderr.txt").write_text(proc.stderr or "", encoding="utf-8")
+        parsed = _parse_dreamina_output(proc.stdout or "")
+        if parsed:
+            response["fail_reason"] = parsed.get("fail_reason") or response.get("fail_reason")
+            response["credit_count"] = parsed.get("credit_count") or response.get("credit_count")
+            gen_status = parsed.get("gen_status", "")
+            if gen_status == "success":
+                response["status"] = "SUCCESS"
+            elif gen_status in ("fail", "failed", "failure", "error"):
+                response["status"] = "FAILED"
+        elif proc.returncode != 0:
+            raise RuntimeError((proc.stderr or proc.stdout or f"query_result failed: {proc.returncode}").strip())
+        response["submit_id"] = submit_id
+        response["refreshed_at"] = now_iso()
+        payload["refresh_status_command"] = command
+        write_json(payload_path, payload)
+    else:
+        raise RuntimeError(f"Refresh status is not supported for provider: {provider}")
+
+    write_json(response_path, response)
+    sync_job_status(job_dir, run_id, response.get("status"))
+    return {"run": list_runs(job_dir)[-1]}
+
+
 def _run_dreamina_image_bg(root, job, run_dir, out_dir, timeout, interval):
     return _run_dreamina_bg(root, job, run_dir, out_dir, timeout, interval, _build_dreamina_image_cmd(root, job), "dreamina_credits")
 
@@ -336,6 +392,32 @@ def extract_submit_id(text: str) -> str | None:
         if match:
             return match.group(1)
     return None
+
+
+def extract_runninghub_task_id(data: Any) -> str | None:
+    if not isinstance(data, dict):
+        return None
+    for key in ("taskId", "task_id"):
+        if data.get(key):
+            return str(data[key])
+    for key in ("data", "submit_response", "query_response"):
+        task_id = extract_runninghub_task_id(data.get(key))
+        if task_id:
+            return task_id
+    return None
+
+
+def sync_job_status(job_dir: Path, run_id: str, status: Any) -> None:
+    job_path = job_dir / "job.yaml"
+    job = read_yaml(job_path)
+    normalized = str(status or "").upper()
+    job["status"] = "succeeded" if normalized in {"SUCCESS", "SUCCEEDED"} else ("failed" if normalized in {"FAILED", "FAILURE", "ERROR"} else str(status or "submitted").lower())
+    runs = job.setdefault("runs", [])
+    if run_id not in runs:
+        runs.append(run_id)
+    job["latest_run"] = run_id
+    job["updated_at"] = now_iso()
+    write_yaml(job_path, job)
 
 
 def existing_ref_paths(root: Path, job: dict[str, Any]) -> list[Path]:

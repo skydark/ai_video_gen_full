@@ -12,7 +12,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from .project_io import add_asset, approve_output, create_job, create_project, delete_asset, delete_job, delete_run_record, export_deliverables, export_iteration_brief, generate_video_thumbnail, load_project, move_job_in_task, open_directory, promote_output_to_asset, read_asset_yaml, save_asset_yaml, save_job, save_review, scan_deliverables, scan_public_assets, unique_path, capture_video_snapshot
-from .providers import retry_download_outputs, run_job
+from .providers import refresh_run_status, retry_download_outputs, run_job
 
 
 APP_DIR = Path(__file__).resolve().parents[1]
@@ -282,6 +282,18 @@ def api_retry_download(req: DeleteRunRequest) -> dict[str, Any]:
     root = Path(req.root).resolve()
     try:
         result = retry_download_outputs(root, req.job_id, req.run_id)
+    except FileNotFoundError as exc:
+        raise HTTPException(status_code=404, detail=str(exc)) from exc
+    except RuntimeError as exc:
+        raise HTTPException(status_code=400, detail=str(exc)) from exc
+    return {"result": result, "project": load_project(root)}
+
+
+@app.post("/api/run/refresh-status")
+def api_refresh_run_status(req: DeleteRunRequest) -> dict[str, Any]:
+    root = Path(req.root).resolve()
+    try:
+        result = refresh_run_status(root, req.job_id, req.run_id)
     except FileNotFoundError as exc:
         raise HTTPException(status_code=404, detail=str(exc)) from exc
     except RuntimeError as exc:

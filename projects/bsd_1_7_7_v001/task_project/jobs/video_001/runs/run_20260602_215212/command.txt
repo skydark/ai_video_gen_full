@@ -1,0 +1,30 @@
+C:\Users\skydark\bin\dreamina.exe multimodal2video "--prompt=【风格】按项目统一动画/漫剧风格；保持参考图一致性。
+
+【参考图锚点】
+- @门仓甲设定图：一名年轻男性角色。
+- @若草菜ノ叶设定图：一位年轻动漫少女。
+- @场景参考图：场景、光线、天气、空间结构。
+- @前一个镜头尾帧：上一个镜头的尾帧，作为构图、机位、运动方向参考。
+
+【时间码动作】
+[00:00-00:05] 菜ノ叶半步上前近景
+画面与动作：菜ノ叶上前半步，抬头直视画面左侧的甲，神情认真。镜头在甲背后越肩视角，聚焦菜ノ叶方向。
+镜头运动：近景微推，菜ノ叶上前时镜头轻微后退保持构图。
+对白/声音：菜叶："甲，听好……请好好珍惜蕾小姐。"
+
+[00:05-00:10] 菜ノ叶近景到甲近景
+画面与动作：菜ノ叶近景，她轻轻点头，回忆蕾拜托她的事情，但画面不插入蕾回忆。切到甲近景，他眼神震动、嘴微张，难以置信。甲在左侧视线朝画面右侧，菜ノ叶在右侧视线朝画面左侧。 
+镜头运动：正反打剪辑，镜头稳定。
+对白/声音：菜叶："‘万一有什么事，甲就拜托你了’……她这么拜托我的……"
+
+[00:10-00:15] 甲近景震惊
+画面与动作：低视角近景仰视甲震惊表情。 
+镜头运动：镜头微推靠近
+对白/声音：甲："蕾，说了那种话……？"
+
+【避免】
+- 不要身份漂移，不要改变角色配色、服装、武器或轮廓。
+- 不要跳轴，不要互换左右位置，不要反转视线方向。
+- 不要把镜头编号、分镜编号或文字标签画进画面。
+- 无字幕，无音乐
+" --poll=420 --image E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\misc\甲_现代篇_制服_有外套.png --image E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\misc\菜叶_现代篇_常服_有外套.png --image E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\misc\校园_校园道_白天.png --image E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_7_v001\task_project\assets\generated\keyframe\38d5a5b2-f54b-4973-b188-ff5ec8a89383_video_1_mp4___14_8s.png --duration=15 --ratio=16:9 --model_version=seedance2.0_vip --video_resolution=720p

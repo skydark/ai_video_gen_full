@@ -1,0 +1,31 @@
+schema_version: 1
+id: video_001
+kind: video
+title: 菜叶备菜
+provider: dreamina_video
+status: succeeded
+version: 1
+refs:
+- asset_id: asset_如月寮_厨房_白天
+  source_path: assets/scenes/如月寮_厨房_白天.png
+  usage: scene
+  label: 如月寮厨房
+- asset_id: asset_菜叶_现代篇_常服_无外套
+  source_path: assets/misc/菜叶_现代篇_常服_无外套.png
+  usage: identity
+  label: 若草菜叶
+prompt: '图2中的女孩在图1的厨房中做菜。缓慢平移特写厨房灶边热腾腾的韭菜炒肉。侧面中近景静止镜头，女孩向左侧(窗外)大喊，然后端起盘子开心地向右侧(门边)走去。
+
+  无字幕，无音乐，无语音，有音效。'
+params:
+  duration_limit: 8
+  aspect_ratio: '16:9'
+  model_version: seedance2.0fast_vip
+  generate_audio: false
+  real_person_mode: false
+  seed: -1
+runs:
+- run_20260602_011145
+created_at: '2026-06-02T00:40:15+08:00'
+updated_at: '2026-06-02T01:14:39+08:00'
+latest_run: run_20260602_011145

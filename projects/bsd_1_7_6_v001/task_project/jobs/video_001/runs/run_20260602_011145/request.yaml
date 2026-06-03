@@ -1,0 +1,31 @@
+schema_version: 1
+job_id: video_001
+kind: video
+provider: dreamina_video
+prompt: '图2中的女孩在图1的厨房中做菜。缓慢平移特写厨房灶边热腾腾的韭菜炒肉。侧面中近景静止镜头，女孩向左侧(窗外)大喊，然后端起盘子开心地向右侧(门边)走去。
+
+  无字幕，无音乐，无语音，有音效。'
+negative_prompt: ''
+params:
+  duration_limit: 8
+  aspect_ratio: '16:9'
+  model_version: seedance2.0fast_vip
+  generate_audio: false
+  real_person_mode: false
+  seed: -1
+refs:
+- asset_id: asset_如月寮_厨房_白天
+  source_path: assets/scenes/如月寮_厨房_白天.png
+  usage: scene
+  label: 如月寮厨房
+  sha256: 5b89d9185a22c85bd9ffcb46c9c7cca31591d83b0b2be18502f088bd87aa669f
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_6_v001\task_project\assets\scenes\如月寮_厨房_白天.png
+- asset_id: asset_菜叶_现代篇_常服_无外套
+  source_path: assets/misc/菜叶_现代篇_常服_无外套.png
+  usage: identity
+  label: 若草菜叶
+  sha256: 6bbd7f919c33a5cef742c7924b1cbf7b24632b457b4cf9cf1f83129e5dd226b9
+  abs_path: E:\VideoProjects\BSDAnime\ai_video_gen_full\projects\bsd_1_7_6_v001\task_project\assets\misc\菜叶_现代篇_常服_无外套.png
+run_id: run_20260602_011145
+created_at: '2026-06-02T01:14:39+08:00'
+status: SUCCESS
