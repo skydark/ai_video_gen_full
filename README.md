@@ -10,8 +10,8 @@
 
 ## Screenshots
 
-[Screenshot1](./screenshot1.png)
-[Screenshot2](./screenshot2.png)
+![Screenshot1](./screenshot1.png)
+![Screenshot2](./screenshot2.png)
 
 ## 快速启动 WebUI
 
